@@ -3,12 +3,10 @@ import * as express from 'express';
 import * as functions from 'firebase-functions';
 
 const app = express();
-
 app.use(express.json());
 
 app.post('/api/contact', (req, res) => {
   sgMail.setApiKey(functions.config().sendgrid.key);
-
   sgMail
     .send({
       to: 'info@zoldos-group.com',
