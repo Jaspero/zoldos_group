@@ -8,7 +8,6 @@ jobs:
   build:
     if: contains(github.ref, 'master')
     name: Build
-    needs: lint
     runs-on: ubuntu-latest
     strategy:
       matrix:
