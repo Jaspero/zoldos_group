@@ -1,5 +1,5 @@
 ![Deploy Public Site](https://github.com/Jaspero/zoldos-group/workflows/Deploy%20Public%20Site/badge.svg)
-![Lint and Build Website](https://github.com/Jaspero/zoldos-group/workflows/Lint%20and%20Build%20Website/badge.svg)
+![Build Website](https://github.com/Jaspero/zoldos-group/workflows/Build%20Website/badge.svg)
 ![Lint and Deploy Functions](https://github.com/Jaspero/zoldos-group/workflows/Lint%20and%20Deploy%20Functions/badge.svg)
 
 # Zoldos Group
