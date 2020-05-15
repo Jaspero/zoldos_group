@@ -1,0 +1,46 @@
+name: Lint and Deploy Functions
+on:
+  push:
+    paths:
+      - 'functions/**/*'
+      - '.github/workflows/functions-ci.workflow.yml'
+jobs:
+  lint:
+    if: contains(github.ref, 'dev') || contains(github.ref, 'master')
+    name: Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm lint
+        run: |
+          npm ci
+          npm --prefix functions ci
+          npm --prefix functions run lint
+  deploy:
+    if: contains(github.ref, 'dev') || contains(github.ref, 'master')
+    name: Deploy
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: |
+          npm ci
+          npm --prefix functions ci
+      - name: Deploy to Firebase
+        run: npm run deploy -- --only functions --token $FIREBASE_TOKEN
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}

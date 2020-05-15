@@ -1,0 +1,60 @@
+{
+  "name": "zoldos-group",
+  "version": "0.0.1",
+  "description": "Source code for the zoldos group website",
+  "main": "index.js",
+  "scripts": {
+    "lint:app": "npm --prefix app run lint:fix",
+    "lint:functions": "npm --prefix functions run lint:fix",
+    "deploy": "firebase deploy",
+    "cleanup": "del-cli \"public/**\" \"!public\" \"!public/admin\" \"!public/collections\" \"!public/uploads\"",
+    "copy:collections": "cp -r public/collections app/dist/",
+    "copy:app": "cp -r app/dist/static/* public/",
+    "build:app": "npm --prefix app run build:prod && npm run copy:collections && npm --prefix app run build:scully && npm run cleanup && npm run copy:app",
+    "collection:listen": "http-server -p 3000 -c-1 public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaspero/zoldos-group.git"
+  },
+  "keywords": [
+    "jam",
+    "firebase",
+    "scully",
+    "angular"
+  ],
+  "author": "Jaspero Ltd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jaspero/zoldos-group/issues"
+  },
+  "homepage": "https://github.com/Jaspero/zoldos-group#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "post-commit": "git update-index -g"
+    }
+  },
+  "lint-staged": {
+    "*.{ts,json}": [
+      "prettier --write",
+      "git add"
+    ],
+    "app/**/*.{ts}": [
+      "npm run lint:app",
+      "git add"
+    ],
+    "functions/**/*.{ts}": [
+      "npm run lint:functions",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "del-cli": "3.0.0",
+    "firebase-tools": "8.2.0",
+    "http-server": "0.12.3",
+    "husky": "4.2.5",
+    "lint-staged": "10.2.2",
+    "prettier": "2.0.5"
+  }
+}

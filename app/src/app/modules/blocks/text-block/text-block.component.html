@@ -1,0 +1,10 @@
+<div class="grid m-y-m m-s-0">
+  <div class="col-12 flex fw-wrap jc-center ai-center">
+    <div *ngIf="data.title" class="w-full ta-center m-y-s m-s-0">
+      <h3>{{data.title}}</h3>
+    </div>
+    <div *ngIf="data.content" class="col-6 col-s-12 no-padding ta-center text-wrapper">
+      <p class="font-tertiary">{{data.content}}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,210 @@
+backend:
+  name: github
+  repo: Jaspero/zoldos-group
+  branch: master
+  base_url: https://us-central1-zoldos-group.cloudfunctions.net/
+  auth_endpoint: /oauth/auth
+publish_mode: editorial_workflow
+
+# Media files will be stored in the repo under docs/uploads
+media_folder: "public/uploads"
+
+# The src attribute for uploaded media will begin with /uploads
+public_folder: "/uploads"
+
+animation: &animation
+  label: "Animation"
+  name: "animation"
+  widget: "select"
+  options:
+    - { label: "None", value: "none" }
+    - { label: "Fade In", value: "fade-in" }
+    - { label: "Fade In From Top", value: "fade-in-from-top" }
+    - { label: "Fade In From Bottom", value: "fade-in-from-bottom" }
+    - { label: "Fade In From Left", value: "fade-in-from-left" }
+    - { label: "Fade In From Right", value: "fade-in-from-right" }
+  default: ["none"]
+
+# Reusable blocks for all of the pages
+blocks: &blocks
+  label: "Blocks"
+  name: "blocks"
+  widget: "list"
+  types:
+    - label: "Image R"
+      name: "imageR"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+        - { label: "Below Image", name: "belowImg", widget: "image", required: false }
+
+    - label: "Image L"
+      name: "imageL"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+        - { label: "Below Image", name: "belowImg", widget: "image", required: false }
+
+    - label: "Image Large"
+      name: "imageLarge"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Image", name: "image", widget: "image", required: false }
+
+    - label: "Logo Block"
+      name: "textImgBlock"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+
+    - label: "Image Shadow R"
+      name: "imageShadowR"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+        - { label: "Link", name: "link", widget: "string", required: false }
+        - { label: "Button Title", name: "buttonTitle", widget: "string", required: false }
+
+
+    - label: "Image Full"
+      name: "imageFull"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Image", name: "image", widget: "image", required: false }
+
+    - label: "Image Full Button"
+      name: "imageFullButton"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Link", name: "link", widget: "string", required: false }
+        - { label: "Button Title", name: "buttonTitle", widget: "string", required: false }
+
+    - label: "Text Block"
+      name: "textBlock"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+
+    - label: "Event Image Block"
+      name: "eventImageBlock"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+
+    - label: "Image Right Button"
+      name: "imageRightButton"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+        - { label: "Below Image", name: "belowImg", widget: "image", required: false }
+
+    - label: "Image Left Button"
+      name: "imageLeftButton"
+      widget: "object"
+      fields:
+        - <<: *animation
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", required: false }
+        - { label: "content", name: "content", widget: "markdown", required: false }
+        - { label: "Below Image", name: "belowImg", widget: "image", required: false }
+
+    - label: "Events Block"
+      name: "eventsBlock"
+      widget: "object"
+      fields:
+        - label: "Title"
+          name: "title"
+          widget: "string"
+        - label: "Blocks"
+          name: "blocks"
+          widget: "list"
+          types:
+            - label: "Image"
+              name: "image"
+              widget: "object"
+              fields:
+                - { label: "Image", name: "image", widget: "image", required: false }
+            - label: "Active"
+              name: "active"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "content", name: "content", widget: "markdown", required: false }
+            - label: "Done"
+              name: "done"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "content", name: "content", widget: "markdown", required: false }
+            - label: "Canceled"
+              name: "canceled"
+              widget: "object"
+              fields:
+                - { label: "Title", name: "title", widget: "string", required: false }
+                - { label: "content", name: "content", widget: "markdown", required: false }
+
+meta: &meta
+  label: "Meta"
+  name: "meta"
+  widget: "object"
+  fields:
+    - { label: "Title", name: "title", widget: "string", required: false }
+    - { label: "Description", name: "description", widget: "text", required: false }
+    - { label: "Keywords", name: "keywords", widget: "string", required: false }
+
+
+collections:
+  - name: "settings"
+    label: "Settings"
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    files:
+      - label: "Navigation"
+        name: "Navigation"
+        file: "public/collections/settings/navigation.json"
+        fields:
+          - label: "Links"
+            name: "links"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "text" }
+              - { label: "Link", name: "link", widget: "text" }
+
+  - name: "pages"
+    label: "Pages"
+    extension: "json"
+    format: "json"
+    folder: "public/collections/pages"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - <<: *meta
+      - <<: *blocks

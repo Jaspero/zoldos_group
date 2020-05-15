@@ -1,0 +1,54 @@
+name: Lint and Build Website
+on:
+  push:
+    paths:
+      - 'app/**/*'
+      - '.github/workflows/app-ci.workflow.yml'
+jobs:
+  lint:
+    if: contains(github.ref, 'dev') || contains(github.ref, 'master')
+    name: Lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: npm lint
+        run: |
+          npm ci
+          npm --prefix app ci
+          npm --prefix app run lint
+  build:
+    if: contains(github.ref, 'master')
+    name: Build
+    needs: lint
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@master
+      - name: Install Dependencies
+        run: |
+          npm ci
+          npm --prefix app ci
+          npm run build:app
+      - name: Commit files
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add public
+          git commit -m "cli: new scully build" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: false
