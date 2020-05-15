@@ -1,0 +1,14 @@
+{
+  "meta": {
+    "title": "Home",
+    "description": "The zoldos group",
+    "keywords": "zoldos"
+  },
+  "blocks": [
+    {
+      "type": "textBlock",
+      "title": "First Block",
+      "content": "Example content"
+    }
+  ]
+}

@@ -1,13 +1,12 @@
 import { Component, ComponentFactoryResolver, Input, OnInit, ViewContainerRef } from '@angular/core';
-import { Block } from '../block.enum';
 import { TextBlockComponent } from '../text-block/text-block.component';
 
-const BLOCKS_MAP: {[key: string]: any} = {
-  [Block.TextBlock]: TextBlockComponent,
+const BLOCKS = {
+  'textBlock': TextBlockComponent
 };
 
 @Component({
-  selector: 'exo-block-renderer',
+  selector: 'zg-block-renderer',
   templateUrl: './block-renderer.component.html',
   styleUrls: ['./block-renderer.component.scss']
 })
@@ -22,9 +21,9 @@ export class BlockRendererComponent implements OnInit {
 
   ngOnInit() {
     for (const block of this.blocks) {
-      if (BLOCKS_MAP[block.type]) {
+      if (BLOCKS[block.type]) {
         const componentFactory = this.componentFactoryResolver.resolveComponentFactory(
-          BLOCKS_MAP[block.type]
+          BLOCKS[block.type]
         );
         const componentRef = this.vcr.createComponent(componentFactory);
         (componentRef.instance as any).data = block;

@@ -1,0 +1,12 @@
+{
+  "links": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "Example",
+      "link": "/example"
+    }
+  ]
+}

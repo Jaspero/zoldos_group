@@ -1,7 +1,7 @@
-import { Http404 } from '@gammastream/scully-plugin-http404';
-import { Sitemap } from '@gammastream/scully-plugin-sitemap';
-import { RouteTypes, ScullyConfig } from '@scullyio/scully';
+// import { Http404 } from '@gammastream/scully-plugin-http404';
 import * as lazyImages from '@notiz/scully-plugin-lazy-images';
+// import { Sitemap } from '@gammastream/scully-plugin-sitemap';
+import { RouteTypes, ScullyConfig } from '@scullyio/scully';
 import { MinifyHtml } from 'scully-plugin-minify-html';
 
 export const config: ScullyConfig = {
@@ -17,8 +17,8 @@ export const config: ScullyConfig = {
   // },
   defaultPostRenderers: [
     'seoHrefOptimise',
-    Sitemap,
-    Http404,
+    // Sitemap,
+    // Http404,
     lazyImages,
     MinifyHtml
   ],

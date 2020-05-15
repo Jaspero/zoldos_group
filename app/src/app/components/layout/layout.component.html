@@ -1,0 +1,11 @@
+<header>
+    <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active">
+        {{link.title}}
+    </a>
+</header>
+
+<router-outlet></router-outlet>
+
+<footer>
+
+</footer>

@@ -1,6 +1,6 @@
-![Deploy Public Site](https://github.com/Jaspero/zoldos-group/workflows/Deploy%20Public%20Site/badge.svg)
-![Build Website](https://github.com/Jaspero/zoldos-group/workflows/Build%20Website/badge.svg)
-![Lint and Deploy Functions](https://github.com/Jaspero/zoldos-group/workflows/Lint%20and%20Deploy%20Functions/badge.svg)
+![Deploy Public Site](https://github.com/Jaspero/zoldos_group/workflows/Deploy%20Public%20Site/badge.svg)
+![Build Website](https://github.com/Jaspero/zoldos_group/workflows/Build%20Website/badge.svg)
+![Lint and Deploy Functions](https://github.com/Jaspero/zoldos_group/workflows/Lint%20and%20Deploy%20Functions/badge.svg)
 
 # Zoldos Group
 
@@ -39,7 +39,7 @@ To build the scully app run `npm run build:app` this in turn runs a few commands
 ## Adding Blocks
 
 1. Define the block in `public/admin/config.yml`
-2. Add the name of the block in to `app/shared/enums/block.enum.ts`. The name needs to equal the name field
+2. Add the name of the block in to `app/components/blocks/blocks.components.ts`. The name needs to equal the name field
 defined for the block in `config.yml`
 3. Create the component in the `app/shared/modules/blocks/` folder. The naming convention we use is `[block-name]-block`.
 The only required property each block needs to have is `data`.

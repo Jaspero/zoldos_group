@@ -43,17 +43,25 @@ collections:
     format: "json"
     editor:
       preview: false
-    files:
-      - label: "Navigation"
-        name: "Navigation"
-        file: "public/collections/settings/navigation.json"
+    file: "public/collections/settings.json"
+    fields:
+      - label: "Links"
+        name: "links"
+        widget: "list"
         fields:
-          - label: "Links"
-            name: "links"
-            widget: "object"
-            fields:
-              - { label: "Title", name: "title", widget: "text" }
-              - { label: "Link", name: "link", widget: "text" }
+          - { label: "Title", name: "title", widget: "text" }
+          - { label: "Link", name: "link", widget: "text" }
+
+  - name: "home"
+    label: "Home"
+    extension: "json"
+    format: "json"
+    file: "public/collections/home.json"
+    editor:
+      preview: false
+    fields:
+      - <<: *meta
+      - <<: *blocks
 
   - name: "pages"
     label: "Pages"
