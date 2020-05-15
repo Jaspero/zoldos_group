@@ -20,15 +20,11 @@ app.post('/api/contact', (req, res) => {
         <p><b>Phone:</b> ${req.body.phone}</p>
         <p><b>Subject:</b> ${req.body.subject}</p>
         <p><b>Message:</b> ${req.body.message}</p>
-      `,
+      `
     })
-    .then(() => {
-
-    }, error => {
+    .catch(error => {
       console.error(error);
     });
 });
 
-export const api = functions
-  .region('europe-west2')
-  .https.onRequest(app);
+export const api = functions.region('europe-west2').https.onRequest(app);
