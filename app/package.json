@@ -5,10 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
-    "scully": "scully",
+    "build:prod": "ng build --prod",
+    "build:scully": "scully --nw",
+    "scully": "scully --scanRoutes",
     "scully:serve": "scully serve"
   },
   "private": true,

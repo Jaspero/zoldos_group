@@ -4,7 +4,6 @@
   "description": "Source code for the zoldos group website",
   "main": "index.js",
   "scripts": {
-    "lint:app": "npm --prefix app run lint:fix",
     "lint:functions": "npm --prefix functions run lint:fix",
     "deploy": "firebase deploy",
     "cleanup": "del-cli \"public/**\" \"!public\" \"!public/admin\" \"!public/collections\" \"!public/uploads\"",
