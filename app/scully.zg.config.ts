@@ -1,8 +1,26 @@
 // import { Http404 } from '@gammastream/scully-plugin-http404';
 import * as lazyImages from '@notiz/scully-plugin-lazy-images';
 // import { Sitemap } from '@gammastream/scully-plugin-sitemap';
-import { RouteTypes, ScullyConfig } from '@scullyio/scully';
+import { registerPlugin, RouteTypes, ScullyConfig } from '@scullyio/scully';
 import { MinifyHtml } from 'scully-plugin-minify-html';
+import { readdirSync } from 'fs';
+
+async function pages(route, config: any = {}) {
+  const {
+    folder
+  } = config;
+
+  return readdirSync('./dist/collections/' + folder)
+    .map(file => ({
+      route: '/' + file.split('.')[0]
+    }))
+}
+registerPlugin(
+  'router',
+  'cFiles',
+  pages,
+  async conf => []
+);
 
 export const config: ScullyConfig = {
   projectRoot: './src',
@@ -24,10 +42,8 @@ export const config: ScullyConfig = {
   ],
   routes: {
     '/:id': {
-      type: RouteTypes.contentFolder,
-      id: {
-        folder: './dist/collections/pages'
-      }
+      type: 'cFiles',
+      folder: 'pages'
     }
   }
 };

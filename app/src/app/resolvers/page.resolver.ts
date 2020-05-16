@@ -2,8 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { ActivatedRouteSnapshot, Resolve, Router } from '@angular/router';
-import { ScullyRoutesService } from '@scullyio/ng-lib';
-import { map, take } from 'rxjs/operators';
+import { map } from 'rxjs/operators';
 import { BASE_TITLE } from '../consts/base-title.const';
 
 @Injectable({
@@ -15,7 +14,6 @@ export class PageResolver implements Resolve<any> {
     private meta: Meta,
     @Inject(BASE_TITLE)
     private baseTitle: string,
-    private scully: ScullyRoutesService,
     private router: Router,
     private http: HttpClient
   ) {}
@@ -71,18 +69,7 @@ export class PageResolver implements Resolve<any> {
     id: string,
     collection?: string
   ) {
-    if (!collection) {
-      return this.http
-        .get( `/collections/${id}.json`)
-    }
-
-    return this.scully.available$
-      .pipe(
-        take(1),
-        map(routes => {
-          console.log(routes);
-          return routes.find(rt => rt.route === `/${id}`)
-        })
-      )
+    return this.http
+      .get( `/collections${collection ? `/${collection}` : ''}/${id}.json`)
   }
 }

@@ -43,25 +43,23 @@ collections:
     format: "json"
     editor:
       preview: false
-    file: "public/collections/settings.json"
-    fields:
-      - label: "Links"
-        name: "links"
-        widget: "list"
+    files:
+      - label: "Settings"
+        name: "settings"
+        file: "public/collections/settings.json"
         fields:
-          - { label: "Title", name: "title", widget: "text" }
-          - { label: "Link", name: "link", widget: "text" }
-
-  - name: "home"
-    label: "Home"
-    extension: "json"
-    format: "json"
-    file: "public/collections/home.json"
-    editor:
-      preview: false
-    fields:
-      - <<: *meta
-      - <<: *blocks
+          - label: "Links"
+            name: "links"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "text" }
+              - { label: "Link", name: "link", widget: "text" }
+      - label: "Home"
+        name: "home"
+        file: "public/collections/home.json"
+        fields:
+          - <<: *meta
+          - <<: *blocks
 
   - name: "pages"
     label: "Pages"
@@ -73,5 +71,8 @@ collections:
     editor:
       preview: false
     fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
       - <<: *meta
       - <<: *blocks
