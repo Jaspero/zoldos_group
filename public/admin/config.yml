@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: Jaspero/zoldos-group
+  repo: Jaspero/zoldos_group
   branch: master
   base_url: https://europe-west2-zoldos-group.cloudfunctions.net/
   auth_endpoint: /oauth/auth
