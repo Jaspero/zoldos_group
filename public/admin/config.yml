@@ -25,6 +25,21 @@ blocks: &blocks
       fields:
         - { label: "Title", name: "title", widget: "string", required: false }
         - { label: "content", name: "content", widget: "markdown", required: false }
+    - label: "Portfolio Block"
+      name: "portfolioBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
+        - label: "Features"
+          name: "features"
+          widget: "list"
+          fields:
+            - { label: "Image", name: "image", widget: "image", requried: true }
+            - { label: "Image Alt", name: "alt", widget: "string", requried: true }
+            - { label: "Title", name: "title", widget: "string", requried: true }
+            - { label: "Author", name: "author", widget: "string", requried: false }
+            - { label: "Content", name: "content", widget: "markdown", requried: true }
 
 meta: &meta
   label: "Meta"

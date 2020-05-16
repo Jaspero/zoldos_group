@@ -11,6 +11,7 @@ import { PageComponent } from './components/page/page.component';
 import { BASE_TITLE } from './consts/base-title.const';
 import { MarkdownToHtmlPipe } from './pipes/markdown-to-html/markdown-to-html.pipe';
 import { TextPipe } from './pipes/text/text.pipe';
+import { PortfolioBlockComponent } from './components/blocks/portfolio-block/portfolio-block.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { TextPipe } from './pipes/text/text.pipe';
     TextPipe,
 
     PageNotFoundComponent,
-    LayoutComponent
+    LayoutComponent,
+    PortfolioBlockComponent
   ],
   imports: [
     /**

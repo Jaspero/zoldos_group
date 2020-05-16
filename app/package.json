@@ -24,6 +24,7 @@
     "@scullyio/init": "0.0.28",
     "@scullyio/ng-lib": "0.0.22",
     "@scullyio/scully": "0.0.91",
+    "marked": "^1.0.0",
     "rxjs": "6.5.4",
     "tslib": "1.10.0",
     "zone.js": "0.10.2"
@@ -36,6 +37,7 @@
     "@gammastream/scully-plugin-http404": "0.0.1",
     "@gammastream/scully-plugin-sitemap": "0.0.5",
     "@notiz/scully-plugin-lazy-images": "0.2.7",
+    "@types/marked": "^0.7.4",
     "@types/node": "12.11.1",
     "scully-plugin-minify-html": "2.3.1",
     "ts-node": "8.3.0",

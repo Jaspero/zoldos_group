@@ -1,0 +1,22 @@
+<section class="wrapper style1">
+    <div class="container">
+        <header class="major special" *ngIf="data.title || data.subTitle">
+            <h2 *ngIf="data.title">{{data.title}}</h2>
+            <p *ngIf="data.subTitle">{{data.subTitle}}</p>
+        </header>
+        <div class="feature-grid">
+            <div class="feature" *ngFor="let feature of data.features">
+                <div class="image rounded">
+                    <img [src]="feature.image" [alt]="feature.alt" />
+                </div>
+                <div class="content">
+                    <header>
+                        <h4>{{feature.title}}</h4>
+                        <p *ngIf="feature.author">{{feature.author}}</p>
+                    </header>
+                    <p [innerHTML]="feature.content | MTH"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
