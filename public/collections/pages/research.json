@@ -1,0 +1,15 @@
+{
+  "title": "Research",
+  "meta": {
+    "title": "Research",
+    "description": "This is our research",
+    "keywords": "research"
+  },
+  "blocks": [
+    {
+      "type": "textBlock",
+      "title": "Research",
+      "content": "This is some research"
+    }
+  ]
+}
