@@ -1,21 +1,22 @@
-import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BlockRendererComponent } from './components/blocks/block-renderer/block-renderer.component';
-import { TextBlockComponent } from './components/blocks/text-block/text-block.component';
-import { LayoutComponent } from './components/layout/layout.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { PageComponent } from './components/page/page.component';
-import { BASE_TITLE } from './consts/base-title.const';
-import { MarkdownToHtmlPipe } from './pipes/markdown-to-html/markdown-to-html.pipe';
-import { TextPipe } from './pipes/text/text.pipe';
-import { PortfolioBlockComponent } from './components/blocks/portfolio-block/portfolio-block.component';
+import {HttpClientModule} from '@angular/common/http';
+import {NgModule} from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {AppRoutingModule} from './app-routing.module';
+import {AppComponent} from './app.component';
+import {BlockRendererComponent} from './components/blocks/block-renderer/block-renderer.component';
+import {TextBlockComponent} from './components/blocks/text-block/text-block.component';
+import {LayoutComponent} from './components/layout/layout.component';
+import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
+import {PageComponent} from './components/page/page.component';
+import {BASE_TITLE} from './consts/base-title.const';
+import {MarkdownToHtmlPipe} from './pipes/markdown-to-html/markdown-to-html.pipe';
+import {TextPipe} from './pipes/text/text.pipe';
+import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portfolio-block.component';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
 
 @NgModule({
   declarations: [
-
     /**
      * Components
      */
@@ -50,6 +51,10 @@ import { PortfolioBlockComponent } from './components/blocks/portfolio-block/por
      * Local
      */
     AppRoutingModule,
+
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [
     {
@@ -57,9 +62,7 @@ import { PortfolioBlockComponent } from './components/blocks/portfolio-block/por
       useValue: 'Zoldos Group'
     }
   ],
-  exports: [
-    TextPipe
-  ],
+  exports: [TextPipe],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

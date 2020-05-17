@@ -21,7 +21,7 @@ jobs:
         run: |
           npm ci
           npm --prefix app ci
-          npm run build:app
+          npm run rebuild:app
       - name: Deploy to Firebase
         run: npm run deploy -- --only hosting --token $FIREBASE_TOKEN
         env:

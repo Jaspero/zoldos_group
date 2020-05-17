@@ -7,10 +7,10 @@
     "lint:functions": "npm --prefix functions run lint:fix",
     "deploy": "firebase deploy",
     "cleanup": "del-cli \"public/**\" \"!public\" \"!public/admin\" \"!public/collections\" \"!public/uploads\"",
-    "copy:collections": "cp -r public/collections app/dist/",
-    "copy:app": "cp -r app/dist/static/* public/",
-    "build:app": "npm --prefix app run build:prod && npm run copy:collections && npm --prefix app run build:scully && npm run cleanup && npm run copy:app",
-    "collection:listen": "http-server -p 3000 -c-1 public"
+    "copy:app": "copyfiles -u 3 \"app/dist/static/{*.*,!(uploads|collections)/**}\" public/",
+    "copy:public": "copyfiles -u 1 \"public/{*.*,!(admin)/**}\" app/dist/zg",
+    "build:app": "npm --prefix app run build:prod && npm --prefix app run build:scully && npm run cleanup && npm run copy:app",
+    "rebuild:app": "npm run copy:public && npm --prefix app run build:scully && npm run copy:app"
   },
   "repository": {
     "type": "git",
@@ -49,9 +49,9 @@
     ]
   },
   "devDependencies": {
-    "del-cli": "3.0.0",
+    "copyfiles": "2.2.0",
+    "del-cli": "3.0.1",
     "firebase-tools": "8.2.0",
-    "http-server": "0.12.3",
     "husky": "4.2.5",
     "lint-staged": "10.2.2",
     "prettier": "2.0.5"

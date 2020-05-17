@@ -48,11 +48,20 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "input": "../public/collections",
+                "output": "/collections",
+                "glob": "**/**"
+              },
+              {
+                "input": "../public/uploads",
+                "output": "/uploads",
+                "glob": "**/**"
+              },
+              "src/manifest.webmanifest"
             ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -82,15 +91,16 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "zg:build",
-            "proxyConfig": "./proxy.config.json"
+            "browserTarget": "zg:build"
           },
           "configurations": {
             "production": {
@@ -105,6 +115,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "zg"
 }
