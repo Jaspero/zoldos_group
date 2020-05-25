@@ -6,23 +6,10 @@
   },
   "blocks": [
     {
-      "type": "textBlock",
-      "title": "First Block",
-      "content": "Example content"
-    },
-    {
-      "type": "portfolioBlock",
-      "title": "Research",
-      "subTitle": "Research",
-      "features": [
-        {
-          "image": "/uploads/300.png",
-          "alt": "Placeholder",
-          "title": "This is a project",
-          "author": "the guy",
-          "content": "pretty goode"
-        }
-      ]
+      "type": "landingBlock",
+      "title": "Zoldoš Lab",
+      "subTitle": "EPIGENETICS OF PROTEIN GLYCOSYLATION BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
+      "image": "/uploads/banner.png"
     }
   ]
 }

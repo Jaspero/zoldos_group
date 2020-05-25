@@ -15,6 +15,8 @@ import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portf
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
+import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
+import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +42,9 @@ import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-bloc
     PageNotFoundComponent,
     LayoutComponent,
     PortfolioBlockComponent,
-    TwoBlockTextComponent
+    TwoBlockTextComponent,
+    TestBlockComponent,
+    LandingBlockComponent
   ],
   imports: [
     /**

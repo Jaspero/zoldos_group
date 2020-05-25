@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590394795176,
+  "timestamp": 1590401402964,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.0a4309a8297315e1582c.js",
-        "/main-es5.0a4309a8297315e1582c.js",
+        "/main-es2015.05fad0450b9d0176aa8d.js",
+        "/main-es5.05fad0450b9d0176aa8d.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.6f102767e288ad0fd189.js",
         "/polyfills-es5.ef2b553afea95784ae26.js",
@@ -25,7 +25,7 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "lazy",
-      "urls": [],
+      "urls": ["/assets/scully-routes.json"],
       "patterns": []
     }
   ],
@@ -40,11 +40,12 @@
     }
   ],
   "hashTable": {
+    "/assets/scully-routes.json": "bbd65ada429010d77791eadcac5c47dc0a929978",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "d3033df6559860f9ae0950256cb3b5e2feb6f326",
-    "/main-es2015.0a4309a8297315e1582c.js": "48b98ee3d48169bc4ee652d1a306328d799f2417",
-    "/main-es5.0a4309a8297315e1582c.js": "23eec7e777358e12cd44dc176558062a3b1fefcb",
-    "/manifest.webmanifest": "f3815b4bcca3a68b618352b4ea557d186348f200",
+    "/index.html": "c1fd599420791706f95c9e7ab00d89f29053d741",
+    "/main-es2015.05fad0450b9d0176aa8d.js": "d81dd7d080f77c5a3b3d558bcef9d364a7c40f8d",
+    "/main-es5.05fad0450b9d0176aa8d.js": "d8fe671bb3431f27654f595d7cc40e353ae36903",
+    "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/polyfills-es2015.6f102767e288ad0fd189.js": "8c6432a1dfcdf9f294d618f7df50a13d73718090",
     "/polyfills-es5.ef2b553afea95784ae26.js": "dbf7aa2aaa9ec484767228d78eab515fab4a7d7d",
     "/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

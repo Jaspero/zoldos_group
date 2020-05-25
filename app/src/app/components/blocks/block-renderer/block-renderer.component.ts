@@ -8,11 +8,15 @@ import {
 import {PortfolioBlockComponent} from '../portfolio-block/portfolio-block.component';
 import {TextBlockComponent} from '../text-block/text-block.component';
 import {TwoBlockTextComponent} from '../two-block-text/two-block-text.component';
+import {TestBlockComponent} from '../test-block/test-block.component';
+import {LandingBlockComponent} from '../landing-block/landing-block.component';
 
 const BLOCKS = {
   textBlock: TextBlockComponent,
   portfolioBlock: PortfolioBlockComponent,
-  twoBlockText: TwoBlockTextComponent
+  twoBlockText: TwoBlockTextComponent,
+  testBlock: TestBlockComponent,
+  landingBlock: LandingBlockComponent
 };
 
 @Component({
