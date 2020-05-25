@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590401402964,
+  "timestamp": 1590415940402,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.05fad0450b9d0176aa8d.js",
-        "/main-es5.05fad0450b9d0176aa8d.js",
+        "/main-es2015.a824074fad87f99b0c31.js",
+        "/main-es5.a824074fad87f99b0c31.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.6f102767e288ad0fd189.js",
         "/polyfills-es5.ef2b553afea95784ae26.js",
@@ -25,14 +25,18 @@
       "name": "assets",
       "installMode": "lazy",
       "updateMode": "lazy",
-      "urls": ["/assets/scully-routes.json"],
+      "urls": [
+        "/assets/scully-routes.json"
+      ],
       "patterns": []
     }
   ],
   "dataGroups": [
     {
       "name": "collections",
-      "patterns": ["\\/collections"],
+      "patterns": [
+        "\\/collections"
+      ],
       "strategy": "performance",
       "maxSize": 2000,
       "maxAge": 86400000,
@@ -42,9 +46,9 @@
   "hashTable": {
     "/assets/scully-routes.json": "bbd65ada429010d77791eadcac5c47dc0a929978",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "c1fd599420791706f95c9e7ab00d89f29053d741",
-    "/main-es2015.05fad0450b9d0176aa8d.js": "d81dd7d080f77c5a3b3d558bcef9d364a7c40f8d",
-    "/main-es5.05fad0450b9d0176aa8d.js": "d8fe671bb3431f27654f595d7cc40e353ae36903",
+    "/index.html": "6705635e706fd64a0d2725fe47f800936f3c8f59",
+    "/main-es2015.a824074fad87f99b0c31.js": "0826c00fdf80edb4ae4f0696e5a84f52e353c35f",
+    "/main-es5.a824074fad87f99b0c31.js": "952ee36d7502facfc164aab0b590387ad3ae2b76",
     "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/polyfills-es2015.6f102767e288ad0fd189.js": "8c6432a1dfcdf9f294d618f7df50a13d73718090",
     "/polyfills-es5.ef2b553afea95784ae26.js": "dbf7aa2aaa9ec484767228d78eab515fab4a7d7d",
