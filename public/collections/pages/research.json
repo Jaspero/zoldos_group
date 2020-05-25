@@ -8,8 +8,8 @@
   "blocks": [
     {
       "type": "textBlock",
-      "title": "Research",
-      "content": "This is some research"
+      "title": "Research 1",
+      "content": "This is some research bal"
     }
   ]
 }
