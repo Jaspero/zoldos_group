@@ -1,0 +1,15 @@
+{
+  "title": "About",
+  "meta": {
+    "title": "About",
+    "description": "This is about page"
+  },
+  "blocks": [
+    {
+      "type": "twoBlockText",
+      "title": "one block text",
+      "subTitle": "text block",
+      "content": "text block content"
+    }
+  ]
+}
