@@ -1,10 +1,17 @@
-import { Component, ComponentFactoryResolver, Input, OnInit, ViewContainerRef } from '@angular/core';
-import { PortfolioBlockComponent } from '../portfolio-block/portfolio-block.component';
-import { TextBlockComponent } from '../text-block/text-block.component';
+import {
+  Component,
+  ComponentFactoryResolver,
+  Input,
+  OnInit,
+  ViewContainerRef
+} from '@angular/core';
+import {PortfolioBlockComponent} from '../portfolio-block/portfolio-block.component';
+import {TextBlockComponent} from '../text-block/text-block.component';
 
 const BLOCKS = {
-  'textBlock': TextBlockComponent,
-  'portfolioBlock': PortfolioBlockComponent
+  textBlock: TextBlockComponent,
+  portfolioBlock: PortfolioBlockComponent,
+  twoBlockText: TextBlockComponent
 };
 
 @Component({

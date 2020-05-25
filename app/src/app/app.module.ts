@@ -14,6 +14,7 @@ import {TextPipe} from './pipes/text/text.pipe';
 import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portfolio-block.component';
 import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
+import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import {environment} from '../environments/environment';
 
     PageNotFoundComponent,
     LayoutComponent,
-    PortfolioBlockComponent
+    PortfolioBlockComponent,
+    TwoBlockTextComponent
   ],
   imports: [
     /**
