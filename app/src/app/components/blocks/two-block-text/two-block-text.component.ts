@@ -6,8 +6,6 @@ import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
   styleUrls: ['./two-block-text.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TwoBlockTextComponent implements OnInit {
-  constructor() {}
-
-  ngOnInit(): void {}
+export class TwoBlockTextComponent {
+  data: any;
 }

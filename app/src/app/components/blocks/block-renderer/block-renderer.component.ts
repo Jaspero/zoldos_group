@@ -7,11 +7,12 @@ import {
 } from '@angular/core';
 import {PortfolioBlockComponent} from '../portfolio-block/portfolio-block.component';
 import {TextBlockComponent} from '../text-block/text-block.component';
+import {TwoBlockTextComponent} from '../two-block-text/two-block-text.component';
 
 const BLOCKS = {
   textBlock: TextBlockComponent,
   portfolioBlock: PortfolioBlockComponent,
-  twoBlockText: TextBlockComponent
+  twoBlockText: TwoBlockTextComponent
 };
 
 @Component({
