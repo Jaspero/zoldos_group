@@ -16,6 +16,7 @@ import {ServiceWorkerModule} from '@angular/service-worker';
 import {environment} from '../environments/environment';
 import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
 import { TestBlockComponent } from './components/blocks/test-block/test-block.component';
+import { LandingBlockComponent } from './components/blocks/landing-block/landing-block.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { TestBlockComponent } from './components/blocks/test-block/test-block.co
     LayoutComponent,
     PortfolioBlockComponent,
     TwoBlockTextComponent,
-    TestBlockComponent
+    TestBlockComponent,
+    LandingBlockComponent
   ],
   imports: [
     /**
