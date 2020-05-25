@@ -47,6 +47,14 @@ blocks: &blocks
         - { label: "Title", name: "title", widget: "string", required: false }
         - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
         - { label: "Content", name: "content", widget: "markdown", requried: true }
+    - label: "Test block"
+      name: "testBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
+        - { label: "Content", name: "content", widget: "markdown", requried: true }
+        - { label: "Image", name: "image", widget: "image", requried: true }
 
 meta: &meta
   label: "Meta"
