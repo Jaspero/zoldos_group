@@ -11,6 +11,10 @@
     {
       "title": "About",
       "link": "/about"
+    },
+    {
+      "title": "Lab Members",
+      "link": "/lab-members"
     }
   ]
 }
