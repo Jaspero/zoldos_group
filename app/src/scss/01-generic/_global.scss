@@ -1,0 +1,110 @@
+/* Sections
+*============================================================================*/
+
+.section {
+  padding: 50px 10em;
+
+  @media (max-width: 1400px) { padding: 50px 7em; }
+  @media (max-width: 900px) { padding: 50px 4em }
+  @media (max-width: 600px) { padding: 50px 1em; }
+}
+
+
+
+
+
+
+
+
+/* Rating
+*============================================================================*/
+
+.rating {
+  color: var(--accent-theme);
+  & > * { margin-left: -2px; }
+}
+
+
+
+/* Headers
+*============================================================================*/
+
+
+.header-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-no-button { padding-bottom: 6px; }
+
+
+
+/* Buttons
+*============================================================================*/
+
+.btn-primary {
+  cursor: pointer;
+  outline: none;
+  padding: 20px;
+  font-size: 16px;
+  border:1px solid black;
+  background: white;
+  color: black;
+  max-width: 175px;
+  text-align: center;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background: black;
+  color: white;
+}
+
+.btn-secondary {
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  padding: 20px;
+  font-size: 25px;
+  border:1px solid white;
+  background: transparent;
+  color: white;
+  max-width: 175px;
+  transition: .3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+}
+
+
+@media (max-width: 600px) {
+  .btn-primary {
+    font-size: 18px;
+    max-width: 150px;
+    padding: 10px;
+  }
+
+  .btn-secondary {
+    font-size: 18px;
+    max-width: 150px;
+    padding: 10px;
+  }
+}
+
+
+
+
+/* Container
+*============================================================================*/
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}

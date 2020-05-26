@@ -1,0 +1,84 @@
+/**
+ * Theme
+ *
+ * Adjustable theme settings.
+ *
+ *============================================================================*/
+
+
+
+/* Theme
+ *============================================================================*/
+
+$colors-themes: (
+primary: (
+        theme    : #0BB363,
+        primary  : rgba(255,255,255,1),
+        secondary: rgba(255,255,255,.8),
+        tertiary : rgba(255,255,255,.15)
+),
+accent: (
+        theme    : #707070,
+        primary  : rgba(255,255,255,1),
+        secondary: rgba(255,255,255,.8),
+        tertiary : rgba(255,255,255,.15)
+),
+warn: (
+        theme    : #FF0433,
+        primary  : rgba(255,255,255,1),
+        secondary: rgba(255,255,255,.8),
+        tertiary : rgba(255,255,255,.15)
+),
+
+light: (
+        theme    : #FFFFFF,
+        primary  : rgba(0,0,0,.9),
+        secondary: rgba(0,0,0,.6),
+        tertiary : rgba(0,0,0,.1)
+),
+dark: (
+        theme    : #000000,
+        primary  : rgba(255,255,255,1),
+        secondary: rgba(255,255,255,.7),
+        tertiary : rgba(255,255,255,.1)
+),
+);
+
+
+
+/* Generating CSS variables in :root
+ *============================================================================*/
+
+:root {
+@each $group-name, $group in $colors-themes {
+  @each $color-name, $color-value in $group {
+    --#{$group-name}-#{$color-name}: #{$color-value};
+  }
+}
+
+  --shadow: 0 6px 6px 0 rgba(0,0,0,.2);
+  --shadow-circle: 0 0 6px 0 rgba(0,0,0,.2);
+}
+
+
+
+/* Generating theme classes
+ *============================================================================*/
+
+@each $group-name, $group in $colors-themes {
+  .#{$group-name} {
+    --theme    : var(--#{$group-name}-theme);
+    --primary  : var(--#{$group-name}-primary);
+    --secondary: var(--#{$group-name}-secondary);
+    --tertiary : var(--#{$group-name}-tertiary);
+  }
+}
+
+
+
+/* Colors
+  *============================================================================*/
+
+.color-primary {
+  color: var(--primary-theme);
+}

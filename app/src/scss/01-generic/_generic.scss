@@ -1,0 +1,63 @@
+/**
+ * Generic
+ *
+ * Style for generic & low-spec HTML elements.
+ *
+ *============================================================================*/
+
+
+
+/* Fonts
+ *============================================================================*/
+
+@font-face {
+  font-family: 'Nexa-Light';
+
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Nexa-Bold';
+
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ITC-Stone-Serif-Std-Medium';
+
+}
+
+
+/* HTML
+ *============================================================================*/
+
+html {
+  font-size: 16px;
+  line-height: 1.8;
+  font-family: 'Nexa-light', sans-serif;
+}
+
+
+/* Body
+ *============================================================================*/
+
+body {
+  background-color: var(--light-theme);
+}
+
+
+
+/* Headings
+ *============================================================================*/
+
+h1, h2, h3, h4, h5 {
+  line-height: 1.4;
+  font-weight: Bold;
+  font-family: "ITC-Stone-Serif-Std-Medium", Serif;
+}
+
+h1 { font-size: 50px; }
+h2 { font-size: 35px; }
+h3 { font-size: 30px; }
+h4 { font-size: 26px; }
+h5 { font-size: 22px; }
