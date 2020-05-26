@@ -48,8 +48,8 @@ blocks: &blocks
       fields:
         - { label: "Name", name: "name", widget: "string", required: false }
         - { label: "Info", name: "info", widget: "string", required: false }
-        - { label: "Bio", name: "bio", widget: "markdown", requried: true }
-        - { label: "Bio Two", name: "bioTwo", widget: "markdown", requried: true }
+        - { label: "Bio", name: "bio", widget: "string", requried: true }
+        - { label: "Bio Two", name: "bioTwo", widget: "string", requried: true }
 
     - label: "Test block"
       name: "testBlock"
