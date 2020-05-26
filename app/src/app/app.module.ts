@@ -17,6 +17,7 @@ import {environment} from '../environments/environment';
 import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
 import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
 import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
+import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import {LandingBlockComponent} from './components/blocks/landing-block/landing-b
     PortfolioBlockComponent,
     TwoBlockTextComponent,
     TestBlockComponent,
-    LandingBlockComponent
+    LandingBlockComponent,
+    ImagesBlockComponent
   ],
   imports: [
     /**

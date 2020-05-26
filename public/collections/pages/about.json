@@ -10,6 +10,15 @@
       "title": "one block text",
       "subTitle": "text block",
       "content": "text block content"
+    },
+    {
+      "type": "imagesBlock",
+      "title": "This is title",
+      "subTitle": "This is some subtitle",
+      "galleryImages": {
+        "image": "assets/icons/flask.svg",
+        "contentLink": "This is link or content"
+      }
     }
   ]
 }
