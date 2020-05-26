@@ -81,6 +81,20 @@ blocks: &blocks
             - {label: Image, name: image, widget: image}
             - { label: "Content/link", name: "contentLink", widget: "string", required: false }
 
+    - label: "Image Text Block"
+      name: "imageTextBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+        - label: "Image Text Wrapper"
+          name: "textWrapper"
+          widget: "list"
+          fields:
+            - {label: Image, name: image, widget: image}
+            - { label: "Image Title", name: "imageTitle", widget: "string", required: false }
+            - { label: "Author/Name", name: "name", widget: "string", required: false }
+            - { label: "Content", name: "content", widget: "string", required: false }
 
 meta: &meta
   label: "Meta"
