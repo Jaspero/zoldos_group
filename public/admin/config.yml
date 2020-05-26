@@ -64,6 +64,18 @@ blocks: &blocks
         - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
         - { label: "Image", name: "image", widget: "image", requried: true }
 
+      - label: "Images Block"
+        name: "imagesBlock"
+        widget: "object"
+        fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+        - label: "Image Gallery"
+          name: "galleryImages"
+          widget: "list"
+          fields:
+            - {label: Image, name: image, widget: image}
+            - { label: "Content/link", name: "contentLink", widget: "string", required: false }
 meta: &meta
   label: "Meta"
   name: "meta"
