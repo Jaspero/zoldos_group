@@ -1,0 +1,16 @@
+.images-block {
+  background: #f6f6f6;
+  &-image {
+    height: 400px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  border: 1px solid rgb(102, 102, 102);;
+}
+
+
+.content-wrapper {
+  box-shadow: 0px 0.0375em 0.125em 0px;
+}
