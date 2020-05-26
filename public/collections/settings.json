@@ -5,12 +5,12 @@
       "link": "/"
     },
     {
-      "title": "Example",
-      "link": "/example"
-    },
-    {
       "title": "About",
       "link": "/about"
+    },
+    {
+      "title": "Example",
+      "link": "/example"
     },
     {
       "title": "Lab Members",
