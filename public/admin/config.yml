@@ -71,14 +71,14 @@ blocks: &blocks
         name: "imagesBlock"
         widget: "object"
         fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
-        - label: "Image Gallery"
-          name: "galleryImages"
-          widget: "list"
-          fields:
-            - {label: Image, name: image, widget: image}
-            - { label: "Content/link", name: "contentLink", widget: "string", required: false }
+          - { label: "Title", name: "title", widget: "string", required: false }
+          - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+          - label: "Image Gallery"
+            name: "galleryImages"
+            widget: "list"
+            fields:
+              - {label: Image, name: image, widget: image}
+              - { label: "Content/link", name: "contentLink", widget: "string", required: false }
 
 
 meta: &meta
