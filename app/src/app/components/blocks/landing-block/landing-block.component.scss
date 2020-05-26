@@ -1,17 +1,108 @@
 .landing {
-  height: 700px;
+  height: 100vh;
+  margin-top: -65px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  //background: url("");
+  justify-content: center;
+  background: url("../../../../assets/images/landing.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   &-title {
-      width: 50%;
-      color: #868686;
-      text-align: center;
+    text-align: center;
+    width: 60%;
+    color: black;
     h1 {
-      color: white;
+      color: black;
     }
+  }
+}
+
+
+
+
+
+/* Two Block text styles
+*============================================================================*/
+
+.info {
+  font-size: 1.7em;
+  color: #aaa;
+}
+
+.bio {
+  color: #666;
+}
+
+
+
+
+
+
+/* Images Block  styles
+*============================================================================*/
+
+.images-block {
+  background: #f6f6f6;
+  &-image {
+    height: 400px;
+  }
+}
+
+
+
+
+
+
+/* Research Image Block styles
+*============================================================================*/
+
+.research-image-block {
+  &-wrapper {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  &-text {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    width: 65%;
+    text-align: right;
+  }
+  &-left {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    width: 60%;
+    text-align: left;
+  }
+  &-title {
+    color: #484848;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  &-name {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+  &-content {
+    color: #666;
+    font-size: 15px;
+  }
+  &-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-bg {
+    background: url("../../../../assets/icons/flask.svg");
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border: 9px solid #868686;
+    border-radius: 50%;
   }
 }
