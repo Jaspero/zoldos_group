@@ -1,0 +1,12 @@
+{
+  "title": "Publications",
+  "blocks": [
+    {
+      "type": "portfolioBlock",
+      "features": []
+    }
+  ],
+  "meta": {
+    "title": "Here you can read all of our publications"
+  }
+}
