@@ -23,6 +23,10 @@
     {
       "title": "Example",
       "link": "/example"
+    },
+    {
+      "title": "News",
+      "link": "/news"
     }
   ]
 }
