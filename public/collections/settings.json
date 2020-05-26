@@ -35,6 +35,10 @@
     {
       "title": "Example",
       "link": "/example"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact"
     }
   ]
 }
