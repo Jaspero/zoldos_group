@@ -1,0 +1,69 @@
+/**
+ * Animations
+ *
+ * Scroll animations 🎉
+ *
+ *============================================================================*/
+
+
+
+/* Global setup for all animations
+ *============================================================================*/
+
+[data-animation] {
+  transition-duration: .8s;
+  transition-delay: .5s;
+}
+
+
+
+/* Animation styles
+ *============================================================================*/
+
+[data-animation="fade-in"] {
+  opacity: 0;
+
+  &.animated {
+    opacity: 1;
+  }
+}
+
+[data-animation="fade-in-from-top"] {
+  opacity: 0;
+  transform: translateY(-40px);
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animation="fade-in-from-bottom"] {
+  opacity: 0;
+  transform: translateY(40px);
+
+  &.animated {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-animation="fade-in-from-left"] {
+  opacity: 0;
+  transform: translateX(-40px);
+
+  &.animated {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+[data-animation="fade-in-from-right"] {
+  opacity: 0;
+  transform: translateX(40px);
+
+  &.animated {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
