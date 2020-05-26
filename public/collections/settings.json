@@ -31,14 +31,6 @@
     {
       "title": "Contact",
       "link": "/contact"
-    },
-    {
-      "title": "About",
-      "link": "/about"
-    },
-    {
-      "title": "Example",
-      "link": "/example"
     }
   ]
 }
