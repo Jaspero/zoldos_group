@@ -33,3 +33,18 @@
 .bio {
   color: #666;
 }
+
+
+
+
+
+
+/* Images Block  styles
+*============================================================================*/
+
+.images-block {
+  background: #f6f6f6;
+  &-image {
+    height: 400px;
+  }
+}
