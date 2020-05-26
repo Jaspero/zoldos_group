@@ -5,16 +5,20 @@
       "link": "/"
     },
     {
+      "title": "Research",
+      "link": "/research"
+    },
+    {
+      "title": "Lab Members",
+      "link": "/lab-members"
+    },
+    {
       "title": "About",
       "link": "/about"
     },
     {
       "title": "Example",
       "link": "/example"
-    },
-    {
-      "title": "Lab Members",
-      "link": "/lab-members"
     }
   ]
 }
