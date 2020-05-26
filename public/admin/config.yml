@@ -76,6 +76,8 @@ blocks: &blocks
           fields:
             - {label: Image, name: image, widget: image}
             - { label: "Content/link", name: "contentLink", widget: "string", required: false }
+
+
 meta: &meta
   label: "Meta"
   name: "meta"
