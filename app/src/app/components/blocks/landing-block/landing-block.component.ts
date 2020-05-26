@@ -1,4 +1,4 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'zg-landing-block',
@@ -6,10 +6,6 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./landing-block.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class LandingBlockComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
-  }
+export class LandingBlockComponent {
+  data: any;
 }
