@@ -7,23 +7,9 @@
   },
   "blocks": [
     {
-      "type": "textBlock",
-      "title": "Research 1",
-      "content": "This is some research bal"
-    },
-    {
-      "type": "portfolioBlock",
-      "title": "Research",
-      "subTitle": "sladkslakdlasd",
-      "features": [
-        {
-          "image": "/uploads/bioloski-odsjek-znak-i-logo-eng.jpg",
-          "alt": "blabla",
-          "title": "Research 1",
-          "author": "Marko",
-          "content": "This is our research blabla bla"
-        }
-      ]
+      "type": "testBlock",
+      "content": "Test",
+      "image": "/uploads/banner.png"
     }
   ]
 }
