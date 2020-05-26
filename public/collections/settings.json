@@ -13,16 +13,16 @@
       "link": "/lab-members"
     },
     {
+      "title": "Publications",
+      "link": "/publications"
+    },
+    {
       "title": "About",
       "link": "/about"
     },
     {
       "title": "Example",
       "link": "/example"
-    },
-    {
-      "title": "Publications",
-      "link": "/publications"
     }
   ]
 }
