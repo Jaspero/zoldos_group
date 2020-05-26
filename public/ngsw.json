@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590478075451,
+  "timestamp": 1590487653338,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.7239d5eb189b1ddc90b4.js",
-        "/main-es5.7239d5eb189b1ddc90b4.js",
+        "/main-es2015.2ed13f07d0b4afafefe6.js",
+        "/main-es5.2ed13f07d0b4afafefe6.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.6f102767e288ad0fd189.js",
         "/polyfills-es5.ef2b553afea95784ae26.js",
@@ -26,7 +26,14 @@
       "installMode": "lazy",
       "updateMode": "lazy",
       "urls": [
-        "/assets/scully-routes.json"
+        "/assets/icons/biology-logo.svg",
+        "/assets/icons/flask.svg",
+        "/assets/icons/logo.svg",
+        "/assets/icons/university-logo.svg",
+        "/assets/images/landing.png",
+        "/assets/scully-routes.json",
+        "/flask.d3607d3f11677f25c072.svg",
+        "/landing.9d510a28e8eecb29f061.png"
       ],
       "patterns": []
     }
@@ -44,11 +51,18 @@
     }
   ],
   "hashTable": {
+    "/assets/icons/biology-logo.svg": "2f696e60f10800fb4d9ca14cf6e4fe0e233b2903",
+    "/assets/icons/flask.svg": "791da0a31fe11711615767ec3b392cc2c5b38920",
+    "/assets/icons/logo.svg": "fe93222fa9d9d65a49a8c76ceb0cc3f38e192ea8",
+    "/assets/icons/university-logo.svg": "003c009a6018dedac22507fc3c50441e5d6686f5",
+    "/assets/images/landing.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
     "/assets/scully-routes.json": "7a3e61508a5f554493ce7c7587591988939bf985",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "666bc8bb053a243783a31e7a95e7f1a4b2134bf2",
-    "/main-es2015.7239d5eb189b1ddc90b4.js": "48a0378973233bfe85ffb9bb90d1eae0247aaebf",
-    "/main-es5.7239d5eb189b1ddc90b4.js": "288caf201149b325ef0bd9cd6417648b42b45db4",
+    "/flask.d3607d3f11677f25c072.svg": "791da0a31fe11711615767ec3b392cc2c5b38920",
+    "/index.html": "adbf6b588e737886431196b52aa103a460f3e5d2",
+    "/landing.9d510a28e8eecb29f061.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
+    "/main-es2015.2ed13f07d0b4afafefe6.js": "ae4d56e9e0dead546043c4283d80710fd976f3b5",
+    "/main-es5.2ed13f07d0b4afafefe6.js": "b5fef2caa0492bbc70d2525ced7f477b036145ec",
     "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/polyfills-es2015.6f102767e288ad0fd189.js": "8c6432a1dfcdf9f294d618f7df50a13d73718090",
     "/polyfills-es5.ef2b553afea95784ae26.js": "dbf7aa2aaa9ec484767228d78eab515fab4a7d7d",
