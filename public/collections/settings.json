@@ -31,6 +31,10 @@
     {
       "title": "Example",
       "link": "/example"
+    },
+    {
+      "title": "Photo Gallery",
+      "link": "/photo-gallery"
     }
   ]
 }
