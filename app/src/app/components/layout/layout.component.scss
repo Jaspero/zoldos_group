@@ -7,12 +7,12 @@
   justify-content: space-between;
   &-links {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    width: 50%;
+    width: 70%;
   }
   &-logo {
-    width: 50%;
+    width: 30%;
     text-align: left;
   }
 }
