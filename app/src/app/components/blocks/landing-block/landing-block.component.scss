@@ -1,4 +1,17 @@
-landing {
-  height: 500px;
-  width: 100vw;
+.landing {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //background: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  &-title {
+      width: 50%;
+      color: #868686;
+      text-align: center;
+    h1 {
+      color: white;
+    }
+  }
 }
