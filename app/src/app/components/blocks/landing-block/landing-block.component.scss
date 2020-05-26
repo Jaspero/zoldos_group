@@ -1,4 +1,35 @@
-landing {
-  height: 500px;
-  width: 100vw;
+.landing {
+  height: 100vh;
+  margin-top: -65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../../../../assets/images/landing.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  &-title {
+    text-align: center;
+    width: 60%;
+    color: black;
+    h1 {
+      color: black;
+    }
+  }
+}
+
+
+
+
+
+/* Two Block text styles
+*============================================================================*/
+
+.info {
+  font-size: 1.7em;
+  color: #aaa;
+}
+
+.bio {
+  color: #666;
 }
