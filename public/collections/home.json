@@ -32,6 +32,25 @@
           "contentLink": "bla"
         }
       ]
+    },
+    {
+      "type": "portfolioBlock",
+      "title": "OUR RESEARCH",
+      "subTitle": "FEUGIAT SED LOREM IPSUM MAGNA",
+      "features": [
+        {
+          "image": "assets/icons/flask.svg",
+          "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
+          "author": "VLATKA ZOLDOŠ",
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+        },
+        {
+          "image": "assets/icons/flask.svg",
+          "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
+          "author": "VLATKA ZOLDOŠ",
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+        }
+      ]
     }
   ]
 }

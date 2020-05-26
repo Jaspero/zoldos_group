@@ -1,23 +1,20 @@
-<section class="wrapper style1">
-    <div class="container">
-        <header class="major special" *ngIf="data.title || data.subTitle">
-            <h2 *ngIf="data.title">{{data.title}}</h2>
-            <p *ngIf="data.subTitle">{{data.subTitle}}</p>
-        </header>
-        <div class="feature-grid">
-            <div class="feature" *ngFor="let feature of data.features">
-                <div class="image rounded">
+<section class="research-image-block m-y-xl">
+    <div class="grid">
+        <div class="col-12 ta-center" *ngIf="data.title || data.subTitle">
+            <h2 class="research-image-block-title" *ngIf="data.title">{{data.title}}</h2>
+            <h4 class="info" *ngIf="data.subTitle">{{data.subTitle}}</h4>
+        </div>
+        <div class="research-image-block-wrapper" *ngFor="let feature of data.features">
+            <div class="research-image-block-text">
+                <h5 class="research-image-block-title">{{feature.title}}</h5>
+                <p class="research-image-block-name m-y-s" *ngIf="feature.author">{{feature.author}}</p>
+                <p class="research-image-block-content" [innerHTML]="feature.content | MTH"></p>
+            </div>
+            <div class="research-image-block-image br-circle">
+                <div class="research-image-block-bg">
                     <img [src]="feature.image" [alt]="feature.alt" />
-                </div>
-                <div class="content">
-                    <header>
-                        <h4>{{feature.title}}</h4>
-                        <p *ngIf="feature.author">{{feature.author}}</p>
-                    </header>
-                    <p [innerHTML]="feature.content | MTH"></p>
                 </div>
             </div>
         </div>
-        <div><img [src]="data.image" alt=""></div>
     </div>
 </section>
