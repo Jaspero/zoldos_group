@@ -1,12 +1,12 @@
 import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
-  selector: 'zg-research-list',
-  templateUrl: './research-list.component.html',
-  styleUrls: ['./research-list.component.scss'],
+  selector: 'zg-research',
+  templateUrl: './research.component.html',
+  styleUrls: ['./research.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ResearchListComponent implements OnInit {
+export class ResearchComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}

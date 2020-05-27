@@ -1,11 +1,11 @@
 import {NgModule} from '@angular/core';
 import {ScullyLibModule} from '@scullyio/ng-lib';
-
 import {ResearchesComponent} from './component/researches/researches.component';
-import {ResearchListComponent} from './component/research-list/research-list.component';
+import {ResearchComponent} from './component/research/research.component';
+import {ResearchesRoutingModule} from './researches-routing.module';
 
 @NgModule({
-  declarations: [ResearchesComponent, ResearchListComponent],
-  imports: [ScullyLibModule]
+  declarations: [ResearchesComponent, ResearchComponent],
+  imports: [ScullyLibModule, ResearchesRoutingModule]
 })
 export class ResearchesModule {}

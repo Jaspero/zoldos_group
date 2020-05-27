@@ -1,15 +1,14 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {DelayResolver} from '../shared/resolvers/delay.resolver';
-import {MetaResolver} from '../shared/resolvers/meta.resolver';
-import {PageResolver} from '../shared/resolvers/page.resolver';
-import {ResearchListComponent} from './component/research-list/research-list.component';
 import {ResearchesComponent} from './component/researches/researches.component';
+import {PageResolver} from '../resolvers/page.resolver';
+import {ResearchComponent} from './component/research/research.component';
 
+var MetaResolver;
 const routes: Routes = [
   {
     path: '',
-    component: ResearchListComponent,
+    component: ResearchComponent,
     data: {
       id: 'research'
     },
@@ -24,8 +23,7 @@ const routes: Routes = [
       collection: 'research'
     },
     resolve: {
-      meta: MetaResolver,
-      delay: DelayResolver
+      meta: MetaResolver
     }
   }
 ];
