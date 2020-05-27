@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590497131133,
+  "timestamp": 1590562195045,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.ed0b925717ddc9c122e9.js",
-        "/main-es5.ed0b925717ddc9c122e9.js",
+        "/main-es2015.b7d34fc3addb5a3af02b.js",
+        "/main-es5.b7d34fc3addb5a3af02b.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.6f102767e288ad0fd189.js",
         "/polyfills-es5.ef2b553afea95784ae26.js",
@@ -32,7 +32,6 @@
         "/assets/icons/university-logo.svg",
         "/assets/images/landing.png",
         "/assets/scully-routes.json",
-        "/flask.d3607d3f11677f25c072.svg",
         "/landing.9d510a28e8eecb29f061.png"
       ],
       "patterns": []
@@ -58,11 +57,10 @@
     "/assets/images/landing.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
     "/assets/scully-routes.json": "7a3e61508a5f554493ce7c7587591988939bf985",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/flask.d3607d3f11677f25c072.svg": "791da0a31fe11711615767ec3b392cc2c5b38920",
-    "/index.html": "a637597ec303ce8eb7cfc8b061ff429bb939201d",
+    "/index.html": "3504c1a23029e2eff0aa3ab36f56427a0d57cc75",
     "/landing.9d510a28e8eecb29f061.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
-    "/main-es2015.ed0b925717ddc9c122e9.js": "ded7eaf647b4ae3b8f53b3bd8e337ea2eb98a4fa",
-    "/main-es5.ed0b925717ddc9c122e9.js": "e059a10a7a2d0826953c123b234e2d21f7a8baf3",
+    "/main-es2015.b7d34fc3addb5a3af02b.js": "4c0b1c93fc5d467ee344bcf8a656d165fba0acca",
+    "/main-es5.b7d34fc3addb5a3af02b.js": "0e2d893852b0aad5d8b744aa4a292b810f70ba95",
     "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/polyfills-es2015.6f102767e288ad0fd189.js": "8c6432a1dfcdf9f294d618f7df50a13d73718090",
     "/polyfills-es5.ef2b553afea95784ae26.js": "dbf7aa2aaa9ec484767228d78eab515fab4a7d7d",
