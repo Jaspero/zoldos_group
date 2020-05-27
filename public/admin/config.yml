@@ -158,6 +158,7 @@ collections:
       preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
