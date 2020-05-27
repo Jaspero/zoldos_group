@@ -18,6 +18,8 @@ import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-bloc
 import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
 import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
 import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
+import {ResearchesComponent} from './researches/component/researches/researches.component';
+import {ResearchListComponent} from './researches/component/research-list/research-list.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +48,9 @@ import {ImagesBlockComponent} from './components/blocks/images-block/images-bloc
     TwoBlockTextComponent,
     TestBlockComponent,
     LandingBlockComponent,
-    ImagesBlockComponent
+    ImagesBlockComponent,
+    ResearchesComponent,
+    ResearchListComponent
   ],
   imports: [
     /**

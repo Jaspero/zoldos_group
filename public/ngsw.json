@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590570043097,
+  "timestamp": 1590562195045,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -10,8 +10,8 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.77044185ab65e54b3085.js",
-        "/main-es5.77044185ab65e54b3085.js",
+        "/main-es2015.b7d34fc3addb5a3af02b.js",
+        "/main-es5.b7d34fc3addb5a3af02b.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.6f102767e288ad0fd189.js",
         "/polyfills-es5.ef2b553afea95784ae26.js",
@@ -40,9 +40,7 @@
   "dataGroups": [
     {
       "name": "collections",
-      "patterns": [
-        "\\/collections"
-      ],
+      "patterns": ["\\/collections"],
       "strategy": "performance",
       "maxSize": 2000,
       "maxAge": 86400000,
@@ -50,18 +48,18 @@
     }
   ],
   "hashTable": {
-    "/assets/icons/biology-logo.svg": "9600f6e9261d63f41df58d010605ea05189a5af8",
-    "/assets/icons/flask.svg": "09b1a689710940a97016b0cc04c9ce1a18d2b844",
-    "/assets/icons/logo.svg": "f2f5ed0a0fe9263c03c52ef8debc4068a7bed705",
-    "/assets/icons/university-logo.svg": "60e9ff891a27ae0cbd583704498172a175f48002",
+    "/assets/icons/biology-logo.svg": "2f696e60f10800fb4d9ca14cf6e4fe0e233b2903",
+    "/assets/icons/flask.svg": "791da0a31fe11711615767ec3b392cc2c5b38920",
+    "/assets/icons/logo.svg": "fe93222fa9d9d65a49a8c76ceb0cc3f38e192ea8",
+    "/assets/icons/university-logo.svg": "003c009a6018dedac22507fc3c50441e5d6686f5",
     "/assets/images/landing.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
     "/assets/scully-routes.json": "7a3e61508a5f554493ce7c7587591988939bf985",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "6472c7ad379579ac62ec9be54ad09b725a7661ac",
+    "/index.html": "3504c1a23029e2eff0aa3ab36f56427a0d57cc75",
     "/landing.9d510a28e8eecb29f061.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
-    "/main-es2015.77044185ab65e54b3085.js": "6e52bfbc471cea0e347897c5cef9b06ad47f0dc8",
-    "/main-es5.77044185ab65e54b3085.js": "a411b523eddccdf4824128bf38867e7053398e71",
-    "/manifest.webmanifest": "f3815b4bcca3a68b618352b4ea557d186348f200",
+    "/main-es2015.b7d34fc3addb5a3af02b.js": "4c0b1c93fc5d467ee344bcf8a656d165fba0acca",
+    "/main-es5.b7d34fc3addb5a3af02b.js": "0e2d893852b0aad5d8b744aa4a292b810f70ba95",
+    "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/polyfills-es2015.6f102767e288ad0fd189.js": "8c6432a1dfcdf9f294d618f7df50a13d73718090",
     "/polyfills-es5.ef2b553afea95784ae26.js": "dbf7aa2aaa9ec484767228d78eab515fab4a7d7d",
     "/runtime-es2015.1eba213af0b233498d9d.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",

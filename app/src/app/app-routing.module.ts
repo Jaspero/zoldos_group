@@ -1,9 +1,10 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { LayoutComponent } from './components/layout/layout.component';
-import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
-import { PageComponent } from './components/page/page.component';
-import { PageResolver } from './resolvers/page.resolver';
+import {NgModule} from '@angular/core';
+import {Routes, RouterModule} from '@angular/router';
+import {LayoutComponent} from './components/layout/layout.component';
+import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
+import {PageComponent} from './components/page/page.component';
+import {PageResolver} from './resolvers/page.resolver';
+import {ResearchesComponent} from './researches/component/researches/researches.component';
 
 const routes: Routes = [
   {
@@ -24,7 +25,17 @@ const routes: Routes = [
           page: PageResolver
         },
         data: {
-          id: 'home',
+          id: 'home'
+        }
+      },
+      {
+        path: '',
+        component: ResearchesComponent,
+        resolve: {
+          page: PageResolver
+        },
+        data: {
+          id: 'research'
         }
       },
       {
@@ -49,4 +60,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
