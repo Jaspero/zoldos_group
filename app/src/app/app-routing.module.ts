@@ -29,14 +29,9 @@ const routes: Routes = [
         }
       },
       {
-        path: '',
-        component: ResearchesComponent,
-        resolve: {
-          page: PageResolver
-        },
-        data: {
-          id: 'research'
-        }
+        path: 'researches',
+        loadChildren: () =>
+          import('./researches/researches.module').then(m => m.ResearchesModule)
       },
       {
         path: '404',
