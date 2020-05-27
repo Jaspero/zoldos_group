@@ -146,3 +146,18 @@ collections:
         widget: "string"
       - <<: *meta
       - <<: *blocks
+
+  - name: "research"
+    label: "Research"
+    extension: "json"
+    format: "json"
+    folder: "public/collections/pages"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - <<: *meta
