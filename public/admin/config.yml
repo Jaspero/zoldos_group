@@ -31,7 +31,7 @@ blocks: &blocks
       widget: "object"
       fields:
         - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
         - label: "Features"
           name: "features"
           widget: "list"
@@ -46,9 +46,10 @@ blocks: &blocks
       name: "twoBlockText"
       widget: "object"
       fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
-        - { label: "Content", name: "content", widget: "markdown", requried: true }
+        - { label: "Name", name: "name", widget: "string", required: false }
+        - { label: "Info", name: "info", widget: "string", required: false }
+        - { label: "Bio", name: "bio", widget: "string", requried: true }
+        - { label: "Bio Two", name: "bioTwo", widget: "string", requried: true }
 
     - label: "Test block"
       name: "testBlock"
@@ -80,6 +81,20 @@ blocks: &blocks
             - {label: Image, name: image, widget: image}
             - { label: "Content/link", name: "contentLink", widget: "string", required: false }
 
+    - label: "Image Text Block"
+      name: "imageTextBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+        - label: "Image Text Wrapper"
+          name: "textWrapper"
+          widget: "list"
+          fields:
+            - {label: Image, name: image, widget: image}
+            - { label: "Image Title", name: "imageTitle", widget: "string", required: false }
+            - { label: "Author/Name", name: "name", widget: "string", required: false }
+            - { label: "Content", name: "content", widget: "string", required: false }
 
 meta: &meta
   label: "Meta"
