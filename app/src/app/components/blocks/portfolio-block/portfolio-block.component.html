@@ -1,11 +1,11 @@
 <section class="research-image-block m-y-xl">
-    <div class="grid">
+    <div class="grid jc-start">
         <div class="col-12 ta-center m-y-l" *ngIf="data.title || data.subTitle">
             <h2 class="research-image-block-title" *ngIf="data.title">{{data.title}}</h2>
             <p class="research-image-block-subtitle" *ngIf="data.subTitle">{{data.subTitle}}</p>
         </div>
-        <div class="research-image-block-wrapper" *ngFor="let feature of data.features">
-            <div class="research-image-block-text">
+        <div class="research-image-block-wrapper m-b-l" *ngFor="let feature of data.features;  let odd = odd" [class.even]="odd">
+            <div class="research-image-block-text" [class.even]="odd">
                 <h5 class="research-image-block-title">{{feature.title}}</h5>
                 <p class="research-image-block-name m-y-s" *ngIf="feature.author">{{feature.author}}</p>
                 <p class="research-image-block-content" [innerHTML]="feature.content | MTH"></p>
