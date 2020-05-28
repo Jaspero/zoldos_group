@@ -4,7 +4,8 @@
             <a routerLink="/" routerLinkActive="" class="logo">Logo</a>
         </div>
         <div class="header-links">
-            <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active" class="links">{{link.title}}</a>
+            <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
+               class="links">{{link.title}}</a>
         </div>
     </div>
 </header>
@@ -12,5 +13,13 @@
 <router-outlet></router-outlet>
 
 <footer>
-
+    <div class="footer">
+        <img class="logo-zoldos" src="assets/icons/logo.svg">
+        <p><b>Zoldos Lab is a part of Divison for Molecular Biology, Department of Biology,</b></p>
+        <p><b>Facutly of Science University of Zagreb</b>.</p>
+        <p>Horvatovac 102A</p>
+        <p>10 000 Zagreb, Croatia</p>
+        <p>Tel- +385 1 4606260</p>
+        <p>Fax. +385 1 4606286</p>
+    </div>
 </footer>
