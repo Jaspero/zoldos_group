@@ -1,27 +1,22 @@
 import {HttpClientModule} from '@angular/common/http';
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
+import {ServiceWorkerModule} from '@angular/service-worker';
+import {environment} from '../environments/environment';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BlockRendererComponent} from './components/blocks/block-renderer/block-renderer.component';
+import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
+import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
+import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portfolio-block.component';
+import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
 import {TextBlockComponent} from './components/blocks/text-block/text-block.component';
+import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
 import {LayoutComponent} from './components/layout/layout.component';
 import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
 import {PageComponent} from './components/page/page.component';
 import {BASE_TITLE} from './consts/base-title.const';
-import {MarkdownToHtmlPipe} from './pipes/markdown-to-html/markdown-to-html.pipe';
-import {TextPipe} from './pipes/text/text.pipe';
-import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portfolio-block.component';
-import {ServiceWorkerModule} from '@angular/service-worker';
-import {environment} from '../environments/environment';
-import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
-import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
-import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
-import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
-import {NewsComponent} from './news/component/news/news.component';
-import {NewsListComponent} from './news/component/news-list/news-list.component';
-import {PublicationsComponent} from './publications/component/publications/publications.component';
-import {PublicationComponent} from './publications/component/publication/publication.component';
+import {SharedModule} from './shared.module';
 
 @NgModule({
   declarations: [
@@ -31,26 +26,8 @@ import {PublicationComponent} from './publications/component/publication/publica
     AppComponent,
     PageComponent,
 
-    /**
-     * Blocks
-     */
-    BlockRendererComponent,
-
-    TextBlockComponent,
-
-    /**
-     * Pipes
-     */
-    MarkdownToHtmlPipe,
-    TextPipe,
-
     PageNotFoundComponent,
     LayoutComponent,
-    PortfolioBlockComponent,
-    TwoBlockTextComponent,
-    TestBlockComponent,
-    LandingBlockComponent,
-    ImagesBlockComponent
   ],
   imports: [
     /**
@@ -58,15 +35,15 @@ import {PublicationComponent} from './publications/component/publication/publica
      */
     BrowserModule,
     HttpClientModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    }),
 
     /**
      * Local
      */
     AppRoutingModule,
-
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: environment.production
-    })
+    SharedModule
   ],
   providers: [
     {
@@ -74,7 +51,6 @@ import {PublicationComponent} from './publications/component/publication/publica
       useValue: 'Zoldos Group'
     }
   ],
-  exports: [TextPipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

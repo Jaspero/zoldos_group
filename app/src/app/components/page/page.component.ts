@@ -22,7 +22,6 @@ export class PageComponent extends RxDestroy implements OnInit {
 
   ngOnInit() {
     this.page = this.activatedRoute.snapshot.data.page;
-    console.log(this.page);
 
     this.activatedRoute.data
       .pipe(

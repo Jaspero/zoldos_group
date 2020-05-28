@@ -4,12 +4,5 @@
     "title": "Research",
     "description": "This is our research",
     "keywords": "research"
-  },
-  "blocks": [
-    {
-      "type": "testBlock",
-      "content": "Test",
-      "image": "/uploads/banner.png"
-    }
-  ]
+  }
 }

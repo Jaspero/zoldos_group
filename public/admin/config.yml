@@ -147,11 +147,9 @@ collections:
       - <<: *meta
       - <<: *blocks
 
-  - name: "research"
-    label: "Research"
-    extension: "json"
-    format: "json"
-    folder: "public/collections/research.json"
+  - name: "researches"
+    label: "Researches"
+    folder: "public/collections/researches"
     create: true
     slug: "{{slug}}"
     editor:
@@ -159,15 +157,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "news"
     label: "News"
-    extension: "json"
-    format: "json"
-    folder: "public/collections/news.json"
+    folder: "public/collections/news"
     create: true
     slug: "{{slug}}"
     editor:
@@ -175,15 +172,14 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
+      - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "publications"
     label: "Publications"
-    extension: "json"
-    format: "json"
-    folder: "public/collections/publications.json"
+    folder: "public/collections/publications"
     create: true
     slug: "{{slug}}"
     editor:
@@ -191,6 +187,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
-      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
+      - { label: "Body", name: "body", widget: "markdown" }
