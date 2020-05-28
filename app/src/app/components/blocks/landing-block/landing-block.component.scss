@@ -4,16 +4,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url("../../../../assets/images/landing.png");
+  background: url("../../../../assets/images/landing.gif");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   &-title {
     text-align: center;
     width: 60%;
-    color: black;
+    color: white;
     h1 {
-      color: black;
+      color: white;
     }
   }
 }
