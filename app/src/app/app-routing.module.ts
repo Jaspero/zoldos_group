@@ -34,6 +34,10 @@ const routes: Routes = [
           import('./researches/researches.module').then(m => m.ResearchesModule)
       },
       {
+        path: 'news',
+        loadChildren: () => import('./news/news.module').then(m => m.NewsModule)
+      },
+      {
         path: '404',
         component: PageNotFoundComponent
       },

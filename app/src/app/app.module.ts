@@ -20,6 +20,8 @@ import {LandingBlockComponent} from './components/blocks/landing-block/landing-b
 import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
 import {NewsComponent} from './news/component/news/news.component';
 import {NewsListComponent} from './news/component/news-list/news-list.component';
+import {PublicationsComponent} from './publications/component/publications/publications.component';
+import {PublicationComponent} from './publications/component/publication/publication.component';
 
 @NgModule({
   declarations: [
@@ -49,8 +51,8 @@ import {NewsListComponent} from './news/component/news-list/news-list.component'
     TestBlockComponent,
     LandingBlockComponent,
     ImagesBlockComponent,
-    NewsComponent,
-    NewsListComponent
+    PublicationsComponent,
+    PublicationComponent
   ],
   imports: [
     /**
