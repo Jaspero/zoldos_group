@@ -1,16 +1,17 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {ResearchesComponent} from './component/researches/researches.component';
+import {MetaResolver} from '../resolvers/meta.resolver';
 import {PageResolver} from '../resolvers/page.resolver';
 import {ResearchComponent} from './component/research/research.component';
+import {ResearchesComponent} from './component/researches/researches.component';
 
-var MetaResolver;
 const routes: Routes = [
   {
     path: '',
     component: ResearchesComponent,
     data: {
-      id: 'research'
+      id: 'researches',
+      collection: 'pages'
     },
     resolve: {
       page: PageResolver
@@ -20,7 +21,7 @@ const routes: Routes = [
     path: ':id',
     component: ResearchComponent,
     data: {
-      collection: 'research'
+      collection: 'researches'
     },
     resolve: {
       meta: MetaResolver

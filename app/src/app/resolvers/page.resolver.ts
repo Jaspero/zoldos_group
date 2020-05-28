@@ -69,6 +69,7 @@ export class PageResolver implements Resolve<any> {
     id: string,
     collection?: string
   ) {
+    console.log('url', `/collections${collection ? `/${collection}` : ''}/${id}.json`);
     return this.http
       .get( `/collections${collection ? `/${collection}` : ''}/${id}.json`)
   }

@@ -1,35 +1,22 @@
 <div class="main flex jc-center ai-center">
-<div class="col-5 c-light z-index ta-center">
-    <h1>Researches</h1>
+    <div class="col-5 c-light z-index ta-center">
+        <h1>{{page.title}}</h1>
+    </div>
 </div>
-</div>
+
+<zg-block-renderer *ngIf="page.blocks" [blocks]="page.blocks"></zg-block-renderer>
+
 <section class="m-y-xl">
     <div class="grid">
-        <div class="col-12 m-y-l ta-center">
-            <h1>Read about our researches</h1>
-        </div>
-        <div class="col-6">
+        <div *ngFor="let item of items$ | async" class="col-6 col-s-12">
             <div class="card br-rounded flex">
                 <div class="img-wrapper col-5"></div>
                 <div class="research-info col-7 ta-left">
-                    <h5 class="research-title">BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION</h5>
-                    <p class="research-author m-y-s">Vlatka Zoldos</p>
-                    <p class="research-description">Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function.</p>
+                    <h5 class="research-title">{{item.title}}</h5>
+                    <p class="research-author m-y-s">{{item.author}}</p>
+                    <p class="research-description" [innerHTML]="item.description | text"></p>
                     <div class="w-full flex jc-end m-t-l">
-                        <a href="" class="btn-primary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6">
-            <div class="card br-rounded flex">
-                <div class="bg-wrapper col-5"></div>
-                <div class="research-info col-7 ta-left">
-                    <h5 class="research-title">BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION</h5>
-                    <p class="research-author m-y-s">Vlatka Zoldos</p>
-                    <p class="research-description">Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function.</p>
-                    <div class="w-full flex jc-end m-t-l">
-                        <a href="" class="btn-primary">Read More</a>
+                        <a [routerLink]="item.route" class="btn-primary">Read More</a>
                     </div>
                 </div>
             </div>
