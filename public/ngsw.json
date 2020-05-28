@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1590666063394,
+  "timestamp": 1590667130425,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -18,8 +18,8 @@
         "/8-es5.7d33d384a9b63e6fb229.js",
         "/favicon.ico",
         "/index.html",
-        "/main-es2015.f5dd6f6e4f33666ab2d1.js",
-        "/main-es5.f5dd6f6e4f33666ab2d1.js",
+        "/main-es2015.699b568d676b8e537f32.js",
+        "/main-es5.699b568d676b8e537f32.js",
         "/manifest.webmanifest",
         "/polyfills-es2015.d83b230669affd1c9acc.js",
         "/polyfills-es5.c6a0ae5254236685dfe3.js",
@@ -93,10 +93,10 @@
     "/assets/images/research.jpg": "19ad4acd19ef313a4f4e9d05e08b08187f90cc6c",
     "/assets/scully-routes.json": "65447afd382393d24c13d70b152f1922e822412a",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "e266f561a004cb2867813c2a85c597dabf3b68a9",
+    "/index.html": "c5615a33e619cde328c80bbe694904747f2f53b6",
     "/landing.9d510a28e8eecb29f061.png": "f0f2216ddad06b1f1f3cabe85d7845019250edf4",
-    "/main-es2015.f5dd6f6e4f33666ab2d1.js": "944245eaf0d7e14511a81b7ac589c949f272ea33",
-    "/main-es5.f5dd6f6e4f33666ab2d1.js": "dcefa3fb401e93d48a9706619cb546e0f1cb1f28",
+    "/main-es2015.699b568d676b8e537f32.js": "3c6230dec7fc62143783ec516f7e280abdcf4a52",
+    "/main-es5.699b568d676b8e537f32.js": "0795d53cadb3fc7bf2557cc9f11339df0bfe2a2a",
     "/manifest.webmanifest": "8cd4eeb73b2f71c71fff7d73f4cc22704f32ad4b",
     "/news-1.4d615b648c7889599dc9.jpg": "f27d1aa6dcdc7dc67e50fea29d1ecf6141cee6b4",
     "/news-main.b74d90e0a3a06f3720a2.jpg": "7ef92fb793330d4931b3b68574f66b2862e09151",
