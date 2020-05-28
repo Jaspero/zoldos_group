@@ -50,9 +50,7 @@ import {PublicationComponent} from './publications/component/publication/publica
     TwoBlockTextComponent,
     TestBlockComponent,
     LandingBlockComponent,
-    ImagesBlockComponent,
-    PublicationsComponent,
-    PublicationComponent
+    ImagesBlockComponent
   ],
   imports: [
     /**

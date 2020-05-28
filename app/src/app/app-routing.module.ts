@@ -38,6 +38,13 @@ const routes: Routes = [
         loadChildren: () => import('./news/news.module').then(m => m.NewsModule)
       },
       {
+        path: 'publications',
+        loadChildren: () =>
+          import('./publications/publications.module').then(
+            m => m.PublicationsModule
+          )
+      },
+      {
         path: '404',
         component: PageNotFoundComponent
       },

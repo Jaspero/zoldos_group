@@ -162,3 +162,35 @@ collections:
       - { label: "Description", name: "description", widget: "markdown" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
+
+  - name: "news"
+    label: "News"
+    extension: "json"
+    format: "json"
+    folder: "public/collections/news.json"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - <<: *meta
+
+  - name: "publications"
+    label: "Publications"
+    extension: "json"
+    format: "json"
+    folder: "public/collections/publications.json"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Author", name: "author", widget: "string" }
+      - { label: "Description", name: "description", widget: "markdown" }
+      - { label: "Image", name: "image", widget: "image" }
+      - <<: *meta
