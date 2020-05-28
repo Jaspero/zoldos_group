@@ -8,7 +8,7 @@ var MetaResolver;
 const routes: Routes = [
   {
     path: '',
-    component: ResearchComponent,
+    component: ResearchesComponent,
     data: {
       id: 'research'
     },
@@ -18,7 +18,7 @@ const routes: Routes = [
   },
   {
     path: ':id',
-    component: ResearchesComponent,
+    component: ResearchComponent,
     data: {
       collection: 'research'
     },

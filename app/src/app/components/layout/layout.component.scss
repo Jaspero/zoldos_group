@@ -10,10 +10,12 @@
     justify-content: flex-end;
     align-items: center;
     width: 70%;
+    z-index: 40;
   }
   &-logo {
     width: 30%;
     text-align: left;
+    z-index: 40;
   }
 }
 
