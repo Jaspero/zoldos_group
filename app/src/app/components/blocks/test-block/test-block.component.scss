@@ -200,8 +200,12 @@ h1, h2, h3, h4, p {
   }
 }
 
-.card__image--fence {
+.card__image--lab-member {
   background-image: url("src/assets/images/lab-members-vlatka.jpg");
+}
+
+.card__image--lab-member-aleksandar {
+  background-image: url("src/assets/images/lab-members-aleksandar.jpg");
 }
 
 .card__title {
