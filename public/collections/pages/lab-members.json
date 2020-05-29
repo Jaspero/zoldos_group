@@ -6,7 +6,7 @@
   },
   "blocks": [
     {
-      "type": "twoBlockText",
+      "type": "testBlock",
       "title": "Title 1",
       "subTitle": "Subtitle 1",
       "content": "Content 1231412414"

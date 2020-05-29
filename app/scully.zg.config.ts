@@ -14,10 +14,7 @@ async function pages(route, config: any = {}) {
 }
 registerPlugin('router', 'cFiles', pages, async () => []);
 
-
-const dynamicPages = [
-  'researches',
-];
+const dynamicPages = ['researches', 'news'];
 
 export const config: ScullyConfig = {
   projectRoot: './src',
@@ -43,7 +40,6 @@ export const config: ScullyConfig = {
       folder: 'pages'
     },
     ...dynamicPages.reduce((acc, cur) => {
-
       acc[`/${cur}/:id`] = {
         type: RouteTypes.contentFolder,
         id: {

@@ -3,14 +3,15 @@ import {RouterModule, Routes} from '@angular/router';
 import {PageResolver} from '../resolvers/page.resolver';
 import {PublicationsComponent} from './component/publications/publications.component';
 import {PublicationComponent} from './component/publication/publication.component';
+import {MetaResolver} from '../resolvers/meta.resolver';
 
-var MetaResolver;
 const routes: Routes = [
   {
     path: '',
     component: PublicationsComponent,
     data: {
-      id: 'news'
+      id: 'publications',
+      collection: 'pages'
     },
     resolve: {
       page: PageResolver
@@ -20,7 +21,7 @@ const routes: Routes = [
     path: ':id',
     component: PublicationComponent,
     data: {
-      collection: 'news'
+      collection: 'publications'
     },
     resolve: {
       meta: MetaResolver

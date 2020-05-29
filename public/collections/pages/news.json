@@ -1,12 +1,8 @@
 {
   "title": "News",
-  "blocks": [
-    {
-      "type": "twoBlockText",
-      "content": "Here is our first news"
-    }
-  ],
   "meta": {
-    "title": "Here you can read all of our news"
+    "title": "Here you can read all of our news",
+    "description": "This are our news",
+    "keywords": "news"
   }
 }
