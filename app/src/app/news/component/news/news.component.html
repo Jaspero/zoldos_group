@@ -3,53 +3,24 @@
         <h1>Researches</h1>
     </div>
 </div>
+
+<zg-block-renderer *ngIf="page.blocks" [blocks]="page.blocks"></zg-block-renderer>
+
 <section class="m-y-xl">
     <div class="grid">
         <div class="col-12 m-y-l ta-center">
             <h1>Read about our news</h1>
         </div>
-        <div class="col-4">
+        <div class="col-4" *ngFor="let item of items$ | async">
             <div class="card br-rounded">
                 <div class="img-wrapper"></div>
                 <div class="news-info ta-left">
-                    <h5 class="news-title">BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION</h5>
+                    <h5 class="news-title">{{item.title}}</h5>
                     <div class="flex jc-between ai-center">
-                        <p class="news-author m-y-s">Vlatka Zoldos</p>
+                        <p class="news-author m-y-s">{{item.author}}</p>
                         <p class="date">Date: 20.05.2019</p>
                     </div>
-                    <p class="news-description">Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function.</p>
-                    <div class="w-full flex jc-center m-y-m">
-                        <a href="" class="btn-secondary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card br-rounded">
-                <div class="bg-wrapper"></div>
-                <div class="news-info ta-left">
-                    <h5 class="news-title">BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION</h5>
-                    <div class="flex jc-between ai-center">
-                        <p class="news-author m-y-s">Vlatka Zoldos</p>
-                        <p class="date">Date: 20.05.2019</p>
-                    </div>
-                    <p class="news-description">Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function.</p>
-                    <div class="w-full flex jc-center m-y-m">
-                        <a href="" class="btn-secondary">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-4">
-            <div class="card br-rounded">
-                <div class="img-wrapper"></div>
-                <div class="news-info ta-left">
-                    <h5 class="news-title">BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION</h5>
-                    <div class="flex jc-between ai-center">
-                        <p class="news-author m-y-s">Vlatka Zoldos</p>
-                        <p class="date">Date: 20.05.2019</p>
-                    </div>
-                    <p class="news-description">Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function.</p>
+                    <p class="news-description" [innerHTML]="item.description | text"></p>
                     <div class="w-full flex jc-center m-y-m">
                         <a href="" class="btn-secondary">Read More</a>
                     </div>
