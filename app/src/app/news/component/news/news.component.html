@@ -13,7 +13,7 @@
         </div>
         <div class="col-4" *ngFor="let item of items$ | async">
             <div class="card br-rounded">
-                <div class="img-wrapper"></div>
+                <div class="img-wrapper" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
                 <div class="news-info ta-left">
                     <h5 class="news-title">{{item.title}}</h5>
                     <div class="flex jc-between ai-center">
@@ -21,8 +21,8 @@
                         <p class="date">Date: 20.05.2019</p>
                     </div>
                     <p class="news-description" [innerHTML]="item.description | text"></p>
-                    <div class="w-full flex jc-center m-y-m">
-                        <a href="" class="btn-secondary">Read More</a>
+                    <div class="news-button-wrapper w-full flex jc-center">
+                        <a [routerLink]="item.route" class="btn-secondary">Read More</a>
                     </div>
                 </div>
             </div>

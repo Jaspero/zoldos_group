@@ -5,7 +5,7 @@
         </div>
         <div class="header-links">
             <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
-               class="links">{{link.title}}</a>
+               class="links" [routerLinkActiveOptions]="{exact: true}">{{link.title}}</a>
         </div>
     </div>
 </header>

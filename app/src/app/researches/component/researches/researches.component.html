@@ -15,7 +15,7 @@
                     <h5 class="research-title">{{item.title}}</h5>
                     <p class="research-author m-y-s">{{item.author}}</p>
                     <p class="research-description" [innerHTML]="item.description | text"></p>
-                    <div class="w-full flex jc-end m-t-l">
+                    <div class="w-full research-button-wrapper flex jc-end">
                         <a [routerLink]="item.route" class="btn-primary">Read More</a>
                     </div>
                 </div>
