@@ -10,12 +10,12 @@
     <div class="grid">
         <div *ngFor="let item of items$ | async" class="col-6 col-s-12">
             <div class="card br-rounded flex">
-                <div class="img-wrapper col-5"></div>
+                <div class="img-wrapper col-5" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
                 <div class="research-info col-7 ta-left">
                     <h5 class="research-title">{{item.title}}</h5>
                     <p class="research-author m-y-s">{{item.author}}</p>
                     <p class="research-description" [innerHTML]="item.description | text"></p>
-                    <div class="w-full flex jc-end m-t-l">
+                    <div class="w-full research-button-wrapper flex jc-end">
                         <a [routerLink]="item.route" class="btn-primary">Read More</a>
                     </div>
                 </div>

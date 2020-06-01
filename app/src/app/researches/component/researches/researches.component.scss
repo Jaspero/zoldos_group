@@ -4,7 +4,6 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  margin-top: -65px;
   &::before {
     position: absolute;
     content: '';
@@ -21,17 +20,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../../../../assets/images/research.jpg");
   height: 100%;
 }
 
-.bg-wrapper {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-image: url("../../../../assets/images/research-1.jpg");
-  height: 100%;
-}
+
 
 
 .card {
@@ -42,6 +34,9 @@
 
 .research-info {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .research-title {
@@ -64,4 +59,8 @@
   font-size: 20px;
   border: none;
   padding: 10px 20px;
+}
+
+.research-button-wrapper {
+  margin-top: auto;
 }

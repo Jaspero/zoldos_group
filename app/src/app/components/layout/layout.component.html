@@ -5,7 +5,7 @@
         </div>
         <div class="header-links">
             <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
-               class="links">{{link.title}}</a>
+               class="links" [routerLinkActiveOptions]="{exact: true}">{{link.title}}</a>
         </div>
     </div>
 </header>
@@ -13,8 +13,7 @@
 <router-outlet></router-outlet>
 
 <footer>
-    <div class="footer">
-        <img class="logo-zoldos" src="assets/icons/logo.svg">
+    <div class="footer"><img class="logo-zoldos" src="assets/icons/logo.svg">
         <p><b>Zoldos Lab is a part of Divison for Molecular Biology, Department of Biology,</b></p>
         <p><b>Facutly of Science University of Zagreb</b>.</p>
         <p>Horvatovac 102A</p>
