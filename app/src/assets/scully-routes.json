@@ -1,1 +1,55 @@
-[{"route":"/"},{"route":"/researches"},{"route":"/researches/another-research","title":"Another research","author":"Vlatka Zoldoš","description":"Glycans are assembled from monosaccharide residues through carefully regulated enzyme-directed biosynthetic pathways. In contrast to polypeptides, which are defined by the sequence of nucleotides.","image":"/uploads/research.jpg","sourceFile":"another-research.md"},{"route":"/researches/example-research","title":"Example Research","description":"Some description","author":"Some author","sourceFile":"example-research.md"},{"route":"/news"},{"route":"/news/news-of-the-day","title":"News of the day","author":"Someone Important","description":"Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function","image":"/uploads/news-1.jpg","sourceFile":"news-of-the-day.md"},{"route":"/news/news","title":"News","author":"Unknown Artist","description":"Some news","image":"/uploads/banner.png","sourceFile":"news.md"},{"route":"/news/one-more","title":"One more","author":"Sanjin","description":"Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function, Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function","image":"/uploads/main.jpg","sourceFile":"one-more.md"},{"route":"/publications"},{"route":"/404"},{"route":"/about"},{"route":"/contact"},{"route":"/lab-members"},{"route":"/news"},{"route":"/other-information"},{"route":"/photo-gallery"},{"route":"/publications"},{"route":"/researches"}]
+[
+  {"route": "/"},
+  {"route": "/researches"},
+  {
+    "route": "/researches/another-research",
+    "title": "Another research",
+    "author": "Vlatka Zoldoš",
+    "description": "Glycans are assembled from monosaccharide residues through carefully regulated enzyme-directed biosynthetic pathways. In contrast to polypeptides, which are defined by the sequence of nucleotides.",
+    "image": "/uploads/main.jpg",
+    "sourceFile": "another-research.md"
+  },
+  {
+    "route": "/researches/example-research",
+    "title": "Example Research",
+    "author": "Some author",
+    "description": "Some description",
+    "image": "/uploads/research.jpg",
+    "sourceFile": "example-research.md"
+  },
+  {"route": "/news"},
+  {
+    "route": "/news/news-of-the-day",
+    "title": "News of the day",
+    "author": "Someone Important",
+    "description": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+    "image": "/uploads/news-1.jpg",
+    "sourceFile": "news-of-the-day.md"
+  },
+  {
+    "route": "/news/news",
+    "title": "News",
+    "author": "Unknown Artist",
+    "description": "Some news",
+    "image": "/uploads/banner.png",
+    "sourceFile": "news.md"
+  },
+  {
+    "route": "/news/one-more",
+    "title": "One more",
+    "author": "Sanjin",
+    "description": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function, Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+    "image": "/uploads/main.jpg",
+    "sourceFile": "one-more.md"
+  },
+  {"route": "/publications"},
+  {"route": "/404"},
+  {"route": "/about"},
+  {"route": "/contact"},
+  {"route": "/lab-members"},
+  {"route": "/news"},
+  {"route": "/other-information"},
+  {"route": "/photo-gallery"},
+  {"route": "/publications"},
+  {"route": "/researches"}
+]
