@@ -1,6 +1,7 @@
 ---
 title: Example Research
-description: Some description
 author: Some author
+description: Some description
+image: /uploads/research.jpg
 ---
 Some content
