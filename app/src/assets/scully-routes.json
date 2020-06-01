@@ -22,6 +22,7 @@
     "route": "/news/news-of-the-day",
     "title": "News of the day",
     "author": "Someone Important",
+    "date": "21.05.2019",
     "description": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
     "image": "/uploads/news-1.jpg",
     "sourceFile": "news-of-the-day.md"
@@ -30,6 +31,7 @@
     "route": "/news/news",
     "title": "News",
     "author": "Unknown Artist",
+    "date": "12.08.2017",
     "description": "Some news",
     "image": "/uploads/banner.png",
     "sourceFile": "news.md"
@@ -38,6 +40,7 @@
     "route": "/news/one-more",
     "title": "One more",
     "author": "Sanjin",
+    "date": "01.06.2020",
     "description": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function, Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
     "image": "/uploads/main.jpg",
     "sourceFile": "one-more.md"

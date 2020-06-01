@@ -1,1 +1,21 @@
-<p>news-list works!</p>
+<section>
+    <div class="grid m-t-xl">
+        <div class="col-10 b-r b-l">
+            <div class="col-12 ta-center">
+                <h1>{{item.title}}</h1>
+            </div>
+            <div class="wrapper">
+                <div class="flex ai-center jc-between b-b">
+                    <p class="news-author">{{item.author}}</p>
+                    <p class="news-author">{{item.date}}</p>
+                </div>
+                <div class="news-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
+                <p class="news-description" [innerHTML]="item.description | text"></p>
+                <div class="flex news-button-wrapper jc-end ai-center">
+                    <a routerLink="/news" class="news-btn">Read more news</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <scully-content></scully-content>
+</section>
