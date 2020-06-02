@@ -7,7 +7,7 @@ import {
 import {RxDestroy} from '@jaspero/ng-helpers';
 import {ScullyRoute, ScullyRoutesService} from '@scullyio/ng-lib';
 import {ActivatedRoute} from '@angular/router';
-import {Observable} from 'rxjs';
+import {observable, Observable} from 'rxjs';
 import {map, skip, takeUntil} from 'rxjs/operators';
 
 @Component({
