@@ -1,26 +1,27 @@
 <div class="main flex jc-center ai-center">
-    <div class="col-5 c-light z-index ta-center">
-        <h1>{{page.title}}</h1>
-    </div>
+        <h1 class="ta-center b-b">{{page.title}}</h1>
 </div>
 
 <zg-block-renderer *ngIf="page.blocks" [blocks]="page.blocks"></zg-block-renderer>
-
 <section class="m-y-xl">
-    <div class="grid">
-        <div *ngFor="let item of items$ | async" class="col-6 col-s-12">
-            <div class="card br-rounded flex">
-                <div class="img-wrapper col-5" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
-                <div class="research-info col-7 ta-left">
+    <div class="grid jc-center">
+        <div class="col-6" *ngFor="let item of items$ | async; let odd = odd">
+            <div class="research-image-block-wrapper m-b-l" [class.even]="odd">
+                <div class="research-image-block-text" [class.text]="odd">
                     <h5 class="research-title">{{item.title}}</h5>
-                    <p class="research-author m-y-s">{{item.author}}</p>
-                    <p class="research-description" [innerHTML]="item.description | text"></p>
-                    <div class="w-full research-button-wrapper flex jc-end">
-                        <a [routerLink]="item.route" class="btn-primary">Read More</a>
+                    <p class="research-author">{{item.author}}</p>
+                    <p class="research-content m-y-s" [innerHTML]="item.description | text"></p>
+                    <div class="research-button-wrapper w-full flex jc-end" [class.flex-end]="odd">
+                        <a [routerLink]="item.route" class="research-btn">Read More</a>
+                    </div>
+                </div>
+                <div class="research-image-block-image br-circle">
+                    <div class="research-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}">
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 

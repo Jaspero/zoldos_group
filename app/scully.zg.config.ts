@@ -14,7 +14,7 @@ async function pages(route, config: any = {}) {
 }
 registerPlugin('router', 'cFiles', pages, async () => []);
 
-const dynamicPages = ['researches', 'news'];
+const dynamicPages = ['researches', 'news', 'publications'];
 
 export const config: ScullyConfig = {
   projectRoot: './src',
