@@ -45,6 +45,13 @@ const routes: Routes = [
           )
       },
       {
+        path: 'lab-members',
+        loadChildren: () =>
+          import('./lab-members/lab-members.module').then(
+            m => m.LabMembersModule
+          )
+      },
+      {
         path: '404',
         component: PageNotFoundComponent
       },

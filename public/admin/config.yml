@@ -189,6 +189,21 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
+      - <<: *meta
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "lab-members"
+    label: "Lab-members"
+    folder: "public/collections/lab-members"
+    create: true
+    slug: "{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text" }
       - { label: "Link", name: "link", widget: "text" }
       - <<: *meta
       - { label: "Body", name: "body", widget: "markdown" }

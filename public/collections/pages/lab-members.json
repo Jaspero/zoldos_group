@@ -3,13 +3,5 @@
   "meta": {
     "title": "Lab Members",
     "description": "Here you can see our Lab Members"
-  },
-  "blocks": [
-    {
-      "type": "testBlock",
-      "title": "Title 1",
-      "subTitle": "Subtitle 1",
-      "content": "Content 1231412414"
-    }
-  ]
+  }
 }
