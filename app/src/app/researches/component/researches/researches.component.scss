@@ -34,6 +34,7 @@ h1, h2, h3, h4, p {
 .research-author {
   font-size: 18px;
   color: #a2a2a2;
+  text-transform: uppercase;
 }
 
 .research-description {
@@ -59,6 +60,11 @@ h1, h2, h3, h4, p {
   border-radius: 50%;
 }
 
+.research-content {
+  color: #666;
+  font-size: 15px;
+}
+
 .research-button-wrapper {
   margin-top: auto;
 }
@@ -71,6 +77,7 @@ h1, h2, h3, h4, p {
     justify-content: space-between;
     padding: 20px;
     height: 300px;
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
   }
 
   &-text {
@@ -79,34 +86,6 @@ h1, h2, h3, h4, p {
     text-align: right;
     display: flex;
     flex-direction: column;
-  }
-
-  &-left {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
-    width: 60%;
-    text-align: left;
-  }
-
-  &-title {
-    color: #484848 !important;
-    font-weight: 700;
-    text-transform: uppercase;
-  }
-
-  &-subtitle {
-    font-size: 1.7em;
-    color: #aaa;
-  }
-
-  &-name {
-    text-transform: uppercase;
-    font-size: 0.9em;
-    color: #aaa;
-  }
-
-  &-content {
-    color: #666;
-    font-size: 15px;
   }
 
   &-image {

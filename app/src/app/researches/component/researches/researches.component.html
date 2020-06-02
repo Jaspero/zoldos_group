@@ -8,8 +8,8 @@
         <div class="col-6" *ngFor="let item of items$ | async; let odd = odd">
             <div class="research-image-block-wrapper m-b-l" [class.even]="odd">
                 <div class="research-image-block-text" [class.text]="odd">
-                    <p class="research-author">{{item.author}}</p>
                     <h5 class="research-title">{{item.title}}</h5>
+                    <p class="research-author">{{item.author}}</p>
                     <p class="research-content m-y-s" [innerHTML]="item.description | text"></p>
                     <div class="research-button-wrapper w-full flex jc-end" [class.flex-end]="odd">
                         <a [routerLink]="item.route" class="research-btn">Read More</a>
