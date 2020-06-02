@@ -5,8 +5,10 @@ import {
   ChangeDetectorRef
 } from '@angular/core';
 import {RxDestroy} from '@jaspero/ng-helpers';
-import {ScullyRoutesService} from '@scullyio/ng-lib';
+import {ScullyRoute, ScullyRoutesService} from '@scullyio/ng-lib';
 import {ActivatedRoute} from '@angular/router';
+import {Observable} from 'rxjs';
+import {map, skip, takeUntil} from 'rxjs/operators';
 
 @Component({
   selector: 'zg-lab-members',
@@ -23,5 +25,21 @@ export class LabMembersComponent extends RxDestroy implements OnInit {
     super();
   }
 
-  ngOnInit(): void {}
+  items$: Observable<ScullyRoute[]>;
+  page: any;
+
+  ngOnInit() {
+    this.items$ = this.scully.available$.pipe(
+      map(items => items.filter(it => it.route.includes('/lab-members/')))
+    );
+
+    this.page = this.activatedRoute.snapshot.data.page;
+
+    this.activatedRoute.data
+      .pipe(skip(1), takeUntil(this.destroyed$))
+      .subscribe(({page}) => {
+        this.page = page;
+        this.cdr.markForCheck();
+      });
+  }
 }
