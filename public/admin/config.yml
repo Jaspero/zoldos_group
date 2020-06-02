@@ -204,6 +204,6 @@ collections:
       - { label: "Name", name: "name", widget: "string" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
-      - { label: "Link", name: "link", widget: "text" }
+      - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
       - { label: "Body", name: "body", widget: "markdown" }
