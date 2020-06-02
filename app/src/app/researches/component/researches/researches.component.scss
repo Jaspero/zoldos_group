@@ -41,6 +41,7 @@
 
 .research-title {
   font-weight: 100;
+  font-size: 30px;
 }
 
 .research-author {
@@ -63,4 +64,65 @@
 
 .research-button-wrapper {
   margin-top: auto;
+}
+.research-image-block {
+  &-wrapper {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  &-text {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    width: 65%;
+    text-align: right;
+  }
+
+  &-left {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    width: 60%;
+    text-align: left;
+  }
+
+  &-title {
+    color: #484848 !important;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &-subtitle {
+    font-size: 1.7em;
+    color: #aaa;
+  }
+
+  &-name {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #aaa;
+  }
+
+  &-content {
+    color: #666;
+    font-size: 15px;
+  }
+
+  &-image {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-bg {
+
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    border: 9px solid #868686;
+    border-radius: 50%;
+  }
 }
