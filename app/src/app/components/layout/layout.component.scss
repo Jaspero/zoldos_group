@@ -31,7 +31,6 @@
   }
 }
 
-
 .links {
   margin: 0 10px;
   position: relative;
@@ -71,9 +70,15 @@
 .logo-zoldos {
   width: 100px;
 }
+.logo-university{
+  width: 80px;
+}
+.logo-biology{
+  width: 150px;
+}
 
 .footer {
   text-align: center;
   background-color: white;
-  border-style: groove;
+  border-top: 1px solid black;
 }
