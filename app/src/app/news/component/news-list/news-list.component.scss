@@ -20,21 +20,22 @@
 .news-description {
   flex: 1;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .news-btn {
   background: white;
-  color: #74ebd5;
+  color: #323037;
   outline: none;
   font-size: 20px;
   font-weight: 400;
-  border: 1px solid #74ebd5;
+  border: 1px solid #323037;
   padding: 10px 20px;
   border-radius: 4px;
   transition: all .4s ease-in-out;
   position: relative;
   &:hover {
-    background: #74ebd5;
+    background: #323037;
     color: white;
   }
 }
