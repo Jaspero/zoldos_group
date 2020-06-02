@@ -1,3 +1,7 @@
+h1, h2, h3, h4, p {
+  font-family: helvetica;
+}
+
 .main {
   height: 100vh;
   background-image: url("../../../../assets/images/research-main.jpg");
@@ -22,9 +26,6 @@
   background-repeat: no-repeat;
   height: 100%;
 }
-
-
-
 
 .card {
   cursor: pointer;
