@@ -1,7 +1,9 @@
 <header>
     <div class="header">
         <div class="header-logo">
-            <img src="assets/icons/logo.svg">
+            <a routerLink="/">
+                <img src="assets/icons/logo.svg">
+            </a>
         </div>
         <div class="header-links">
             <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
