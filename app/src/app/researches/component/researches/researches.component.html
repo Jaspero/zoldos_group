@@ -1,51 +1,27 @@
 <div class="main flex jc-center ai-center">
-    <div class="col-5 c-light z-index ta-center">
-        <h1>{{page.title}}</h1>
-    </div>
+        <h1 class="ta-center b-b">{{page.title}}</h1>
 </div>
 
 <zg-block-renderer *ngIf="page.blocks" [blocks]="page.blocks"></zg-block-renderer>
-<section class="research-cards flex">
-    <section class="research-image-block m-y-xl">
-        <div class="grid jc-center">
-            <div class="research-image-block-wrapper m-b-l">
-                <div class="research-image-block-text">
-                    <h5 class="research-image-block-title">A Systems medicine approach to chronic inflammatory disease</h5>
-                    <p class="research-image-block-name m-y-s">Zoldoš group is involved in SYSCID project within the
-                        Workpackage WP9 (led by HUNIMED) by epigenetic reprogamming to cis-regulatory regions (i.e.
-                        pathogenic variants associated to CID, previously identified by partner Humanitas University, Milan,
-                        Italy) using dCas9 fusions (with activator and repressor domains, and/or epigenetic reader/eraser
-                        domains).</p>
-                    <p class="research-image-block-content">Author: Vlatka Zoldoš</p>
+<section class="m-y-xl">
+    <div class="grid jc-center">
+        <div class="col-6" *ngFor="let item of items$ | async; let odd = odd">
+            <div class="research-image-block-wrapper m-b-l" [class.even]="odd">
+                <div class="research-image-block-text" [class.text]="odd">
+                    <p class="research-author">{{item.author}}</p>
+                    <h5 class="research-title">{{item.title}}</h5>
+                    <p class="research-content m-y-s" [innerHTML]="item.description | text"></p>
+                    <div class="research-button-wrapper w-full flex jc-end" [class.flex-end]="odd">
+                        <a [routerLink]="item.route" class="research-btn">Read More</a>
+                    </div>
                 </div>
                 <div class="research-image-block-image br-circle">
-                    <div class="research-image-block-bg">
-                        <img src="assets/icons/flask.svg">
+                    <div class="research-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}">
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-<section class="research-image-block m-y-xl">
-    <div class="grid jc-center">
-        <div class="research-image-block-wrapper m-b-l">
-            <div class="research-image-block-text">
-                <h5 class="research-image-block-title">A Systems medicine approach to chronic inflammatory disease</h5>
-                <p class="research-image-block-name m-y-s">Zoldoš group is involved in SYSCID project within the
-                    Workpackage WP9 (led by HUNIMED) by epigenetic reprogamming to cis-regulatory regions (i.e.
-                    pathogenic variants associated to CID, previously identified by partner Humanitas University, Milan,
-                    Italy) using dCas9 fusions (with activator and repressor domains, and/or epigenetic reader/eraser
-                    domains).</p>
-                <p class="research-image-block-content">Author: Vlatka Zoldoš</p>
-            </div>
-            <div class="research-image-block-image br-circle">
-                <div class="research-image-block-bg">
-                    <img src="assets/icons/flask.svg">
-                </div>
-            </div>
-        </div>
     </div>
-</section>
 </section>
 
 

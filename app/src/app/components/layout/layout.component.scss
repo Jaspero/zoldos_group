@@ -51,7 +51,6 @@
     margin: auto;
     width: 0%;
     content: '';
-    color: #C71585;
     background: #C71585;
     height: 1px;
     transition: all .4s ease-in-out;
@@ -64,7 +63,7 @@
   &.active {
     font-weight: 300;
     color: 	#C71585 !important;
-    border-bottom: 1px solid #74ebd5;
+    border-bottom: 1px solid #C71585;
   }
 }
 

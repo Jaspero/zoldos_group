@@ -3,21 +3,12 @@ h1, h2, h3, h4, p {
 }
 
 .main {
-  height: 100vh;
-  background-image: url("../../../../assets/images/research-main.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  &::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #484848;
-    opacity: .4;
-  }
+  height: 500px;
+  border-bottom: 3px solid #323037;
+}
+
+.b-b {
+  border-bottom:2px solid #323037;
 }
 
 .img-wrapper {
@@ -27,11 +18,6 @@ h1, h2, h3, h4, p {
   height: 100%;
 }
 
-.card {
-  cursor: pointer;
-  height: 400px;
-  box-shadow: 0 3px 7px -1px rgba(#000, .1);
-}
 
 .research-info {
   padding: 20px;
@@ -63,22 +49,36 @@ h1, h2, h3, h4, p {
   padding: 10px 20px;
 }
 
+.research-image {
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  border: 9px solid #868686;
+  border-radius: 50%;
+}
+
 .research-button-wrapper {
   margin-top: auto;
 }
 .research-image-block {
   &-wrapper {
-    width: 50%;
+    border: 1px solid #323037;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 20px;
+    height: 300px;
   }
 
   &-text {
     font-family: "Raleway", Arial, Helvetica, sans-serif;
     width: 65%;
     text-align: right;
+    display: flex;
+    flex-direction: column;
   }
 
   &-left {
@@ -115,15 +115,61 @@ h1, h2, h3, h4, p {
     align-items: center;
     justify-content: center;
   }
+}
 
-  &-bg {
 
-    height: 200px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.text {
+  text-align: left;
+}
+
+.even {
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.flex-end {
+  justify-content: flex-start;
+}
+
+
+.research-btn {
+  position: relative;
+  border:none;
+  outline: none;
+  color: #323037;
+  font-size: 22px;
+  &:before {
+    position: absolute;
+    width: 0%;
+    top: 105%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    color: #323037;
+    background: #323037;
+    height: 1px;
+    transition: all .4s ease-in-out;
+  }
+  &:after {
+    position: absolute;
+    width: 0%;
+    bottom: 105%;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    content: '';
+    color: #323037;
+    background: #323037;
+    height: 1px;
+    transition: all .4s ease-in-out;
+  }
+  &:hover::before {
     width: 100%;
-    border: 9px solid #868686;
-    border-radius: 50%;
+  }
+  &:hover::after {
+    width: 100%;
   }
 }
