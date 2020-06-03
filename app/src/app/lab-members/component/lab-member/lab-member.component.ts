@@ -1,4 +1,5 @@
 import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'zg-lab-member',
@@ -7,7 +8,11 @@ import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LabMemberComponent implements OnInit {
-  constructor() {}
+  constructor(private activatedRoute: ActivatedRoute) {}
 
-  ngOnInit(): void {}
+  item: any;
+
+  ngOnInit() {
+    this.item = this.activatedRoute.snapshot.data.meta;
+  }
 }

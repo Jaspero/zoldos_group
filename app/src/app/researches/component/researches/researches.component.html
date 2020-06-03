@@ -3,6 +3,7 @@
 </div>
 
 <zg-block-renderer *ngIf="page.blocks" [blocks]="page.blocks"></zg-block-renderer>
+
 <section class="m-y-xl">
     <div class="grid jc-center">
         <div class="col-6" *ngFor="let item of items$ | async; let odd = odd">

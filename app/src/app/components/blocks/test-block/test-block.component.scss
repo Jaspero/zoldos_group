@@ -1,6 +1,10 @@
 
-h1, h2, h3, h4, p {
-  font-family: helvetica;
+h1 {
+  font-family: Particle;
+}
+
+ h2, h3, h4, p {
+  font-family: Futura;
 }
 
 .card {
@@ -51,13 +55,13 @@ h1, h2, h3, h4, p {
   }
 
   &-text {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Futura", Arial, Helvetica, sans-serif;
     width: 65%;
     text-align: right;
   }
 
   &-left {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
+    font-family: "Futura", Arial, Helvetica, sans-serif;
     width: 60%;
     text-align: left;
   }
@@ -208,8 +212,6 @@ h1, h2, h3, h4, p {
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
-
-
 
 .lab-member-text {
   width: 650px;

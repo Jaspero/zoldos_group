@@ -11,15 +11,15 @@
  *============================================================================*/
 
 @font-face {
-  font-family: 'Nexa-Light';
-
+  font-family: 'Futura';
+  src: url("assets/fonts/FuturaLT.ttf");
   font-weight: normal;
 }
 
 @font-face {
-  font-family: 'Nexa-Bold';
-
-  font-weight: bold;
+  font-family: 'Particle';
+  src: url("assets/fonts/Particle-Regular.otf");
+  font-weight: normal;
 }
 
 @font-face {
@@ -34,7 +34,7 @@
 html {
   font-size: 16px;
   line-height: 1.8;
-  font-family: 'Nexa-light', sans-serif;
+  font-family: 'Futura', sans-serif;
 }
 
 
@@ -49,11 +49,15 @@ body {
 
 /* Headings
  *============================================================================*/
+h1 {
+  font-family: "Particle", sans-serif;
+}
 
-h1, h2, h3, h4, h5 {
+
+ h2, h3, h4, h5 {
   line-height: 1.4;
   font-weight: Bold;
-  font-family: "ITC-Stone-Serif-Std-Medium", Serif;
+  font-family: "Futura", sans-serif;
 }
 
 h1 { font-size: 50px; }

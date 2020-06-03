@@ -1,16 +1,22 @@
 <div class="main flex jc-center ai-center">
-    <div class="col-5 c-light z-index ta-center">
-        <h1>{{page.title}}</h1>
-    </div>
+    <h1 class="ta-center b-b">{{page.title}}</h1>
 </div>
 <section class="m-y-xl">
     <div class="grid">
         <div class="col-12 ta-center">
-            <h2>Publications</h2>
+            <h2>{{page.title}}</h2>
         </div>
-        <div class="col-8 flex fw-wrap" *ngFor="let item of items$ | async">
-            <p class="publication"><span class="name">{{item.name}}</span><b>{{item.title}}</b> <br> <span>{{item.description}}</span></p>
-            <a [routerLink]="item.route" class="link">Publication</a>
+        <div class="col-10 flex jc-center pub-wrapper">
+            <div class="pub-sidebar m-t-m">
+                <select name="" id="" class="pub-select"></select>
+            </div>
+            <div class="col-8 pub-container m-t-m">
+                <div class="wrapper flex p-x-l fw-wrap" *ngFor="let item of items$ | async">
+                    <h2 class="pub-year">2020</h2>
+                    <p class="publication"><span class="name">{{item.name}}</span><b>{{item.title}}</b> <br> <span>{{item.description}}</span></p>
+                    <a [routerLink]="item.route" class="link">Publication</a>
+                </div>
+            </div>
         </div>
     </div>
 </section>
