@@ -188,7 +188,7 @@ collections:
     fields:
       - label: "Year"
         name: "year"
-        widget: "list"
+        widget: "object"
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
