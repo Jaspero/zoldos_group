@@ -186,7 +186,9 @@ collections:
     editor:
       preview: false
     fields:
-      - { label: "Year", name: "year", widget: "string" }
+      - label: "Year"
+          name: "year"
+          widget: "list"
       fields:
         - { label: "Name", name: "name", widget: "string" }
         - { label: "Title", name: "title", widget: "string" }
