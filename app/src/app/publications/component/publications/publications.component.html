@@ -8,7 +8,17 @@
         </div>
         <div class="col-10 flex jc-center pub-wrapper">
             <div class="pub-sidebar m-t-m">
-                <select name="" id="" class="pub-select"></select>
+                <div class="select-wrapper">
+                <select name="" id="" class="pub-select">
+                    <option value="" class="option-value">Select a year</option>
+                    <option value="" class="option-value">2020</option>
+                    <option value="" class="option-value">2019</option>
+                    <option value="" class="option-value">2018</option>
+                    <option value="" class="option-value">2017</option>
+                    <option value="" class="option-value">2016</option>
+                    <option value="" class="option-value">2015</option>
+                </select>
+                </div>
             </div>
             <div class="col-8 pub-container m-t-m">
                 <div class="year-wrapper m-y-m" *ngFor="let year of items$ | async">
