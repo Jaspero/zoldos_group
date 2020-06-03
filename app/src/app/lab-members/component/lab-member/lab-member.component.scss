@@ -1,0 +1,53 @@
+.main {
+  height: 500px;
+  border-bottom: 3px solid #323037;
+}
+
+.b-b {
+  border-bottom:2px solid #323037;
+}
+
+.members-text {
+  font-size: 18px;
+}
+
+.members-title {
+  color: gray;
+  font-size: 24px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.members-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 500px;
+  cursor: pointer;
+}
+
+.members-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-wrapper {
+  margin-top: auto;
+}
+
+.members-btn {
+  outline: none;
+  border: 1px solid #868686;
+  color: #868686;
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 400;
+  transition: all .4s ease-in-out;
+  &:hover {
+    color: white;
+    background: #868686;
+  }
+}
