@@ -1,26 +1,16 @@
-/*
-img {
-  width: 30%;
-  float:left;
-  margin:1.66%;
-}
-*/
 :root {
   /* Base font size */
   font-size: 10px;
 }
-
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
 body {
   min-height: 100vh;
   background-color: #fafafa;
 }
-
 .container {
   max-width: 100rem;
   margin: 0 auto;
@@ -35,24 +25,20 @@ body {
   padding: 3.5rem 0;
   color: #1a1a1a;
 }
-
 .heading span {
   display: block;
 }
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
   margin: -1rem -1rem;
 }
-
 .gallery-item {
   flex: 1 0 24rem;
   margin: 1rem;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
   overflow: hidden;
 }
-
 .gallery-image {
   display: block;
   width: 100%;
@@ -60,18 +46,15 @@ body {
   object-fit: cover;
   transition: transform 400ms ease-out;
 }
-
 .gallery-image:hover {
   transform: scale(1.15);
 }
-
 @supports (display: grid) {
   .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     grid-gap: 2rem;
   }
-
   .gallery,
   .gallery-item {
     margin: 0;
