@@ -95,6 +95,13 @@
     "sourceFile": "this-is-important-one.md"
   },
   {"route": "/lab-members"},
+  {
+    "route": "/lab-members/map-name-vlatka-zoldos-description-asdas-image-uploads-lab-members-vlatka-jpg-body-asdas",
+    "name": "Vlatka Zoldos",
+    "description": "asdas",
+    "image": "/uploads/lab-members-vlatka.jpg",
+    "sourceFile": "map-name-vlatka-zoldos-description-asdas-image-uploads-lab-members-vlatka-jpg-body-asdas.md"
+  },
   {"route": "/404"},
   {"route": "/about"},
   {"route": "/contact"},
