@@ -183,18 +183,21 @@ collections:
     folder: "public/collections/publications"
     create: true
     slug: "{{slug}}"
+    identifier_field: "year"
     editor:
       preview: false
     fields:
       - label: "Year"
         name: "year"
-        widget: "object"
+        widget: "string"
+      - label: "Publications"
+        name: "publications"
+        widget: "list"
         fields:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-          - <<: *meta
-          - { label: "Body", name: "body", widget: "markdown" }
+
 
   - name: "lab-members"
     label: "Lab-members"
