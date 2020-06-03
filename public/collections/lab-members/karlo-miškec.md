@@ -3,10 +3,7 @@ title: Karlo Miškec
 description: Karlo graduated at the Faculty of Science, University of Zagreb, in
   2019 with a Master's degree in Molecular Biology with *magna cum laude*
   honors. He was working on his master's thesis project in Plant Tissue Culture
-  Laboratory under the mentorship of Assoc. prof. Dunja Leljak-Levanić where he
-  focused on BPM1 protein as a novel regulator of RNA directed DNA methylation
-  in plant develompent and its importance in *de novo* methylation of plant
-  genome, using bacteria, yeast and plant models.
+  Laboratory under the mentorship of Assoc. prof. Dunja Leljak-Levanić.
 image: /uploads/karlo-miškec.jpg
 meta:
   title: KARLO MIŠKEC
