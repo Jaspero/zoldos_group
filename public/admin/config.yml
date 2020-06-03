@@ -187,14 +187,14 @@ collections:
       preview: false
     fields:
       - label: "Year"
-          name: "year"
-          widget: "list"
-      fields:
-        - { label: "Name", name: "name", widget: "string" }
-        - { label: "Title", name: "title", widget: "string" }
-        - { label: "Description", name: "description", widget: "text" }
-        - <<: *meta
-        - { label: "Body", name: "body", widget: "markdown" }
+        name: "year"
+        widget: "list"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - <<: *meta
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "lab-members"
     label: "Lab-members"
