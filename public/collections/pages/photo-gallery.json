@@ -1,3 +1,10 @@
 {
-  "title": "Photo gallery"
+  "title": "Photo gallery",
+  "blocks": [
+    {
+      "type": "testBlock",
+      "image": "/uploads/banner.png",
+      "content": "asda"
+    }
+  ]
 }
