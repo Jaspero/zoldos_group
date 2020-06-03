@@ -6,9 +6,9 @@
         <div class="card">
             <div class="members-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
             <div class="flex flex-1 fd-col members-wrapper">
-                <div class="members-title">{{item.name}}</div>
+                <div class="members-title">{{item.title}}</div>
                 <p class="members-text m-y-s" [innerHTML]="item.description | text"></p>
-                <button class="members-btn">Read More</button>
+                <a [routerLink]="item.route" class="members-btn">Read More</a>
             </div>
         </div>
     </div>

@@ -96,11 +96,26 @@
   },
   {"route": "/lab-members"},
   {
+    "route": "/lab-members/aleksandar-vojta",
+    "title": "Aleksandar Vojta",
+    "description": "Aleksandar Vojta obtained his Ph.D. (dr. rer. nat.) in 2006 from Ludwig-Maximilians-Universität in Munich, Germany, in the field of cell biology, with a focus on protein import into chloroplasts.",
+    "image": "/uploads/lab-members-aleksandar.jpg",
+    "sourceFile": "aleksandar-vojta.md"
+  },
+  {
     "route": "/lab-members/map-name-vlatka-zoldos-description-asdas-image-uploads-lab-members-vlatka-jpg-body-asdas",
     "name": "Vlatka Zoldos",
-    "description": "asdas",
+    "title": "Vlatka Zoldoš",
+    "description": "Vlatka Zoldoš, PhD, is a full professor at the University of Zagreb Faculty of Science, and a principle investigator running a Laboratory for epigenetics at the Department of molecular biology.",
     "image": "/uploads/lab-members-vlatka.jpg",
     "sourceFile": "map-name-vlatka-zoldos-description-asdas-image-uploads-lab-members-vlatka-jpg-body-asdas.md"
+  },
+  {
+    "route": "/lab-members/new-lab-member",
+    "title": "New Lab-member",
+    "description": "Short description",
+    "image": "/uploads/lab-members-vlatka.jpg",
+    "sourceFile": "new-lab-member.md"
   },
   {"route": "/404"},
   {"route": "/about"},
