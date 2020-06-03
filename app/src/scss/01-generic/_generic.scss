@@ -5,8 +5,6 @@
  *
  *============================================================================*/
 
-
-
 /* Fonts
  *============================================================================*/
 
@@ -21,12 +19,6 @@
   src: url("assets/fonts/Particle-Regular.otf");
   font-weight: normal;
 }
-
-@font-face {
-  font-family: 'ITC-Stone-Serif-Std-Medium';
-
-}
-
 
 /* HTML
  *============================================================================*/
@@ -53,10 +45,9 @@ h1 {
   font-family: "Particle", sans-serif;
 }
 
-
  h2, h3, h4, h5 {
   line-height: 1.4;
-  font-weight: Bold;
+  font-weight: normal;
   font-family: "Futura", sans-serif;
 }
 
