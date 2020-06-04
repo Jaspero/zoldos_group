@@ -1,5 +1,5 @@
 .main {
-  height: 500px;
+  height: 200px;
   border-bottom: 3px solid #323037;
 }
 
@@ -7,34 +7,17 @@
   border-bottom:2px solid #323037;
 }
 
-.members-text {
-  font-size: 18px;
-}
-
-.members-title {
-  color: gray;
-  font-size: 24px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
 .members-image {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  height: 500px;
+  height: 600px;
   cursor: pointer;
 }
 
-.members-info {
-  display: flex;
-  flex-direction: column;
-}
-
 .button-wrapper {
-  margin-top: auto;
+  margin-top: 40px;
 }
 
 .members-btn {

@@ -1,5 +1,5 @@
 .main {
-  height: 500px;
+  height: 200px;
   border-bottom: 3px solid #323037;
 }
 
@@ -38,36 +38,38 @@
 .card {
   background-color: white;
   border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: -webkit-box;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
+  border: 1px solid #868686;
   flex-direction: column;
   overflow: hidden;
   height: 100%;
+  cursor: pointer;
+  transition: all .4s ease-in-out;
 }
 
-.btn-secondary {
+.card:hover {
+  box-shadow: 0px 0px 13px 0px rgba(0,0,0,0.75);
+  .news-btn {
+    background: #868686;
+    color: white;
+  }
+}
+
+.news-btn {
   background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
+  border: 1px solid gray;
+  color: #868686;
   padding: 0.5rem;
-  text-transform: lowercase;
-  max-width: 100%;
-  width: 100%;
+  text-transform: uppercase;
   display: block;
+  width: 100%;
+  margin-top: auto;
   text-align: center;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+  transition: all .4s ease-in-out;
 }
 
 .news-description {
   color: #999999;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   margin-bottom: 20px;
 }
 

@@ -1,4 +1,4 @@
-<div class="main flex jc-center ai-center">
+<div class="main flex jc-center ai-center m-t-m">
     <h1 class="ta-center b-b">{{page.title}}</h1>
 </div>
 
@@ -10,7 +10,7 @@
             <h1>Read about our news</h1>
         </div>
         <div class="col-4 col-s-6 col-xs-12" *ngFor="let item of items$ | async">
-            <div class="card br-rounded">
+            <a [routerLink]="item.route" class="card">
                 <div class="img-wrapper" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
                 <div class="news-info ta-left">
                     <h5 class="news-title">{{item.title}}</h5>
@@ -19,11 +19,9 @@
                         <p class="date">{{item.date}}</p>
                     </div>
                     <p class="news-description" [innerHTML]="item.description | text"></p>
-                    <div class="news-button-wrapper w-full flex jc-center">
-                        <a [routerLink]="item.route" class="btn-secondary">Read More</a>
-                    </div>
+                    <a [routerLink]="item.route" class="news-btn">Read More</a>
                 </div>
-            </div>
+            </a>
         </div>
     </div>
 </section>
