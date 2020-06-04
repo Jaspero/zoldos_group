@@ -25,11 +25,15 @@
       "galleryImages": [
         {
           "image": "/uploads/research.jpg",
-          "contentLink": "This is link or content"
+          "contentLink": "This is link or content",
+          "title": "News Title",
+          "link": "/news"
         },
         {
           "image": "/uploads/news-1.jpg",
-          "contentLink": "News"
+          "contentLink": "News",
+          "title": "Other Title",
+          "link": "/news"
         }
       ]
     },
