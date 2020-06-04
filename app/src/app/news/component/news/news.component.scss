@@ -14,8 +14,6 @@
   min-height: 300px;
 }
 
-
-
 .news-title {
   color: #696969;
   font-size: 1.25rem;
@@ -73,7 +71,19 @@
   margin-bottom: 20px;
 }
 
-
 .news-button-wrapper {
   margin-top: auto;
+}
+
+
+
+
+
+
+
+/* Mobile styles
+ *============================================================================*/
+
+@media (max-width: 600px) {
+
 }
