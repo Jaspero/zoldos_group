@@ -7,7 +7,7 @@ import {
 import {RxDestroy} from '@jaspero/ng-helpers';
 import {ScullyRoute, ScullyRoutesService} from '@scullyio/ng-lib';
 import {ActivatedRoute} from '@angular/router';
-import {observable, Observable} from 'rxjs';
+import {Observable} from 'rxjs';
 import {map, skip, takeUntil} from 'rxjs/operators';
 
 @Component({
@@ -30,7 +30,18 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
 
   ngOnInit() {
     this.items$ = this.scully.available$.pipe(
-      map(items => items.filter(it => it.route.includes('/publications/')))
+      map(items => items
+        .filter(it => it.route.includes('/publications/'))
+        .sort((a, b) => {
+          if (a.year > b.year) {
+            return -1
+          } else if (a.year < b.year) {
+            return 1;
+          }
+
+          return 0;
+        })
+      )
     );
 
     this.page = this.activatedRoute.snapshot.data.page;
@@ -41,5 +52,12 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
         this.page = page;
         this.cdr.markForCheck();
       });
+  }
+
+  yearSelected(event) {
+    const year = event.target.value;
+    document.getElementById(year).scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }

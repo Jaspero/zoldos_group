@@ -1,13 +1,14 @@
-<div class="main flex jc-center ai-center">
+<div class="main flex jc-center ai-center m-t-m">
     <h1 class="ta-center b-b">{{item.title}}</h1>
 </div>
-<div class="grid jc-between m-y-xl">
-    <div class="col-6 members-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
-    <div class="col-6 members-info p-x-l">
-        <h3>{{item.title}}</h3>
-        <p class="members-text m-y-s" [innerHTML]="item.description | text"></p>
-        <div class="button-wrapper flex jc-end">
-            <a routerLink="/lab-members" class="members-btn">Other Members</a>
+<div class="grid m-y-xl">
+    <div class="col-10 flex jc-center fw-wrap">
+        <div class="col-12 members-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
+        <div class="col-12">
+            <scully-content class="m-y-s"></scully-content>
+            <div class="button-wrapper flex jc-end">
+                <a routerLink="/lab-members" class="members-btn">Other Members</a>
+            </div>
         </div>
     </div>
 </div>

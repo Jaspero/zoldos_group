@@ -25,17 +25,17 @@
 
 .news-btn {
   background: white;
-  color: #323037;
+  color: #868686;
   outline: none;
   font-size: 20px;
   font-weight: 400;
-  border: 1px solid #323037;
+  border: 1px solid #868686;
   padding: 10px 20px;
   border-radius: 4px;
   transition: all .4s ease-in-out;
   position: relative;
   &:hover {
-    background: #323037;
+    background: #868686;
     color: white;
   }
 }

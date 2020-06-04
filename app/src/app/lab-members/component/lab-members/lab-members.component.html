@@ -1,15 +1,15 @@
-<div class="main flex jc-center ai-center">
+<div class="main flex jc-center ai-center m-t-m">
     <h1 class="ta-center b-b">{{page.title}}</h1>
 </div>
-<div class="grid m-y-xl">
-    <div class="col-4 col-s-6 col-xs-12" *ngFor="let item of items$ | async">
-        <div class="card">
+<div class="grid jc-start m-y-xl">
+    <div class="col-4 col-s-6 col-xs-12 m-y-s" *ngFor="let item of items$ | async">
+        <a [routerLink]="item.route" class="card">
             <div class="members-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
             <div class="flex flex-1 fd-col members-wrapper">
                 <div class="members-title">{{item.title}}</div>
                 <p class="members-text m-y-s" [innerHTML]="item.description | text"></p>
-                <a [routerLink]="item.route" class="members-btn">Read More</a>
+                <a  class="members-btn">Read More</a>
             </div>
-        </div>
+        </a>
     </div>
 </div>
