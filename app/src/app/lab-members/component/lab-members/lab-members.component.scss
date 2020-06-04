@@ -80,3 +80,22 @@
   flex-direction: column;
   flex: 1;
 }
+
+
+
+
+
+/* Mobile styles
+ *============================================================================*/
+
+@media (max-width: 600px) {
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #868686;
+  }
+}
