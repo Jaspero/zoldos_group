@@ -5,9 +5,10 @@
                 <img src="assets/icons/logo.svg">
             </a>
         </div>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <div class="header-links">
+        <button class="header-menu">
+            <img src="assets/icons/ham-menu.svg" alt="">
+        </button>
+        <div class="header-links active">
             <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
                class="links" [routerLinkActiveOptions]="{exact: true}">{{link.title}}</a>
         </div>
@@ -19,10 +20,16 @@
 <footer>
     <section class="footer">
         <div class="footer-logos m-t-m flex jc-center ai-center">
-            <div class="col-4 col-s-12 flex ai-center jc-between">
-            <img class="logo-university ai-center" src="assets/icons/university-logo.svg">
-            <img class="logo-zoldos ai-center m-x-m" src="assets/icons/logo.svg">
-            <img class="logo-biology ai-center" src="assets/icons/biology-logo.svg">
+            <div class="col-12 flex ai-center">
+                <div class="flex-1 ta-right">
+                    <img class="logo-university" src="assets/icons/university-logo.svg">
+                </div>
+                <div>
+                    <img class="logo-zoldos m-x-m" src="assets/icons/logo.svg">
+                </div>
+                <div class="flex-1 ta-left">
+                    <img class="logo-biology" src="assets/icons/biology-logo.svg">
+                </div>
             </div>
         </div>
         <div class="col-12 ta-center">
