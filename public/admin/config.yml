@@ -80,7 +80,7 @@ blocks: &blocks
           fields:
             - {label: Image, name: image, widget: image}
             - { label: "Title", name: "title", widget: "string", required: false }
-              - { label: "Link", name: "link", widget: "string", required: false }
+            - { label: "Link", name: "link", widget: "string", required: false }
 
     - label: "Image Text Block"
       name: "imageTextBlock"
