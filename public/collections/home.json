@@ -8,8 +8,8 @@
     {
       "type": "landingBlock",
       "title": "Zoldoš Lab",
-      "subTitle": "EPIGENETICS OF PROTEIN GLYCOSYLATION BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
-      "image": "/uploads/banner.png"
+      "subTitle": "CRISPR/DCAS9-BASED EPIGNOME EDITING",
+      "image": "/uploads/landing.gif"
     },
     {
       "type": "twoBlockText",
@@ -20,16 +20,20 @@
     },
     {
       "type": "imagesBlock",
-      "title": "This is title",
-      "subTitle": "This is some subtitle",
+      "title": "News",
+      "subTitle": "Read the latest news",
       "galleryImages": [
         {
-          "image": "assets/icons/flask.svg",
-          "contentLink": "This is link or content"
+          "image": "/uploads/research.jpg",
+          "contentLink": "This is link or content",
+          "title": "News Title",
+          "link": "/news"
         },
         {
-          "image": "assets/icons/flask.svg",
-          "contentLink": "bla"
+          "image": "/uploads/news-1.jpg",
+          "contentLink": "News",
+          "title": "Other Title",
+          "link": "/news"
         }
       ]
     },
@@ -39,28 +43,32 @@
       "subTitle": "FEUGIAT SED LOREM IPSUM MAGNA",
       "features": [
         {
-          "image": "assets/icons/flask.svg",
+          "image": "/uploads/research.jpg",
           "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
           "author": "VLATKA ZOLDOŠ",
-          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+          "alt": "Research image"
         },
         {
-          "image": "assets/icons/flask.svg",
+          "image": "/uploads/banner.png",
           "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
           "author": "VLATKA ZOLDOŠ",
-          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+          "alt": "Research image"
         },
         {
-          "image": "assets/icons/flask.svg",
+          "image": "/uploads/research-1.jpg",
           "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
           "author": "VLATKA ZOLDOŠ",
-          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+          "alt": "Research image"
         },
         {
-          "image": "assets/icons/flask.svg",
+          "image": "/uploads/research-main.jpg",
           "title": "BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION",
           "author": "VLATKA ZOLDOŠ",
-          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function"
+          "content": "Most integral membrane and extracellular proteins are modified by covalent addition of complex oligosaccharides (glycans), which considerably affects protein structure and function",
+          "alt": "Research Image"
         }
       ]
     }
