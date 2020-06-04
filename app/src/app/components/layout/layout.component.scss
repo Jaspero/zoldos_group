@@ -16,6 +16,11 @@
   &-menu {
     background: none;
     border: none;
+    visibility: hidden;
+
+    @media (max-width:765px) {
+      visibility: visible;
+    }
 
   }
 
