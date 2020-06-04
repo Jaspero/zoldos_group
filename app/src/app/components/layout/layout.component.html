@@ -5,6 +5,8 @@
                 <img src="assets/icons/logo.svg">
             </a>
         </div>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <div class="header-links">
             <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
                class="links" [routerLinkActiveOptions]="{exact: true}">{{link.title}}</a>
