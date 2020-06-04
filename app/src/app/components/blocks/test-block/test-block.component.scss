@@ -7,29 +7,12 @@
 *::after {
   box-sizing: border-box;
 }
-body {
-  min-height: 100vh;
-  background-color: #fafafa;
-}
 .container {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 2rem 2rem;
 }
-.heading {
-  font-family: "Montserrat", Arial, sans-serif;
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 1.5;
-  text-align: center;
-  padding: 3.5rem 0;
-  color: #1a1a1a;
-}
-.heading span {
-  display: block;
-}
 .gallery {
-  display: flex;
   flex-wrap: wrap;
   margin: -1rem -1rem;
 }
@@ -48,15 +31,4 @@ body {
 }
 .gallery-image:hover {
   transform: scale(1.15);
-}
-@supports (display: grid) {
-  .gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    grid-gap: 2rem;
-  }
-  .gallery,
-  .gallery-item {
-    margin: 0;
-  }
 }
