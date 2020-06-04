@@ -5,7 +5,7 @@
     <div class="col-6 members-image" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
     <div class="col-6 members-info p-x-l">
         <h3>{{item.title}}</h3>
-        <p class="members-text m-y-s" [innerHTML]="item.description | text"></p>
+        <scully-content></scully-content>
         <div class="button-wrapper flex jc-end">
             <a routerLink="/lab-members" class="members-btn">Other Members</a>
         </div>

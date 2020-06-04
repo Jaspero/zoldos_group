@@ -1,8 +1,10 @@
 import {CommonModule} from '@angular/common';
 import {NgModule} from '@angular/core';
+import {RouterModule} from '@angular/router';
 import {BlockRendererComponent} from './components/blocks/block-renderer/block-renderer.component';
 import {ImagesBlockComponent} from './components/blocks/images-block/images-block.component';
 import {LandingBlockComponent} from './components/blocks/landing-block/landing-block.component';
+import {NewsBlockComponent} from './components/blocks/news-block/news-block.component';
 import {PortfolioBlockComponent} from './components/blocks/portfolio-block/portfolio-block.component';
 import {TestBlockComponent} from './components/blocks/test-block/test-block.component';
 import {TextBlockComponent} from './components/blocks/text-block/text-block.component';
@@ -11,7 +13,8 @@ import {MarkdownToHtmlPipe} from './pipes/markdown-to-html/markdown-to-html.pipe
 import {TextPipe} from './pipes/text/text.pipe';
 
 const MODULES = [
-  CommonModule
+  CommonModule,
+  RouterModule
 ];
 
 const PIPES = [
@@ -30,7 +33,8 @@ const COMPONENTS = [
   TwoBlockTextComponent,
   TestBlockComponent,
   LandingBlockComponent,
-  ImagesBlockComponent
+  ImagesBlockComponent,
+  NewsBlockComponent
 ];
 
 @NgModule({

@@ -2,8 +2,6 @@ import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {PageResolver} from '../resolvers/page.resolver';
 import {PublicationsComponent} from './component/publications/publications.component';
-import {PublicationComponent} from './component/publication/publication.component';
-import {MetaResolver} from '../resolvers/meta.resolver';
 
 const routes: Routes = [
   {
@@ -17,16 +15,6 @@ const routes: Routes = [
       page: PageResolver
     }
   },
-  {
-    path: ':id',
-    component: PublicationComponent,
-    data: {
-      collection: 'publications'
-    },
-    resolve: {
-      meta: MetaResolver
-    }
-  }
 ];
 
 @NgModule({

@@ -30,7 +30,10 @@ export class LabMembersComponent extends RxDestroy implements OnInit {
 
   ngOnInit() {
     this.items$ = this.scully.available$.pipe(
-      map(items => items.filter(it => it.route.includes('/lab-members/')))
+      map(items => items
+        .filter(it => it.route.includes('/lab-members/'))
+        .sort((a, b) => b.order - a.order)
+      )
     );
 
     this.page = this.activatedRoute.snapshot.data.page;

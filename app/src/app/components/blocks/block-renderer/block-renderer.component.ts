@@ -5,6 +5,7 @@ import {
   OnInit,
   ViewContainerRef
 } from '@angular/core';
+import {NewsBlockComponent} from '../news-block/news-block.component';
 import {PortfolioBlockComponent} from '../portfolio-block/portfolio-block.component';
 import {TextBlockComponent} from '../text-block/text-block.component';
 import {TwoBlockTextComponent} from '../two-block-text/two-block-text.component';
@@ -18,7 +19,8 @@ const BLOCKS = {
   twoBlockText: TwoBlockTextComponent,
   testBlock: TestBlockComponent,
   landingBlock: LandingBlockComponent,
-  imagesBlock: ImagesBlockComponent
+  imagesBlock: ImagesBlockComponent,
+  newsBlock: NewsBlockComponent
 };
 
 @Component({
