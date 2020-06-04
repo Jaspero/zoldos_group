@@ -79,7 +79,8 @@ blocks: &blocks
           widget: "list"
           fields:
             - {label: Image, name: image, widget: image}
-            - { label: "Content/link", name: "contentLink", widget: "string", required: false }
+            - { label: "Title", name: "title", widget: "string", required: false }
+              - { label: "Link", name: "link", widget: "string", required: false }
 
     - label: "Image Text Block"
       name: "imageTextBlock"
@@ -197,6 +198,7 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
+          - { label: "Link", name: "link", widget: "text" }
 
 
   - name: "lab-members"

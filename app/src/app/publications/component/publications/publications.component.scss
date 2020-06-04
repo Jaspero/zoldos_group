@@ -40,7 +40,8 @@ body {
   padding-left: 10px;
   padding-right: 24px;
   &:after {
-    content: '';
+    font-family: FontAwesome;
+    content: '\f107';
     position: absolute;
     right: 25px;
     top: 14px;
