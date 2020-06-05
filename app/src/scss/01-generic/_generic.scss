@@ -15,8 +15,8 @@
 }
 
 @font-face {
-  font-family: 'Particle';
-  src: url("assets/fonts/Particle-Regular.otf");
+  font-family: 'NeutraText-Book';
+  src: url("assets/fonts/NeutraText-Book.otf");
   font-weight: normal;
 }
 
@@ -42,13 +42,14 @@ body {
 /* Headings
  *============================================================================*/
 h1 {
-  font-family: "Particle", sans-serif;
+  font-family: "Futura", sans-serif;
+  text-transform: uppercase;
 }
 
  h2, h3, h4, h5 {
   line-height: 1.4;
   font-weight: normal;
-  font-family: "Futura", sans-serif;
+  font-family: "NeutraText-Book", sans-serif;
 }
 
 h1 { font-size: 50px; }
