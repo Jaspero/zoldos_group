@@ -45,7 +45,7 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
       )
     );
 
-    this.items$.subscribe(value => {
+    this.scully.available$.subscribe(value => {
       console.log(value);
     });
 
