@@ -10,21 +10,18 @@ import {map} from 'rxjs/operators';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class NewsBlockComponent implements OnInit {
-  constructor(
-    private scully: ScullyRoutesService
-  ) {
-  }
+  constructor(private scully: ScullyRoutesService) {}
 
   data: any;
   news$: Observable<any[]>;
 
   ngOnInit() {
     this.news$ = this.scully.available$.pipe(
-      map(items => items
-        .filter(it => it.route.includes('/news/') && it.fetured)
-        .slice(0, this.data.count || 2)
+      map(items =>
+        items
+          .filter(it => it.route.includes('/news/') && it.featured)
+          .slice(0, this.data.count || 2)
       )
-    )
+    );
   }
-
 }

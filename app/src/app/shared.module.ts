@@ -11,16 +11,11 @@ import {TextBlockComponent} from './components/blocks/text-block/text-block.comp
 import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-block-text.component';
 import {MarkdownToHtmlPipe} from './pipes/markdown-to-html/markdown-to-html.pipe';
 import {TextPipe} from './pipes/text/text.pipe';
+import {ResearchesBlockComponent} from './components/blocks/researches-block/researches-block.component';
 
-const MODULES = [
-  CommonModule,
-  RouterModule
-];
+const MODULES = [CommonModule, RouterModule];
 
-const PIPES = [
-  TextPipe,
-  MarkdownToHtmlPipe
-];
+const PIPES = [TextPipe, MarkdownToHtmlPipe];
 
 const COMPONENTS = [
   /**
@@ -34,21 +29,13 @@ const COMPONENTS = [
   TestBlockComponent,
   LandingBlockComponent,
   ImagesBlockComponent,
-  NewsBlockComponent
+  NewsBlockComponent,
+  ResearchesBlockComponent
 ];
 
 @NgModule({
-  imports: [
-    ...MODULES
-  ],
-  exports: [
-    ...PIPES,
-    ...MODULES,
-    ...COMPONENTS
-  ],
-  declarations: [
-    ...PIPES,
-    ...COMPONENTS
-  ]
+  imports: [...MODULES],
+  exports: [...PIPES, ...MODULES, ...COMPONENTS],
+  declarations: [...PIPES, ...COMPONENTS]
 })
 export class SharedModule {}

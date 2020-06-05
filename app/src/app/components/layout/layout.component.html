@@ -1,16 +1,22 @@
 <header>
     <div class="header">
         <div class="header-logo">
-            <a routerLink="/">
-                <img src="assets/icons/logo.svg">
+            <a (click)="goTo(['/'])">
+                <img src="assets/icons/logo.svg" alt="Zoldos Group Logo">
             </a>
         </div>
         <button class="header-menu">
-            <img src="assets/icons/ham-menu.svg" alt="">
+            <img src="assets/icons/ham-menu.svg" alt="Menu open icon">
         </button>
-        <div class="header-links">
-            <a *ngFor="let link of settings.links" [routerLink]="[link.link]" routerLinkActive="active"
-               class="links" [routerLinkActiveOptions]="{exact: true}">{{link.title}}</a>
+        <div class="header-links hide-s">
+            <a
+                *ngFor="let link of settings.links"
+                (click)="goTo([link.link])"
+                routerLinkActive="active"
+                class="links"
+                [routerLinkActiveOptions]="{exact: true}">
+                {{link.title}}
+            </a>
         </div>
     </div>
 </header>
