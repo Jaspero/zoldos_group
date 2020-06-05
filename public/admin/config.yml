@@ -175,6 +175,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - <<: *meta
       - { label: "Body", name: "body", widget: "markdown" }
@@ -191,6 +192,7 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Featured", name: "featured", widget: "boolean" }
       - <<: *meta
@@ -228,6 +230,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Order", name: "order", widget: "number" }
       - <<: *meta
