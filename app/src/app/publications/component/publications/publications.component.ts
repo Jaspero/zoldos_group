@@ -30,19 +30,24 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
 
   ngOnInit() {
     this.items$ = this.scully.available$.pipe(
-      map(items => items
-        .filter(it => it.route.includes('/publications/'))
-        .sort((a, b) => {
-          if (a.year > b.year) {
-            return -1
-          } else if (a.year < b.year) {
-            return 1;
-          }
+      map(items =>
+        items
+          .filter(it => it.route.includes('/publications/'))
+          .sort((a, b) => {
+            if (a.year > b.year) {
+              return -1;
+            } else if (a.year < b.year) {
+              return 1;
+            }
 
-          return 0;
-        })
+            return 0;
+          })
       )
     );
+
+    this.items$.subscribe(value => {
+      console.log(value);
+    });
 
     this.page = this.activatedRoute.snapshot.data.page;
 

@@ -1,5 +1,5 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
+import {ActivatedRoute, Router} from '@angular/router';
 
 @Component({
   selector: 'zg-layout',
@@ -8,18 +8,20 @@ import { ActivatedRoute } from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class LayoutComponent implements OnInit {
-  constructor(
-    private activatedRoute: ActivatedRoute
-  ) { }
+  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
 
   settings: {
     links: Array<{
-      title: string,
-      link: string
-    }>
+      title: string;
+      link: string;
+    }>;
   };
 
   ngOnInit() {
     this.settings = this.activatedRoute.snapshot.data.settings;
+  }
+
+  goTo(items: string[]) {
+    this.router.navigate(items);
   }
 }

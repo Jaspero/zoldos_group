@@ -9,5 +9,6 @@ description: Most integral membrane and extracellular proteins are modified by
   oligosaccharides (glycans), which considerably affects protein structure and
   function
 image: /uploads/main.jpg
+featured: true
 ---
 asdsa
