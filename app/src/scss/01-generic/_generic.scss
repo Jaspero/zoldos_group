@@ -41,16 +41,11 @@ body {
 
 /* Headings
  *============================================================================*/
-h1 {
+h1, h2, h3, h4, h5  {
   font-family: "Futura", sans-serif;
   text-transform: uppercase;
 }
 
- h2, h3, h4, h5 {
-  line-height: 1.4;
-  font-weight: normal;
-  font-family: "NeutraText-Book", sans-serif;
-}
 
 h1 { font-size: 50px; }
 h2 { font-size: 35px; }

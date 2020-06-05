@@ -105,6 +105,13 @@ blocks: &blocks
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
         - { label: "Count", name: "count", widget: "number", requred: false }
 
+    - label: "Researches Block"
+      name: "researchesBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+        - { label: "Count", name: "count", widget: "number", requred: false }
 
 meta: &meta
   label: "Meta"
