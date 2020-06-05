@@ -1,5 +1,5 @@
 ---
-title: BIOLOGICAL IMPORTANCE OF PROTEIN GLYCOSYLATION
+title: "BIOLOGICAL IMPORTANCE "
 author: Vlatka Zoldoš
 description: Most integral membrane and extracellular proteins are modified by
   covalent addition of complex oligosaccharides (glycans), which considerably
