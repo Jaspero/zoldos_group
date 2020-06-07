@@ -3,6 +3,7 @@ title: Ana Vujić
 description: Ana graduated Molecular Biology at the University of Zagreb,
   Faculty of Science in November 2019. Two months later, she joined the Zoldoš
   Lab as a research associate on the project CEKOM „Molecular diagnostics".
+thumbImg: /uploads/ana-vujić-thumbnail.jpg
 image: /uploads/ana-vujić.jpg
 order: 8
 meta:
