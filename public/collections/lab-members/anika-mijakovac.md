@@ -4,6 +4,7 @@ description: Anika graduated with a Master's degree in Molecular Biology at the
   Faculty of Science, University of Zagreb in 2019. She was working on her
   master's thesis „A vector system for transposase-mediated stable genomic
   integration of an expression cassete“.
+thumbImg: /uploads/anika-mijakovac-thumbnails.jpg
 image: /uploads/anika-mijakovac.jpg
 order: 7
 meta:
