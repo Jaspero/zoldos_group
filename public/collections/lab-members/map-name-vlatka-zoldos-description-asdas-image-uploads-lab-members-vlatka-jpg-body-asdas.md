@@ -4,6 +4,7 @@ title: Vlatka Zoldoš
 description: Vlatka Zoldoš, PhD, is a full professor at the University of Zagreb
   Faculty of Science, and a principle investigator running a Laboratory for
   epigenetics at the Department of molecular biology.
+thumbImg: /uploads/vlatka-zoldoš-thumbnail.jpg
 image: /uploads/lab-members-vlatka.jpg
 order: 1
 meta:
