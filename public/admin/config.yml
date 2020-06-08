@@ -113,6 +113,20 @@ blocks: &blocks
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
         - { label: "Count", name: "count", widget: "number", requred: false }
 
+    - name: "Gallery Block"
+      label: "galleryBlock"
+      identifier_field: "year"
+      fields:
+        - label: "Year"
+          name: "year"
+          widget: "string"
+        - label: "Images"
+          name: "images"
+          widget: "list"
+          fields:
+            - {label: Image, name: image, widget: image}
+
+
 meta: &meta
   label: "Meta"
   name: "meta"
@@ -219,6 +233,8 @@ collections:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Link", name: "link", widget: "text" }
+
+
 
 
   - name: "lab-members"
