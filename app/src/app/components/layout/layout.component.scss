@@ -144,10 +144,6 @@
     font-size: 18px;
     transform: translateX(100%);
     transition: all .2s, transform 1s;
-
-    &:hover {
-      opacity: 1;
-    }
   }
 }
 
@@ -162,7 +158,6 @@
   .slide-menu-links:nth-child(1) {
     transform: translateX(0%);
   }
-
   .slide-menu-links:nth-child(2) {
     transform: translateX(0%);
     transition-delay: .1s;

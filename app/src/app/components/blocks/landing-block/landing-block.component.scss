@@ -39,3 +39,27 @@
   background: #323037;
   opacity: .5;
 }
+
+
+
+
+
+/* Mobile styles
+ *============================================================================*/
+
+@media (max-width: 900px)  {
+  .landing-title-wrapper {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  h1 {
+    width: 100%;
+    font-size: 30px;
+  }
+  h4 {
+    max-width: 100%!important;
+    width: 100%;
+    font-size: 20px;
+    text-align: center!important;
+  }
+}
