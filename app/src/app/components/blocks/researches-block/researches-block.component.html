@@ -8,11 +8,11 @@
             <div class="research-image-block-text" [class.even]="odd">
                 <h5 class="research-image-block-title">{{item.title}}</h5>
                 <p class="research-image-block-name m-y-s" *ngIf="item.author">{{item.author}}</p>
-                <p class="research-image-block-content" [innerHTML]="item.content | MTH"></p>
+                <p class="research-image-block-content" [innerHTML]="item.description | MTH"></p>
             </div>
             <div class="research-image-block-image br-circle">
                 <div class="research-image-block-bg flex jc-center ai-center">
-                    <img [src]="item.image" class="br-circle h-full obj-cover" [alt]="item.alt" />
+                    <img [src]="item.thumbImg" class="br-circle h-full obj-cover" [alt]="item.alt" />
                 </div>
             </div>
         </div>
