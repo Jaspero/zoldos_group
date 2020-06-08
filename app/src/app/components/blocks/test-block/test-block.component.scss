@@ -25,6 +25,14 @@
   transform: scale(1.15);
 }
 .contact-us-photo {
-  width: 900px;
+  width: 800px;
 }
 
+.contact-us {
+  display: flex;
+}
+
+.contact-us-left {
+  position: sticky;
+  top: 100px;
+}
