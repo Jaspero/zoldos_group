@@ -1,0 +1,6 @@
+<div class="gallery flex">
+    <h1 class="w-full">{{data.year}}</h1>
+    <div class="gallery-item col-4" *ngFor="let image of data.images">
+        <img [src]="image.image"  class="gallery-image">
+    </div>
+</div>

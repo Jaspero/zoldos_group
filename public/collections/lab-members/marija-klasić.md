@@ -4,6 +4,7 @@ description: "Marija graduated with a Master’s degree in Molecular Biology at
   Faculty of Science, University of Zagreb. She joined Zoldoš Lab in 2012 as a
   PhD student and was working at that time on the FP7 project IBD-BIOM
   „Diagnostic and prognostic biomarkers for inflammatory bowel disease”. "
+thumbImg: /uploads/marija-klasić-thumbnail.jpg
 image: /uploads/marija-klasić.jpg
 order: 4
 meta:

@@ -5,6 +5,7 @@ description: Vedrana graduated with a Master’s degree in Molecular Biology at
   Department of Molecular Biology, Faculty of Science, University of Zagreb,
   where she completed her PhD in  Molecular Biology and Biochemistry under the
   mentorship of Prof. Vlatka Zoldoš.
+thumbImg: /uploads/vedrana-vičić-bočkor-thumbnail.jpg
 image: /uploads/vedrana-vičić-bočkor.jpg
 order: 3
 meta:

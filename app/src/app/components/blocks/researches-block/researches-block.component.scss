@@ -41,7 +41,6 @@
     justify-content: center;
   }
   &-bg {
-
     height: 200px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,4 +55,36 @@
 .even {
   flex-direction: row-reverse;
   text-align: left;
+}
+
+
+
+/* Mobile styles
+ *============================================================================*/
+
+@media (max-width: 900px)  {
+  .research-image-block-text {
+    width: 100%;
+    order: 2;
+    text-align: left;
+    margin-top: 10px;
+  }
+  .research-image-block-wrapper {
+    margin: 20px 0px;
+    width: 100%;
+  }
+  .research-image-block-image {
+    order: 1;
+    width: 100%;
+  }
+
+  .research-image-block-bg {
+    height: 300px;
+    border: 1px solid #868686;
+    border-radius: 0px;
+    img {
+      border-radius: 0px;
+      width: 100%;
+    }
+  }
 }

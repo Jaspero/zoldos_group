@@ -4,6 +4,7 @@ description: Karlo graduated at the Faculty of Science, University of Zagreb, in
   2019 with a Master's degree in Molecular Biology with *magna cum laude*
   honors. He was working on his master's thesis project in Plant Tissue Culture
   Laboratory under the mentorship of Assoc. prof. Dunja Leljak-Levanić.
+thumbImg: /uploads/karlo-miškec-thumbnail.jpg
 image: /uploads/karlo-miškec.jpg
 order: 9
 meta:
