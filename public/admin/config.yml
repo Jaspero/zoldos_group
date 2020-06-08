@@ -113,8 +113,8 @@ blocks: &blocks
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
         - { label: "Count", name: "count", widget: "number", requred: false }
 
-    - name: "Gallery Block"
-      label: "galleryBlock"
+    - label: "Gallery Block"
+      name: "galleryBlock"
       identifier_field: "year"
       fields:
         - label: "Year"

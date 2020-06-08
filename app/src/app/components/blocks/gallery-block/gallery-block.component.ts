@@ -1,4 +1,4 @@
-import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   selector: 'zg-gallery-block',
@@ -6,8 +6,8 @@ import {Component, OnInit, ChangeDetectionStrategy} from '@angular/core';
   styleUrls: ['./gallery-block.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class GalleryBlockComponent implements OnInit {
+export class GalleryBlockComponent {
   constructor() {}
 
-  ngOnInit(): void {}
+  data: any;
 }

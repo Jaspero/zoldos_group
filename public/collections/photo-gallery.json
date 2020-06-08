@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "title": "Gallery",
+    "description": "This is our photo gallery",
+    "keywords": "zoldos"
+  },
+  "blocks": [
+    {
+      "type": "galleryBlock",
+      "title": "Zoldoš Lab",
+      "subTitle": "CRISPR/DCAS9-BASED EPIGNOME EDITING",
+      "image": "/uploads/landing.gif"
+    }
+  ]
+}
