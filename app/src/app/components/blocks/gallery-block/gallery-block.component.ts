@@ -1,4 +1,6 @@
 import {Component, ChangeDetectionStrategy} from '@angular/core';
+import {Observable} from 'rxjs';
+import {ScullyRoute} from '@scullyio/ng-lib';
 
 @Component({
   selector: 'zg-gallery-block',
@@ -8,6 +10,6 @@ import {Component, ChangeDetectionStrategy} from '@angular/core';
 })
 export class GalleryBlockComponent {
   constructor() {}
-
+  items$: Observable<ScullyRoute[]>;
   data: any;
 }

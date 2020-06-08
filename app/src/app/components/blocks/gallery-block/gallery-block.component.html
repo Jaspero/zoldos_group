@@ -1,20 +1,6 @@
 <div class="gallery flex">
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/landing.png">
-    </div>
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/lab-members-vlatka.jpg">
-    </div>
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/lab-members-aleksandar.jpg">
-    </div>
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/landing.png">
-    </div>
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/lab-members-vlatka.jpg">
-    </div>
-    <div class="gallery-item col-4">
-        <img class="gallery-image" src="assets/images/lab-members-aleksandar.jpg">
+    <h1 class="w-full">{{data.year}}</h1>
+    <div class="gallery-item col-4" *ngFor="let image of data.images">
+        <img [src]="image.image"  class="gallery-image">
     </div>
 </div>
