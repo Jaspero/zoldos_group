@@ -32,7 +32,7 @@ export class LabMembersComponent extends RxDestroy implements OnInit {
     this.items$ = this.scully.available$.pipe(
       map(items => items
         .filter(it => it.route.includes('/lab-members/'))
-        .sort((a, b) => b.order - a.order)
+        .sort((a, b) => a.order - b.order)
       )
     );
 

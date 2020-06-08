@@ -13,6 +13,7 @@ import {ResearchesBlockComponent} from '../researches-block/researches-block.com
 import {TestBlockComponent} from '../test-block/test-block.component';
 import {TextBlockComponent} from '../text-block/text-block.component';
 import {TwoBlockTextComponent} from '../two-block-text/two-block-text.component';
+import {GalleryBlockComponent} from '../gallery-block/gallery-block.component';
 
 const BLOCKS = {
   textBlock: TextBlockComponent,
@@ -22,7 +23,8 @@ const BLOCKS = {
   landingBlock: LandingBlockComponent,
   imagesBlock: ImagesBlockComponent,
   newsBlock: NewsBlockComponent,
-  researchesBlock: ResearchesBlockComponent
+  researchesBlock: ResearchesBlockComponent,
+  galleryBlock: GalleryBlockComponent
 };
 
 @Component({

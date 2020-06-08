@@ -12,6 +12,7 @@ import {TwoBlockTextComponent} from './components/blocks/two-block-text/two-bloc
 import {MarkdownToHtmlPipe} from './pipes/markdown-to-html/markdown-to-html.pipe';
 import {TextPipe} from './pipes/text/text.pipe';
 import {ResearchesBlockComponent} from './components/blocks/researches-block/researches-block.component';
+import {GalleryBlockComponent} from './components/blocks/gallery-block/gallery-block.component';
 
 const MODULES = [CommonModule, RouterModule];
 
@@ -30,7 +31,8 @@ const COMPONENTS = [
   LandingBlockComponent,
   ImagesBlockComponent,
   NewsBlockComponent,
-  ResearchesBlockComponent
+  ResearchesBlockComponent,
+  GalleryBlockComponent
 ];
 
 @NgModule({

@@ -4,6 +4,7 @@ description: Goran graduated with a Master’s degree in Molecular Biology at
   Faculty of Science, University of Zagreb in 2016 . He was working on his
   master’s thesis “Targeted DNA methylation of the *MGAT3* gene promoter using a
   CRISPR‐Cas9 tool”under the mentorship of Prof. Vlatka Zoldoš.
+thumbImg: /uploads/goran-josipović-thumbnail.jpg
 image: /uploads/goran-josipović.jpg
 order: 6
 meta:

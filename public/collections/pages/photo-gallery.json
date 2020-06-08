@@ -2,9 +2,19 @@
   "title": "Photo gallery",
   "blocks": [
     {
-      "type": "testBlock",
-      "image": "/uploads/banner.png",
-      "content": "asda"
+      "type": "galleryBlock",
+      "year": "2020",
+      "images": [
+        {
+          "image": "/uploads/main.jpg"
+        },
+        {
+          "image": "/uploads/research.jpg"
+        },
+        {
+          "image": "/uploads/research-1.jpg"
+        }
+      ]
     }
   ]
 }

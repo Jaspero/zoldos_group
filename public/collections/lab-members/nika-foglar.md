@@ -5,6 +5,7 @@ description: Nika obtained her MSc degree in Molecular Biology at the Faculty of
   Ludwig-Maximilians University in Munich where she did her master's thesis on
   the effect of Trnp1 on proliferation of mouse cortical primary culture, in the
   group of prof. Magdalena Gotz.
+thumbImg: /uploads/nika-foglar-thumbnails.jpg
 image: /uploads/nika-foglar.jpg
 order: 10
 meta:

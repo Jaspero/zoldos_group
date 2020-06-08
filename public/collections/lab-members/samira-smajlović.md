@@ -5,6 +5,7 @@ description: Samira is originally from Bosnia and Herzegovina where she obtained
   International Burch University of Sarajevo. She joined Zoldoš Lab in spring
   2018 as an Early Stage Researcher on the Marie Curie ETN-ETN Horizon2020
   project IMforFUTURE.
+thumbImg: /uploads/samira-smajlović-thumbnail.jpg
 image: /uploads/samira-smajlović.jpg
 order: 5
 meta:

@@ -113,6 +113,20 @@ blocks: &blocks
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
         - { label: "Count", name: "count", widget: "number", requred: false }
 
+    - label: "Gallery Block"
+      name: "galleryBlock"
+      identifier_field: "year"
+      fields:
+        - label: "Year"
+          name: "year"
+          widget: "string"
+        - label: "Images"
+          name: "images"
+          widget: "list"
+          fields:
+            - {label: Image, name: image, widget: image}
+
+
 meta: &meta
   label: "Meta"
   name: "meta"
@@ -175,6 +189,7 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Featured", name: "featured", widget: "boolean" }
       - <<: *meta
@@ -192,6 +207,7 @@ collections:
       - { label: "Author", name: "author", widget: "string" }
       - { label: "Date", name: "date", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Featured", name: "featured", widget: "boolean" }
       - <<: *meta
@@ -219,6 +235,8 @@ collections:
           - { label: "Link", name: "link", widget: "text" }
 
 
+
+
   - name: "lab-members"
     label: "Lab-members"
     folder: "public/collections/lab-members"
@@ -229,6 +247,7 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description", widget: "text" }
+      - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - { label: "Image", name: "image", widget: "image" }
       - { label: "Order", name: "order", widget: "number" }
       - <<: *meta

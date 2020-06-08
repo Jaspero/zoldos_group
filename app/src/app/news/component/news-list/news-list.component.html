@@ -9,7 +9,7 @@
                     <p class="news-author">{{item.author}}</p>
                     <p class="news-author">{{item.date}}</p>
                 </div>
-                <div class="news-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
+                <div class="news-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.thumbImg +')'}"></div>
                 <scully-content></scully-content>
                 <div class="flex news-button-wrapper jc-end ai-center">
                     <a routerLink="/news" class="news-btn">Read more news</a>
