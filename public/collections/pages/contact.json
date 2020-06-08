@@ -1,3 +1,10 @@
 {
-  "title": "Contact"
+  "title": "Contact",
+  "blocks": [
+    {
+      "type": "testBlock",
+      "content": "adsadas",
+      "image": "/uploads/bioloski-odsjek-znak-i-logo-eng.jpg"
+    }
+  ]
 }
