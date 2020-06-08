@@ -5,16 +5,28 @@
                 <img src="assets/icons/logo.svg" alt="Zoldos Group Logo">
             </a>
         </div>
-        <button class="header-menu">
-            <img src="assets/icons/ham-menu.svg" alt="Menu open icon">
-        </button>
         <div class="header-links hide-s">
             <a
                 *ngFor="let link of settings.links"
                 (click)="goTo([link.link])"
                 routerLinkActive="active"
-                class="links"
+                class="links hide-s"
                 [routerLinkActiveOptions]="{exact: true}">
+                {{link.title}}
+            </a>
+        </div>
+        <div class="mobile-menu show-s" (click)="toggleMenu()" [class.active-menu]="menu">
+            <span class="mobile-menu-line-1"></span>
+            <span class="mobile-menu-line-2"></span>
+            <span class="mobile-menu-line-3"></span>
+        </div>
+        <div class="slide-menu hide-s" [class.active-menu]="menu">
+            <a
+                    *ngFor="let link of settings.links"
+                    (click)="goTo([link.link])"
+                    routerLinkActive="active"
+                    class="slide-menu-links"
+                    [routerLinkActiveOptions]="{exact: true}">
                 {{link.title}}
             </a>
         </div>

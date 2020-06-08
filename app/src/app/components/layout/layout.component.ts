@@ -16,6 +16,11 @@ export class LayoutComponent implements OnInit {
       link: string;
     }>;
   };
+  menu = false;
+
+  toggleMenu() {
+    this.menu = !this.menu;
+  }
 
   ngOnInit() {
     this.settings = this.activatedRoute.snapshot.data.settings;

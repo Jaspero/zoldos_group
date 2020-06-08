@@ -1,4 +1,10 @@
-import {Component, ComponentFactoryResolver, Input, OnInit, ViewContainerRef} from '@angular/core';
+import {
+  Component,
+  ComponentFactoryResolver,
+  Input,
+  OnInit,
+  ViewContainerRef
+} from '@angular/core';
 import {ImagesBlockComponent} from '../images-block/images-block.component';
 import {LandingBlockComponent} from '../landing-block/landing-block.component';
 import {NewsBlockComponent} from '../news-block/news-block.component';

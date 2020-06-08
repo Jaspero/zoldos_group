@@ -71,9 +71,7 @@
   "dataGroups": [
     {
       "name": "collections",
-      "patterns": [
-        "\\/collections"
-      ],
+      "patterns": ["\\/collections"],
       "strategy": "performance",
       "maxSize": 2000,
       "maxAge": 86400000,
