@@ -2,9 +2,46 @@
   "title": "Photo gallery",
   "blocks": [
     {
-      "type": "testBlock",
-      "image": "/uploads/banner.png",
-      "content": "asda"
+      "type": "Gallery Block",
+      "year": "2020",
+      "images": [
+        {
+          "image": "/uploads/research.jpg"
+        },
+        {
+          "image": "/uploads/research-1.jpg"
+        },
+        {
+          "image": "/uploads/research-main.jpg"
+        }
+      ]
+    },
+    {
+      "type": "Gallery Block",
+      "year": "2018",
+      "images": [
+        {
+          "image": "/uploads/aleksandar-vojta-thumbnail.jpg"
+        },
+        {
+          "image": "/uploads/anika-mijakovac.jpg"
+        }
+      ]
+    },
+    {
+      "type": "Gallery Block",
+      "year": "2017",
+      "images": [
+        {
+          "image": "/uploads/vlatka-zoldoš-thumbnail.jpg"
+        },
+        {
+          "image": "/uploads/nika-foglar.jpg"
+        },
+        {
+          "image": "/uploads/goran-josipović-thumbnail.jpg"
+        }
+      ]
     }
   ]
 }
