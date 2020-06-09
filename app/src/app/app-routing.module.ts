@@ -52,6 +52,13 @@ const routes: Routes = [
           )
       },
       {
+        path: 'photo-gallery',
+        loadChildren: () =>
+          import('./photo-gallery/photo-gallery.module').then(
+            m => m.PhotoGalleryModule
+          )
+      },
+      {
         path: '404',
         component: PageNotFoundComponent
       },
