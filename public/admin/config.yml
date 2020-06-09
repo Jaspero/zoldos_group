@@ -234,6 +234,23 @@ collections:
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Link", name: "link", widget: "text" }
 
+  - name: "photo-gallery"
+    label: "Photo-gallery"
+    folder: "public/collections/photo-gallery"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: "year"
+    editor:
+      preview: false
+    fields:
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Image", name: "image", widget: "image" }
+      - label: "Image Gallery"
+        name: "imageGallery"
+        widget: "list"
+        fields:
+          - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
+
 
 
 
