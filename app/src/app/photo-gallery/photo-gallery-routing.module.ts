@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {MetaResolver} from '../resolvers/meta.resolver';
 import {PageResolver} from '../resolvers/page.resolver';
 import {PhotoGalleryComponent} from './component/photo-gallery/photo-gallery.component';
+import {PhotoGalleryListComponent} from './component/photo-gallery-list/photo-gallery-list.component';
 
 const routes: Routes = [
   {
@@ -18,7 +19,7 @@ const routes: Routes = [
   },
   {
     path: ':id',
-    component: PhotoGalleryComponent,
+    component: PhotoGalleryListComponent,
     data: {
       collection: 'photo-gallery'
     },

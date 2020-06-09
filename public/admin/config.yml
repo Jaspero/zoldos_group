@@ -246,6 +246,8 @@ collections:
       - label: "Year"
         name: "year"
         widget: "string"
+        fields:
+          - { label: "Thumbnail Image", name: "thumbImg", widget: "image" }
       - label: "Image Gallery"
         name: "imageGallery"
         widget: "list"
