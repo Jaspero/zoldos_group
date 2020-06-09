@@ -1,1 +1,10 @@
-<p>photo-gallery-list works!</p>
+<section class="m-y-xl">
+    <div class="grid">
+        <div class="col-12 ta-center">
+            <h1>Photos from {{item.year}}</h1>
+        </div>
+        <div class="col-4" *ngFor="let data of item.imageGallery">
+            <div class="image-wrapper" [ngStyle]="{'background-image': 'url('+ data.thumbImg +')'}"></div>
+        </div>
+    </div>
+</section>

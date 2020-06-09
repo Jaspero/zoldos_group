@@ -208,14 +208,15 @@
   },
   {"route": "/photo-gallery"},
   {
-    "route": "/photo-gallery/map-year-2020-image-uploads-aleksandar-vojta-thumbnail-jpg",
-    "year": {"year": 2020, "image": "/uploads/aleksandar-vojta-thumbnail.jpg"},
+    "route": "/photo-gallery/2020",
+    "year": 2020,
+    "image": "/uploads/lab-members-aleksandar.jpg",
     "imageGallery": [
       {"thumbImg": "/uploads/main.jpg"},
       {"thumbImg": "/uploads/research-main.jpg"},
       {"thumbImg": "/uploads/research.jpg"}
     ],
-    "sourceFile": "map-year-2020-image-uploads-aleksandar-vojta-thumbnail-jpg.md"
+    "sourceFile": "2020.md"
   },
   {"route": "/404"},
   {"route": "/about"},
