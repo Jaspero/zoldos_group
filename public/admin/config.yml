@@ -68,6 +68,14 @@ blocks: &blocks
         - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
         - { label: "Image", name: "image", widget: "image", requried: true }
 
+    - label: "Members Block"
+      name: "membersBlock"
+      widget: "object"
+      fields:
+        - { label: "Title", name: "title", widget: "string", required: false }
+        - { label: "Image", name: "image", widget: "image", requried: true }
+        - { label: "Description", name: "description", widget: "string", required: false }
+
     - label: "Images Block"
       name: "imagesBlock"
       widget: "object"
