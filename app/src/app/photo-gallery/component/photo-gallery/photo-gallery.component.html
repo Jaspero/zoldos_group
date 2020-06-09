@@ -4,13 +4,13 @@
 <div class="grid">
     <h1 class="w-full ta-center m-y-l">{{page.title}}</h1>
     <div class="wrapper flex jc-start fw-wrap">
-        <a  class="gallery-container" *ngFor="let year of items$ | async" [id]="year.year">
+        <a [routerLink]="['/gallery', year.year]" class="gallery-container" *ngFor="let year of items$ | async" [id]="year.year">
             <div class="year-wrapper m-y-m">
                 <h2 class="year">{{year.year}}</h2>
             </div>
             <div class="flex fw-wrap jc-start ai-center">
                 <div class="gallery-item col-4" >
-                    <img class="gallery-image" [src]="year.imageGallery[0]">
+                    <img class="gallery-image" [src]="year.image">
                 </div>
             </div>
         </a>
