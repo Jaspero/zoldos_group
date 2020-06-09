@@ -37,6 +37,7 @@
   margin: 0 10px;
   position: relative;
   transition: all .4s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     color: #C71585;
@@ -189,6 +190,9 @@
   }
 }
 
+a {
+  text-decoration: underline;
+}
 
 
 
