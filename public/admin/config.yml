@@ -84,9 +84,9 @@ blocks: &blocks
         - { label: "Image", name: "image", widget: "image", requried: true }
         - { label: "Description", name: "description", widget: "string", required: false }
         - { label: "Name", name: "name", widget: "string", required: false }
-        - { label: "Subtitle", name: "subTitle", widget: "string", required: false
+        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
 
-                                                                      - label: "Images Block"
+    - label: "Images Block"
       name: "imagesBlock"
       widget: "object"
       fields:
