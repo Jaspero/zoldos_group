@@ -2,9 +2,12 @@
   "title": "Contact",
   "blocks": [
     {
-      "type": "testBlock",
-      "content": "adsadas",
-      "image": "/uploads/bioloski-odsjek-znak-i-logo-eng.jpg"
+      "type": "contactBlock",
+      "image": "/uploads/contact-us-photo.jpg",
+      "description": "Some Description",
+      "name": "Vlatka Zoldoš",
+      "subTitle": "PRINCIPLE INVESTIGATOR LABORATORY FOR EPIGENETICS",
+      "title": "Contact Us"
     }
   ]
 }
