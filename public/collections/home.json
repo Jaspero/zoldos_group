@@ -12,6 +12,12 @@
       "image": "/uploads/landing.gif"
     },
     {
+      "type": "membersBlock",
+      "title": "Meet our members",
+      "image": "/uploads/members.jpg",
+      "description": "some description"
+    },
+    {
       "type": "twoBlockText",
       "name": "VLATKA ZOLDOŠ",
       "info": "2000 PHD NATURAL SCIENCES, FACULTY OF SCIENCE UNIVERSITY OF ZAGREB AND UNIVERSITY PARIS-SUD XI, CNRS, ORSAY, FRANCE (DUAL MENTORSHIP) 1992 B.SC. IN BIOLOGY, FACULTY OF SCIENCE UNIVERSITY OF ZAGREB",
