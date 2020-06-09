@@ -245,7 +245,7 @@ collections:
     fields:
       - label: "Year"
         name: "year"
-        widget: "list"
+        widget: "object"
         fields:
           - { label: "Image", name: "image", widget: "image" }
       - label: "Image Gallery"
