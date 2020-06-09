@@ -1,0 +1,96 @@
+.main {
+  height: 200px;
+  border-bottom: 3px solid #323037;
+}
+
+.gallery-item {
+  margin: 1rem;
+  box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+  height: 100%;
+}
+.gallery-image {
+  display: block;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 400ms ease-out;
+}
+.gallery-image:hover {
+  transform: scale(1.15);
+}
+
+
+.gallery-sidebar {
+  width: 400px;
+}
+
+.gallery-container {
+  border-left: 1px solid #868686;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.year {
+  letter-spacing: normal;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 0;
+  position: relative;
+  text-align: left;
+  color: #323037;
+  margin-left: 80px;
+  &:before {
+    position: absolute;
+    right: 100%;
+    left: -88px;
+    top: 10px;
+    width: 16px;
+    height: 16px;
+    border: 5px solid white;
+    background: #b8b8ba;
+    content: "";
+    border-radius: 100%;
+    outline: none;
+    background-clip: padding-box;
+    overflow: hidden;
+  }
+}
+
+.gallery-select {
+  color: #919090;
+  width: 80%;
+  border: 1px solid #d8d8d8;
+  border-radius: 2px;
+  text-align: center;
+  text-align-last: center;
+  padding: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  font-size: 15px;
+  padding-right: 24px;
+  &:after {
+    font-family: FontAwesome;
+    content: '\f107';
+    position: absolute;
+    right: 25px;
+    top: 14px;
+    border-bottom: 2px solid #989797;
+    border-right: 2px solid #989797;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    width: 9px;
+    height: 9px;
+  }
+}

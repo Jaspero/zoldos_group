@@ -30,7 +30,19 @@ export class PhotoGalleryComponent extends RxDestroy implements OnInit {
 
   ngOnInit() {
     this.items$ = this.scully.available$.pipe(
-      map(items => items.filter(it => it.route.includes('/photo-gallery/')))
+      map(items =>
+        items
+          .filter(it => it.route.includes('/photo-gallery/'))
+          .sort((a, b) => {
+            if (a.year > b.year) {
+              return -1;
+            } else if (a.year < b.year) {
+              return 1;
+            }
+
+            return 0;
+          })
+      )
     );
 
     this.page = this.activatedRoute.snapshot.data.page;
@@ -41,5 +53,12 @@ export class PhotoGalleryComponent extends RxDestroy implements OnInit {
         this.page = page;
         this.cdr.markForCheck();
       });
+  }
+
+  yearSelected(event) {
+    const year = event.target.value;
+    document.getElementById(year).scrollIntoView({
+      behavior: 'smooth'
+    });
   }
 }
