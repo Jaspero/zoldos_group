@@ -243,11 +243,8 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Year"
-        name: "year"
-        fields:
-          - { label: "Year", name: "year", widget: "number" }
-          - { label: "Image", name: "image", widget: "image" }
+      - { label: "Year", name: "year", widget: "number" }
+      - { label: "Image", name: "image", widget: "image" }
       - label: "Image Gallery"
         name: "imageGallery"
         widget: "list"
