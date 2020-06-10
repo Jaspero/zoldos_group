@@ -1,12 +1,26 @@
-.contact-us-photo {
-  width: 800px;
-}
-
-.contact-us {
-  display: flex;
-}
-
 .contact-us-left {
   position: sticky;
   top: 100px;
+}
+.main {
+  height: 200px;
+  border-bottom: 3px solid #323037;
+  margin-top: 65px;
+}
+
+
+svg {
+  transition: all .4s ease-in-out;
+}
+
+.research-gate:hover {
+  fill: #0cb;
+}
+
+.linkedin:hover {
+  fill: #2867B2;
+}
+
+.facebook:hover {
+  fill: #4267B2;
 }

@@ -1,3 +1,8 @@
+.main {
+  height: 200px;
+  border-bottom: 3px solid #323037;
+}
+
 
 .container {
   max-width: 100rem;
@@ -125,4 +130,8 @@
     background-image: url("/assets/images/members.jpg");
     background-size: 100% auto;
   }
+}
+
+p {
+  text-decoration: underline;
 }

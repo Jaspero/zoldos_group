@@ -37,6 +37,7 @@
   margin: 0 10px;
   position: relative;
   transition: all .4s ease-in-out;
+  text-decoration: none;
 
   &:hover {
     color: #C71585;
@@ -66,6 +67,12 @@
     color: 	#C71585 !important;
     border-bottom: 1px solid #C71585;
   }
+}
+
+.active {
+  font-weight: 300;
+  color: 	#C71585 !important;
+  border-bottom: 1px solid #C71585;
 }
 
 
@@ -189,6 +196,9 @@
   }
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
 
 
 
