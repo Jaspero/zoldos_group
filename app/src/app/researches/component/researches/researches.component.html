@@ -7,7 +7,7 @@
 <section class="m-y-xl">
     <div class="grid jc-start">
         <div class="col-6 col-s-12" *ngFor="let item of items$ | async; let odd = odd last as last;">
-            <div class="research-image-block-wrapper m-b-l" [class.even]="odd" [class.m-b-l]="!last">
+            <div class="research-image-block-wrapper card" [class.even]="odd" [class.m-b-l]="!last">
                 <div class="research-image-block-text" [class.text]="odd">
                     <h5 class="research-title">{{item.title}}</h5>
                     <p class="research-author m-y-s">{{item.author}}</p>

@@ -69,6 +69,12 @@
   }
 }
 
+.active {
+  font-weight: 300;
+  color: 	#C71585 !important;
+  border-bottom: 1px solid #C71585;
+}
+
 
 
 
@@ -190,7 +196,7 @@
   }
 }
 
-a {
+.footer-link:hover {
   text-decoration: underline;
 }
 
