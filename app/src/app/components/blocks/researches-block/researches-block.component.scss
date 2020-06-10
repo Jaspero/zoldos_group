@@ -7,12 +7,10 @@
     padding: 20px;
   }
   &-text {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
     width: 65%;
     text-align: right;
   }
   &-left {
-    font-family: "Raleway", Arial, Helvetica, sans-serif;
     width: 60%;
     text-align: left;
   }
@@ -61,6 +59,25 @@
 
 /* Mobile styles
  *============================================================================*/
+
+@media (max-width: 1300px) {
+  .research-image-block-bg {
+    height: 180px;
+  }
+}
+
+@media (max-width: 1150px) {
+  .research-image-block-bg {
+    height: 150px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .research-image-block-bg {
+    height: 130px;
+  }
+}
+
 
 @media (max-width: 900px)  {
   .research-image-block-text {

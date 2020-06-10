@@ -200,17 +200,6 @@
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 .logo-zoldos {
   width: 100px;
   height: 100px;
@@ -228,4 +217,12 @@
   text-align: center;
   background-color: white;
   border-top: 1px solid black;
+}
+
+
+
+@media (max-width: 1000px) {
+  .links {
+    font-size: 14px;
+  }
 }
