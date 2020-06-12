@@ -5,10 +5,16 @@
             <h4 *ngIf="data.subTitle" class="info m-t-m m-b-l">{{data.subTitle}}</h4>
         </div>
         <div class="col-5 col-s-12 ta-center flex jc-center" *ngFor="let item of news$ | async">
-            <a [routerLink]="item.route" class="wrapper news-card font-secondary">
-                <img [src]="item.thumbImg" alt="" class="images-block-image w-full obj-cover">
-                <div class="w-full content-wrapper bg-light flex ai-center jc-center p-y-m">
-                    <p>{{item.title}}</p>
+            <a [routerLink]="item.route" class="card">
+                <div class="img-wrapper" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
+                <div class="news-info ta-left">
+                    <h5 class="news-title">{{item.title}}</h5>
+                    <div class="flex jc-between ai-center">
+                        <p class="news-author m-y-s">{{item.author}}</p>
+                        <p class="date">{{item.date}}</p>
+                    </div>
+                    <p class="news-description" [innerHTML]="item.description | text"></p>
+                    <a [routerLink]="item.route" class="news-btn">Read More</a>
                 </div>
             </a>
         </div>

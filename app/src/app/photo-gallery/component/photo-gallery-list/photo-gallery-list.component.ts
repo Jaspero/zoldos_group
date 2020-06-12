@@ -13,9 +13,9 @@ export class PhotoGalleryListComponent {
   item: any;
   gallery: string;
 
-  toggleGallery(image) {
-    console.log(image);
-    this.gallery = image;
+  toggleGallery(fullImg) {
+    console.log(fullImg);
+    this.gallery = fullImg;
   }
 
   ngOnInit() {
