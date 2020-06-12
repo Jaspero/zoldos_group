@@ -11,10 +11,11 @@ export class PhotoGalleryListComponent {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   item: any;
-  gallery = false;
+  gallery: string;
 
-  toggleGallery() {
-    this.gallery = !this.gallery;
+  toggleGallery(image) {
+    console.log(image);
+    this.gallery = image;
   }
 
   ngOnInit() {
