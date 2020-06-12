@@ -1,10 +1,11 @@
-<section class="m-y-xl">
+<section class="m-t-l">
     <div class="grid">
-        <div class="col-12 ta-center">
+        <div class="col-12 ta-center m-t-s">
             <h1>Photos from {{item.year}}</h1>
         </div>
         <div class="col-4" *ngFor="let data of item.imageGallery">
             <div class="image-wrapper" [ngStyle]="{'background-image': 'url('+ data.thumbImg +')'}"></div>
         </div>
     </div>
+</section>
 </section>
