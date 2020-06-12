@@ -11,6 +11,11 @@ export class PhotoGalleryListComponent {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   item: any;
+  gallery = false;
+
+  toggleGallery() {
+    this.gallery = !this.gallery;
+  }
 
   ngOnInit() {
     this.item = this.activatedRoute.snapshot.data.meta;
