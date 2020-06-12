@@ -32,3 +32,15 @@ svg {
 .email:hover {
   text-decoration: underline;
 }
+
+
+
+
+
+/* Mobile Styles
+ *============================================================================*/
+@media (max-width: 900px)  {
+  .contact-us-left {
+    position: unset;
+  }
+}

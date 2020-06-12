@@ -5,7 +5,7 @@
     <div class="grid">
         <div class="col-12 ta-center">
         </div>
-        <div class="col-10 flex jc-center pub-wrapper">
+        <div class="col-10 col-s-12 flex  jc-center pub-wrapper">
             <div class="pub-sidebar m-t-m">
                 <div class="select-wrapper">
                     <select class="pub-select" (change)="yearSelected($event)">
@@ -14,10 +14,10 @@
                     </select>
                 </div>
             </div>
-            <div class="col-8 pub-container m-t-m">
+            <div class="col-8 col-s-12 pub-container m-t-m">
                 <div class="year-wrapper m-y-m" *ngFor="let year of items$ | async" [id]="year.year">
                     <h2 class="pub-year">{{year.year}}</h2>
-                    <div class="flex p-x-l fw-wrap" *ngFor="let item of year.publications">
+                    <div class="flex p-x-l fw-wrap container" *ngFor="let item of year.publications">
                         <p class="publication"><span class="name">{{item.name}}</span><b>{{item.title}}</b> <br> <span>{{item.description}}</span></p>
                         <a [routerLink]="item.route" class="link">{{item.link}}</a>
                     </div>
