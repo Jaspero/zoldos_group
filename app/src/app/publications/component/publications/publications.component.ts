@@ -45,10 +45,6 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
       )
     );
 
-    this.scully.available$.subscribe(value => {
-      console.log(value);
-    });
-
     this.page = this.activatedRoute.snapshot.data.page;
 
     this.activatedRoute.data
