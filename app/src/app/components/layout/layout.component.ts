@@ -28,6 +28,6 @@ export class LayoutComponent implements OnInit {
 
   goTo(items: string[]) {
     this.router.navigate(items);
-    this.menu = !this.menu;
+    this.menu = false;
   }
 }
