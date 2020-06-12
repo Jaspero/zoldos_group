@@ -5,7 +5,7 @@
             <h4 *ngIf="data.subTitle" class="info m-t-m m-b-l">{{data.subTitle}}</h4>
         </div>
         <div class="col-5 col-s-12 ta-center flex jc-center" *ngFor="let item of news$ | async">
-            <a [routerLink]="['news', item.id]" class="wrapper news-card font-secondary">
+            <a [routerLink]="item.route" class="wrapper news-card font-secondary">
                 <img [src]="item.thumbImg" alt="" class="images-block-image w-full obj-cover">
                 <div class="w-full content-wrapper bg-light flex ai-center jc-center p-y-m">
                     <p>{{item.title}}</p>
