@@ -121,7 +121,11 @@ blocks: &blocks
       fields:
         - { label: "Title", name: "title", widget: "string", required: false }
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
+        - { label: "Author", name: "author", widget: "string" }
+        - { label: "Date", name: "date", widget: "string" }
+        - { label: "Description", name: "description", widget: "text" }
         - { label: "Count", name: "count", widget: "number", requred: false }
+
 
     - label: "Researches Block"
       name: "researchesBlock"
