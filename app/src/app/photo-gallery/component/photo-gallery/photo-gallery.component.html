@@ -3,7 +3,7 @@
 </div>
 <div class="grid m-y-m">
     <h1 class="w-full ta-center m-y-l">Browse trough our galleries</h1>
-    <a [routerLink]="year.route" class=" col-4" *ngFor="let year of items$ | async" [id]="year.year">
+    <a [routerLink]="year.route" class=" col-4 col-s-6 col-xs-12" *ngFor="let year of items$ | async" [id]="year.year">
         <div class="gallery-card">
             <h2 class="year m-y-s">{{year.year}}</h2>
             <div class="image-wrapper w-full" >

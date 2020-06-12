@@ -84,7 +84,6 @@
 
 .mobile-menu {
   cursor: pointer;
-  height: 30px;
   margin: 0 10px;
   transition: .4s ease-in-out;
   z-index: 23;
@@ -224,5 +223,12 @@
 @media (max-width: 1000px) {
   .links {
     font-size: 14px;
+  }
+}
+
+
+@media (max-width: 900px) {
+  .header-logo {
+    width: 15%;
   }
 }
