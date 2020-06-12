@@ -1,8 +1,8 @@
-<section class="m-y-xl relative">
-    <div class="grid">
-        <div class="col-12 ta-center">
-            <h1>Photos from {{item.year}}</h1>
-        </div>
+<section class="relative">
+    <div class="main flex jc-center ai-center m-t-m">
+        <h1>Photos from {{item.year}}</h1>
+    </div>
+    <div class="grid m-y-xl">
         <div class="col-4 col-s-6 col-xs-12" *ngFor="let data of item.imageGallery">
             <div class="image-wrapper" [ngStyle]="{'background-image': 'url('+ data.thumbImg +')'}"></div>
             <div class="image-overlay">

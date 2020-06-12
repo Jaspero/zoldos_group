@@ -5,3 +5,23 @@
   background-size: cover;
   width: 100%;
 }
+
+
+.main {
+  height: 200px;
+  border-bottom: 3px solid #323037;
+  margin-top: 65px;
+}
+
+.b-b {
+  border-bottom:2px solid #323037;
+}
+
+
+
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 30px;
+  }
+}
