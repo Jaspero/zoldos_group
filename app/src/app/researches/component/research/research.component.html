@@ -1,15 +1,15 @@
 <section>
-<div class="grid m-t-xl">
-    <div class="col-12">
-        <div class="col-12 ta-center">
-            <h1>{{item.title}}</h1>
-        </div>
-        <div class="wrapper">
-            <p class="research-author">{{item.author}}</p>
-            <div class="research-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
-            <p class="research-description" [innerHTML]="item.description | text"></p>
+    <div class="grid m-t-xl">
+        <div class="col-12">
+            <div class="col-12 ta-center">
+                <h1>{{item.title}}</h1>
+            </div>
+            <div class="wrapper">
+                <p class="research-author">{{item.author}}</p>
+                <div class="research-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
+                <p class="research-description" [innerHTML]="item.description | text"></p>
+            </div>
         </div>
     </div>
-</div>
-<scully-content></scully-content>
+    <scully-content></scully-content>
 </section>

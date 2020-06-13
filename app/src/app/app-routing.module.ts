@@ -4,7 +4,6 @@ import {LayoutComponent} from './components/layout/layout.component';
 import {PageNotFoundComponent} from './components/page-not-found/page-not-found.component';
 import {PageComponent} from './components/page/page.component';
 import {PageResolver} from './resolvers/page.resolver';
-import {ResearchesComponent} from './researches/component/researches/researches.component';
 
 const routes: Routes = [
   {

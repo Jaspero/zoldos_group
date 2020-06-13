@@ -13,8 +13,7 @@ export class PhotoGalleryListComponent {
   item: any;
   gallery: string;
 
-  toggleGallery(fullImg) {
-    console.log(fullImg);
+  toggleGallery(fullImg?: string) {
     this.gallery = fullImg;
   }
 

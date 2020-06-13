@@ -156,7 +156,9 @@ meta: &meta
     - { label: "Description", name: "description", widget: "text", required: false }
     - { label: "Keywords", name: "keywords", widget: "string", required: false }
 
-
+slug:
+  encoding: "ascii"
+  clean_accents: true
 collections:
   - name: "settings"
     label: "Settings"
