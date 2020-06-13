@@ -7,7 +7,7 @@ backend:
 publish_mode: editorial_workflow
 media_folder: "public/uploads"
 public_folder: "/uploads"
-display_url: https://zoldos-group.web.app/
+display_url: https://zoldos-group.web.app
 logo_url: https://zoldos-group.web.app/assets/icons/logo.svg
 
 
