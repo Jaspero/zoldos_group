@@ -5,12 +5,10 @@ backend:
   base_url: https://europe-west2-zoldos-group.cloudfunctions.net/
   auth_endpoint: /oauth/auth
 publish_mode: editorial_workflow
-
-# Media files will be stored in the repo under docs/uploads
 media_folder: "public/uploads"
-
-# The src attribute for uploaded media will begin with /uploads
 public_folder: "/uploads"
+display_url: https://zoldos-group.web.app/
+logo_url: https://zoldos-group.web.app/assets/icons/logo.svg
 
 
 # Reusable blocks for all of the pages
@@ -254,7 +252,7 @@ collections:
           - { label: "Name", name: "name", widget: "string" }
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
-          - { label: "Link", name: "link", widget: "text" }
+          - { label: "Link", name: "link", widget: "string" }
 
   - name: "photo-gallery"
     label: "Photo-gallery"
