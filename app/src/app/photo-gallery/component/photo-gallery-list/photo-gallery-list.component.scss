@@ -34,15 +34,50 @@
   background: black;
   opacity: 0;
   &.active-gallery {
-    opacity: 0.8;
+    opacity: 1;
     pointer-events: all;
   }
 }
 
+.image-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.full-img {
+  height: 500px;
+  width: 50%;
+  object-fit: cover;
+}
+
+.close-btn-container {
+  position: absolute;
+  right: 20%;
+  top: 0;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 @media (max-width: 900px) {
   h1 {
     font-size: 30px;
+  }
+  .full-img {
+    width: 80%;
+  }
+  .close-btn-container {
+    right: 5%;
   }
 }
