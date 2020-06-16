@@ -117,11 +117,18 @@ option  {
 /* Mobile Styles
  *============================================================================*/
 @media (max-width: 900px)  {
+  h1 {
+    font-size: 30px;
+  }
+  .pub-sidebar {
+    text-align: center;
+  }
   .pub-container {
     border: none;
   }
   .pub-wrapper {
     flex-wrap: wrap;
+    border: none;
   }
   .pub-year {
     position: unset;

@@ -1,7 +1,7 @@
 <section class="m-y-xl images-block">
     <div class="grid jc-around">
         <div class="col-12 ta-center" *ngIf="data.title || data.subTitle">
-            <h1 *ngIf="data.title">{{data.title}}</h1>
+            <h1 *ngIf="data.title" class="section-title">{{data.title}}</h1>
             <h4 *ngIf="data.subTitle" class="info m-t-m m-b-l">{{data.subTitle}}</h4>
         </div>
         <div class="col-5 col-s-12 ta-center flex jc-center" *ngFor="let item of news$ | async">

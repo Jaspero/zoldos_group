@@ -76,4 +76,14 @@
 /* Mobile styles
  *============================================================================*/
 
-
+@media (max-width: 900px) {
+  .section-title {
+    font-size: 30px;
+  }
+  .info {
+    font-size: 25px;
+  }
+  .news-title {
+    font-size: 20px;
+  }
+}
