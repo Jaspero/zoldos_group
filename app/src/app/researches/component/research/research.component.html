@@ -7,9 +7,11 @@
             <div class="wrapper">
                 <p class="research-author">{{item.author}}</p>
                 <div class="research-image m-y-m" [ngStyle]="{'background-image': 'url('+ item.image +')'}"></div>
-                <p class="research-description" [innerHTML]="item.description | text"></p>
+                <scully-content class="m-y-s"></scully-content>
+                <div class="button-wrapper flex jc-end">
+                    <a routerLink="/researches" class="research-btn">Other Researches</a>
+                </div>
             </div>
         </div>
     </div>
-    <scully-content></scully-content>
 </section>

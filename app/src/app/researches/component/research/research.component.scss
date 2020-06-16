@@ -18,7 +18,26 @@
   font-size: 20px;
 }
 
+.button-wrapper {
+  margin-top: 40px;
+}
 
+.research-btn {
+  background: white;
+  color: #868686;
+  outline: none;
+  font-size: 20px;
+  font-weight: 400;
+  border: 1px solid #868686;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: all .4s ease-in-out;
+  position: relative;
+  &:hover {
+    background: #868686;
+    color: white;
+  }
+}
 
 
 
