@@ -1,5 +1,6 @@
-import {Component, ChangeDetectionStrategy} from '@angular/core';
+import {Component, ChangeDetectionStrategy, Inject} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import {DOCUMENT} from '@angular/common';
 
 @Component({
   selector: 'zg-photo-gallery-list',
@@ -8,13 +9,17 @@ import {ActivatedRoute} from '@angular/router';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class PhotoGalleryListComponent {
-  constructor(private activatedRoute: ActivatedRoute) {}
+  constructor(
+    @Inject(DOCUMENT) private document: Document,
+    private activatedRoute: ActivatedRoute
+  ) {}
 
   item: any;
   gallery: string;
 
   toggleGallery(fullImg?: string) {
     this.gallery = fullImg;
+    this.document.body.classList.toggle('of-hidden');
   }
 
   ngOnInit() {

@@ -23,7 +23,7 @@
         <div class="slide-menu hide-s" [class.active-menu]="menu">
             <a
                 *ngFor="let link of settings.links"
-                routerLinkActive=""
+                routerLinkActive="active"
                 class="slide-menu-links"
                 [routerLink]="[link.link]"
                 [routerLinkActiveOptions]="{exact: link.link === '/'}"
