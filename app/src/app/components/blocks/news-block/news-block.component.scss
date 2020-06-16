@@ -34,6 +34,7 @@
   flex-direction: column;
   overflow: hidden;
   height: 100%;
+  width: 100%;
   cursor: pointer;
   transition: all .4s ease-in-out;
 }
@@ -68,6 +69,9 @@
   margin-top: auto;
 }
 
+section {
+  background: #f6f6f6;
+}
 
 
 
