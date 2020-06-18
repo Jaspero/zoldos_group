@@ -23,6 +23,7 @@ export class PhotoGalleryListComponent {
   ) {
     if (this.gallery) {
       this.gallery = '';
+      this.document.body.classList.toggle('of-hidden');
     }
   }
 
