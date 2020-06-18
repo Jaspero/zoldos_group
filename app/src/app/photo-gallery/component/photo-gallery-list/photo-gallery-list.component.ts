@@ -1,4 +1,9 @@
-import {Component, ChangeDetectionStrategy, Inject} from '@angular/core';
+import {
+  Component,
+  ChangeDetectionStrategy,
+  Inject,
+  HostListener
+} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DOCUMENT} from '@angular/common';
 
@@ -13,6 +18,13 @@ export class PhotoGalleryListComponent {
     @Inject(DOCUMENT) private document: Document,
     private activatedRoute: ActivatedRoute
   ) {}
+  @HostListener('document:keydown.escape', ['$event']) onKeydownHandler(
+    event: KeyboardEvent
+  ) {
+    if (this.gallery) {
+      this.gallery = '';
+    }
+  }
 
   item: any;
   gallery: string;
