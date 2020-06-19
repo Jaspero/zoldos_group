@@ -57,8 +57,10 @@ export class PublicationsComponent extends RxDestroy implements OnInit {
 
   yearSelected(event) {
     const year = event.target.value;
-    document.getElementById(year).scrollIntoView({
-      behavior: 'smooth'
-    });
+    if (year) {
+      document.getElementById(year).scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
   }
 }
