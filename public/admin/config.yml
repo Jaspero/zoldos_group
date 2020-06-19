@@ -17,29 +17,6 @@ blocks: &blocks
   name: "blocks"
   widget: "list"
   types:
-    - label: "Text Block"
-      name: "textBlock"
-      widget: "object"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "content", name: "content", widget: "markdown", required: false }
-
-    - label: "Portfolio Block"
-      name: "portfolioBlock"
-      widget: "object"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
-        - label: "Features"
-          name: "features"
-          widget: "list"
-          fields:
-            - { label: "Image", name: "image", widget: "image", requried: true }
-            - { label: "Image Alt", name: "alt", widget: "string", requried: true }
-            - { label: "Title", name: "title", widget: "string", requried: true }
-            - { label: "Author", name: "author", widget: "string", requried: false }
-            - { label: "Content", name: "content", widget: "markdown", requried: true }
-
     - label: "Two Block Text"
       name: "twoBlockText"
       widget: "object"
@@ -48,15 +25,6 @@ blocks: &blocks
         - { label: "Info", name: "info", widget: "string", required: false }
         - { label: "Bio", name: "bio", widget: "string", requried: true }
         - { label: "Bio Two", name: "bioTwo", widget: "string", requried: true }
-
-    - label: "Test block"
-      name: "testBlock"
-      widget: "object"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Sub Title", name: "subTitle", widget: "string", required: false }
-        - { label: "Content", name: "content", widget: "markdown", requried: true }
-        - { label: "Image", name: "image", widget: "image", requried: true }
 
     - label: "Landing block"
       name: "landingBlock"
@@ -83,35 +51,6 @@ blocks: &blocks
         - { label: "Description", name: "description", widget: "string", required: false }
         - { label: "Name", name: "name", widget: "string", required: false }
         - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
-
-    - label: "Images Block"
-      name: "imagesBlock"
-      widget: "object"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
-        - label: "Image Gallery"
-          name: "galleryImages"
-          widget: "list"
-          fields:
-            - {label: Image, name: image, widget: image}
-            - { label: "Title", name: "title", widget: "string", required: false }
-            - { label: "Link", name: "link", widget: "string", required: false }
-
-    - label: "Image Text Block"
-      name: "imageTextBlock"
-      widget: "object"
-      fields:
-        - { label: "Title", name: "title", widget: "string", required: false }
-        - { label: "Subtitle", name: "subTitle", widget: "string", required: false }
-        - label: "Image Text Wrapper"
-          name: "textWrapper"
-          widget: "list"
-          fields:
-            - {label: Image, name: image, widget: image}
-            - { label: "Image Title", name: "imageTitle", widget: "string", required: false }
-            - { label: "Author/Name", name: "name", widget: "string", required: false }
-            - { label: "Content", name: "content", widget: "string", required: false }
 
     - label: "News Block"
       name: "newsBlock"
